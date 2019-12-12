@@ -26,6 +26,6 @@ Case Study provider : Mathias Rouan (LETG)
 
 Master student participation : Yasmin Ait Maksene, Yanis Remila, Fatah M'Sili and Boubacar DIALLO
 
-License
+# License
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details
  
