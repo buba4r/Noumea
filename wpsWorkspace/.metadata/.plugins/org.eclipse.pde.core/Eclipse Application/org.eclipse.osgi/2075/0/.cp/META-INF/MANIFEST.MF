@@ -1,0 +1,341 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.photran.ui; singleton:=true
+Built-By: default
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,or
+ g.eclipse.debug.ui,org.eclipse.jface.text,org.eclipse.help,org.eclips
+ e.ui,org.eclipse.ui.ide,org.eclipse.ui.editors,org.eclipse.ui.views,o
+ rg.eclipse.ui.workbench.texteditor,org.eclipse.photran.core,org.eclip
+ se.photran.cdtinterface
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: %providerName
+Export-Package: org.eclipse.photran.internal.ui;x-friends:="org.eclips
+ e.photran.ui.vpg",org.eclipse.photran.internal.ui.actions;x-friends:=
+ "org.eclipse.photran.ui.vpg",org.eclipse.photran.internal.ui.editor;x
+ -friends:="org.eclipse.photran.ui.vpg",org.eclipse.photran.internal.u
+ i.preferences;x-friends:="org.eclipse.photran.ui.vpg",org.eclipse.pho
+ tran.internal.ui.properties;x-friends:="org.eclipse.photran.ui.vpg",o
+ rg.eclipse.photran.internal.ui.startup;x-friends:="org.eclipse.photra
+ n.ui.vpg",org.eclipse.photran.ui
+Bundle-Name: %pluginName
+Bundle-Version: 9.0.0.201909101352
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.photran.internal.ui.FortranUIPlugin
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_202
+
+Name: plugin.xml
+SHA-256-Digest: Jmsvvoriv7x7YykZskyVLGSBlRXDOr5+R9wP9alYdx0=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranSourceFormEdit
+ or.class
+SHA-256-Digest: wVZD1mt5j6yaqNs2eRHRNPumaC1hBvqV7qKMj3FE5X4=
+
+Name: org/eclipse/photran/internal/ui/editor/IndentUtil.class
+SHA-256-Digest: XpqPrvatLNy2YtTke8TbqgTCzjpBH9AZaSXsUR+fa80=
+
+Name: org/eclipse/photran/internal/ui/actions/FortranEditorActionDeleg
+ ate.class
+SHA-256-Digest: lKfgrgK2/H0SfIQfpL340yR/plYxuLrleMcu7sQpGMs=
+
+Name: intro/css/graphics/sample_hov.gif
+SHA-256-Digest: 7mbskRP5cTjLo8QZPXzyUTk7C0aIdD0ywEtrB/zXXn0=
+
+Name: org/eclipse/photran/internal/ui/startup/ShowReleaseNotes.class
+SHA-256-Digest: I8sWUleptsgHMLUUYwQ/x73MtMHb6ygmoLIYUlDHBUE=
+
+Name: org/eclipse/photran/internal/ui/properties/uimessages.properties
+SHA-256-Digest: GG5mdcm88bx5PPKLveEgll8wdVFsX9bprHLr0UhaRW8=
+
+Name: org/eclipse/photran/internal/ui/actions/uimessages.properties
+SHA-256-Digest: HLOuL+BwdvXI3GDoCHTPElF+m34y9AgwnO14ythqrdE=
+
+Name: META-INF/maven/org.eclipse.photran/org.eclipse.photran.ui/pom.xm
+ l
+SHA-256-Digest: ZxFLkhhunAd1367k0aND3INnKHjLRar6Lc5VApZG2yU=
+
+Name: icons/elcl16/shift_l_edit.gif
+SHA-256-Digest: Hg0bajUqG1kzjy79Rp2yZq8UVI5rpA09aEdONl9QdWk=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranBooleanFieldEd
+ itor.class
+SHA-256-Digest: 8hDOY2VSht9F5bqZgVt0TypceU+I+mq0Mvt//kTLuys=
+
+Name: org/eclipse/photran/internal/ui/preferences/CDTFortranPreference
+ Page.class
+SHA-256-Digest: xgZRPOHiaTQr9YjUn7+iOdJ3es4yH8S/LavPU1+SrX8=
+
+Name: org/eclipse/photran/internal/ui/startup/uimessages.properties
+SHA-256-Digest: KD5zQvLROTyHPBuHqhNJJDIcNfq3ZTwzDO/FAMVpvq0=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranStmtPartitionScann
+ er.class
+SHA-256-Digest: azVwousstHnpsu0Bk8jwHGDrLZ5JrbgQNaF1Wrh1cjY=
+
+Name: plugin.properties
+SHA-256-Digest: 7W8LeBfsEKtn6eEqkDbJaFV0rUtagmRm1IfQk9nZvsE=
+
+Name: intro/css/graphics/f_hov.xcf
+SHA-256-Digest: AuWvWq+xsqC0rSbMPq/JO1v8+8xlGaNSQb1so/g5atk=
+
+Name: org/eclipse/photran/internal/ui/preferences/CDTFortranPreference
+ Page$1.class
+SHA-256-Digest: 4FDRSUoblD3fbjhntWInk3qY8XM/cQg+n3UCLpD3Qsg=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranSourceViewer.class
+SHA-256-Digest: SvP0F6v0Zj3ADpExw5wSLgfSh3bl5eNCKSAiONV/3fc=
+
+Name: icons/elcl16/shift_r_edit.gif
+SHA-256-Digest: dVn8eOLUM+4bJrpjv/pEc+wIfMGVnfCu8j4ux3f1fpc=
+
+Name: org/eclipse/photran/internal/ui/preferences/AbstractFortranPrefe
+ rencePage$PreferencesAdapter.class
+SHA-256-Digest: Xfgy4K3sXEPsHZCkxn6yuWZYVl/6ABo3gpXdAWpS2BY=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranBooleanFieldEd
+ itor$1.class
+SHA-256-Digest: IlyaM4LucKo2v17Ys94znVBCWk6wsvZhZ9pKkYJudJE=
+
+Name: org/eclipse/photran/internal/ui/editor/TabsToSpacesConverter.cla
+ ss
+SHA-256-Digest: wsvCF6LBgkytpyrirXDFc4YRqBug+88UQybnpKMgt9I=
+
+Name: intro/css/overview.css
+SHA-256-Digest: 2kUOm5PxqbNZp/pNkj2gs7XJctI6Vf6WZ43uUmwp/7E=
+
+Name: org/eclipse/photran/internal/ui/editor/IFortranSourceViewerConfi
+ gurationFactory.class
+SHA-256-Digest: ldTutFd2pilM8XwvpSAiQKnjoki9xl+GjnxOPIWeKMM=
+
+Name: org/eclipse/photran/internal/ui/preferences/MainFortranPreferenc
+ ePage.class
+SHA-256-Digest: m2X8aqPXRmt0V8+ijZeAD8tRWUnqzIyvpqndBiK8RBI=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranHelpContextProvide
+ r.class
+SHA-256-Digest: Bvj2Tcp9thExmZyIdin4tkxkiZ3K06y5zLDFerLsNTs=
+
+Name: org/eclipse/photran/internal/ui/startup/ShowReleaseNotes$1.class
+SHA-256-Digest: 3o3AUXo28R7EA6a4UCpt5twT3ZyF9J72jvnu/goo6sY=
+
+Name: org/eclipse/photran/internal/ui/properties/SourceFormPropertyPag
+ e.class
+SHA-256-Digest: V/GR1EIhCKECiBEa2bJQoD1elHen5c1xdPzevl6l4YY=
+
+Name: icons/dlcl16/shift_r_edit.gif
+SHA-256-Digest: dVn8eOLUM+4bJrpjv/pEc+wIfMGVnfCu8j4ux3f1fpc=
+
+Name: org/eclipse/photran/internal/ui/editor/CompletionUtil.class
+SHA-256-Digest: akSrbfSjbRBwqPZaip8fwVjbm++Egf4W+veO8hPpb0s=
+
+Name: intro/css/graphics/f.xcf
+SHA-256-Digest: 9pU98MAsrZeh6q1vG1s/6rmB0J66GPtByofmH/NduDI=
+
+Name: org/eclipse/photran/internal/ui/properties/SourceFormPropertyPag
+ e$3.class
+SHA-256-Digest: 5mnOouScrNi9nP28rXp50uqp9AmqnmVP2URyo7ScAeQ=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranStmtPartitionScann
+ er$DocumentLookaheadLineReader.class
+SHA-256-Digest: bo3PuRV0Z2PkRekNjXJrJDkcogH9joJDKMX5IDi24kI=
+
+Name: org/eclipse/photran/internal/ui/editor/CompletionComputer.class
+SHA-256-Digest: lZksDdsekehdC4nXkOEB6rIvWIUCkxViPJJvp7VpG5U=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranSourceFormEdit
+ or$2.class
+SHA-256-Digest: lmkD3MNqMmutNuFWsIIDhKegYLr0KLaghQv3fxcN9sc=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranPropertyPage.c
+ lass
+SHA-256-Digest: GsqWA34+Z+2XH9RlfrYBgu1wvTiMmuR005NdjjDskzw=
+
+Name: icons/dlcl16/shift_l_edit.gif
+SHA-256-Digest: Hg0bajUqG1kzjy79Rp2yZq8UVI5rpA09aEdONl9QdWk=
+
+Name: org/eclipse/photran/internal/ui/actions/FortranBlockCommentActio
+ nDelegate$Edit$EditFactory.class
+SHA-256-Digest: RJDRTyHA8iDNXaAOR/KHJiyI2kXRPU+AZR6V6CkUlu0=
+
+Name: org/eclipse/photran/internal/ui/preferences/messages.properties
+SHA-256-Digest: y6LYEZheDNa4msQkBH/t3Rh993sKUW22dSsgxidlMvg=
+
+Name: org/eclipse/photran/internal/ui/preferences/EditorPreferencePage
+ .class
+SHA-256-Digest: DrPvGiUTdEMQLf8x6g524Jk/rljCB75y9Abc5ipsl9k=
+
+Name: intro/css/graphics/f.png
+SHA-256-Digest: VTTxWMMxIxQcUySX3KxIQ9z07w5Y/B4DHebT75Ssnkw=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranBooleanFieldEd
+ itor$2.class
+SHA-256-Digest: y9xGVEwqh09x111oEkfFISBdbpdkdTqgUIECnu9A9fY=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranTemplateCompletion
+ Processor$1.class
+SHA-256-Digest: KywKsRNC2Vw8E0w9DRt5RAYkehnZXl5Y9BCaI3vnfzc=
+
+Name: org/eclipse/photran/internal/ui/preferences/FortranTemplatesPref
+ erencePage.class
+SHA-256-Digest: ilX5sXjduQMkiTQtf7k8di1FboxL4jq5ahhu/aaEPlQ=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranEditor$1.class
+SHA-256-Digest: 22faJRnWaZaR9fenldu2bJcUmNOyLjPBgeq1L/S6AOw=
+
+Name: schema/apiHelpProvider.exsd
+SHA-256-Digest: 4+ECtSZ+yBr0fK4HmzF/bhpmQeSyv4UbQGmih4nbu6E=
+
+Name: intro/css/graphics/f_hov.png
+SHA-256-Digest: fvPe6TqMKCpBajdW9p6sJVL08nKdl13burasVh6s9Uc=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranKeywordRuleBasedSc
+ anner$FixedFormColumnCommentRule.class
+SHA-256-Digest: 8zQvt94eVTGJ0vDdheNLlMsI7XpK4JsCwCOMSs2556Q=
+
+Name: org/eclipse/photran/internal/ui/FortranUIPlugin.class
+SHA-256-Digest: 7e6IyWHgFGFX1kocApmps6xEg77S8HssAVmuGWclEfk=
+
+Name: org/eclipse/photran/internal/ui/preferences/AbstractFortranPrefe
+ rencePage$PreferencesAdapter$PropertyChangeListener.class
+SHA-256-Digest: amQPQoTpIbaeyP6ERXdJfKHda12iZ1egCp8hO5pCAFI=
+
+Name: templates/defaults.xml
+SHA-256-Digest: qSkwnJOXKJegmUQX5Sd4UrXL/tzxQZjHSx6X6ANScwI=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranEditor$FortranSour
+ ceViewerConfiguration$EntirePartitionDamager.class
+SHA-256-Digest: U01mptFZdu9E+HfKaRcgikBrLQNcELhWV4RTjildT4o=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranTemplateCompletion
+ Processor.class
+SHA-256-Digest: N/f8yGWODx9GGhm3BUblx7YIJgTM5HCJocsKIOIrXsQ=
+
+Name: org/eclipse/photran/internal/ui/properties/WorkspacePathEditor.c
+ lass
+SHA-256-Digest: xfBpUuIjLeA9NQU33HTCyDPZEY1QdAs4I9s9cGZhzdg=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranEditor.class
+SHA-256-Digest: 0E1xISoEAZoBLlTd9QCSR8sz9VoToatnaapgGKWGSB8=
+
+Name: META-INF/maven/org.eclipse.photran/org.eclipse.photran.ui/pom.pr
+ operties
+SHA-256-Digest: 4q5E7i9vtvNaHQ+TZU5MqACTFSl5gAi90fqcrbvY8iw=
+
+Name: org/eclipse/photran/internal/ui/preferences/AbstractFortranPrefe
+ rencePage.class
+SHA-256-Digest: q5x/vmmx+C3Vv62N8T4OaYxXOOgTX0VECEx69d9MnL0=
+
+Name: org/eclipse/photran/internal/ui/editor/HorizontalRuler$RulerPain
+ ter.class
+SHA-256-Digest: zuNMh844MeBxw27mVKQse5irBBpb5M2huCDO/EWOHoI=
+
+Name: org/eclipse/photran/internal/ui/properties/SourceFormPropertyPag
+ e$2.class
+SHA-256-Digest: Gp6ka0oZ4Oo1J97I2kZL/+naJCzG7TAB2clfS+i04Ug=
+
+Name: org/eclipse/photran/internal/ui/properties/FortranSourceFormEdit
+ or$1.class
+SHA-256-Digest: csIBaRJTiLkykk/Bp1fLjEh3bUg7+nBW9I0NhYSTtNo=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranKeywordRuleBasedSc
+ anner$PreferenceChangeListener.class
+SHA-256-Digest: pz8Z/F8cKxafTR5b1XSmUPZQzR60JYrUGAsoOdFxo4c=
+
+Name: org/eclipse/photran/internal/ui/properties/SourceFormPropertyPag
+ e$1.class
+SHA-256-Digest: FtbAWb7J9fSYLxhvudzSPup07pm2U2DPTyz4nS6xwZM=
+
+Name: about.html
+SHA-256-Digest: ya3Z+MfvZ84OTNBm/vilsw1zx0s2u3S3LH6s+Py177Q=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranKeywordRuleBasedSc
+ anner$FortranWordDetector.class
+SHA-256-Digest: gV7h7xUiKWR1BCHpmz+jHLCM7zhrReoNDiGzlO+YvJg=
+
+Name: org/eclipse/photran/internal/ui/properties/Page_head_general.cla
+ ss
+SHA-256-Digest: 4jRQGxTVBlV48B6aHRomR1joJaH2xL2vBJW/EiqxyQc=
+
+Name: org/eclipse/photran/ui/IFortranAPIHelpProvider.class
+SHA-256-Digest: W+5Bm1gt4ATRJx2eCHqycng8c+WhH90m5siA/2Fndkw=
+
+Name: org/eclipse/photran/internal/ui/preferences/Messages.class
+SHA-256-Digest: hmZGh3hyKWX813ykQmBXspBco65VmN9daceAUnvL+3s=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranKeywordRuleBasedSc
+ anner$Eclipse33WordRule.class
+SHA-256-Digest: Xyb2TBWh4EwFX9XvqSpMMmF38s8qbgTO8O6tS0huL5o=
+
+Name: org/eclipse/photran/internal/ui/actions/FortranBlockCommentActio
+ nDelegate.class
+SHA-256-Digest: Yl8HE2egx5jZVaswpDnehkV9z0PY0h/TU7I9XBWLfA0=
+
+Name: org/eclipse/photran/internal/ui/actions/FortranBlockCommentActio
+ nDelegate$Edit.class
+SHA-256-Digest: SQ68+NU5A5nuRVL+LBZB0h2Jj97LqJmQZz3Zt8i9KGY=
+
+Name: org/eclipse/photran/internal/ui/FortranTemplateManager.class
+SHA-256-Digest: UA0F7nATuIHNgOCqAIMXsX8nfkonMhpyRdZLwaWBFpo=
+
+Name: org/eclipse/photran/internal/ui/editor/SalesScanKeywordRule$Sale
+ sScanner.class
+SHA-256-Digest: KdA8gImvWYuLoZzlRXhAjtLc4CdEC8YIgauzTJDNsBA=
+
+Name: org/eclipse/photran/internal/ui/editor/SalesScanKeywordRule.clas
+ s
+SHA-256-Digest: Xs8IeRGTbgdGU3+Cqtw9dwwY3eIvkHcXIGfgYLJfTgo=
+
+Name: org/eclipse/photran/internal/ui/startup/UIMessages.class
+SHA-256-Digest: PaZmG8MWf8Dif+g7aMBsy8doA2ElQvfE1RrJ+btwnBw=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranKeywordRuleBasedSc
+ anner.class
+SHA-256-Digest: 8LVdfhnnfF3/ZSYIP7tP9OGngh20xCwP+yXT2Y90FJ4=
+
+Name: intro/css/graphics/sample.gif
+SHA-256-Digest: 7yw6WJAhFev5/DoUMzkkS20gSvn6VAT+kdNfBvlF1Aw=
+
+Name: intro/overviewContent.xml
+SHA-256-Digest: dogBdoTAgYkY18JiHSeLoLWoHXQr7kEcvhwkqBbkoZI=
+
+Name: org/eclipse/photran/internal/ui/properties/UIMessages.class
+SHA-256-Digest: dkb/hjOTGuKRmubqeAFhagm6eXf0UsHhMsZFjPmphPM=
+
+Name: org/eclipse/photran/internal/ui/actions/UIMessages.class
+SHA-256-Digest: TEm9ZM+1nNGZIojNMysBZcM1cR94DE1T7fNK46mLjqk=
+
+Name: org/eclipse/photran/internal/ui/editor/HorizontalRuler.class
+SHA-256-Digest: 7jw6Um6HMmMk96GnvfKXkFYkqyhdS70F9DLzr3zKF2E=
+
+Name: icons/sample.gif
+SHA-256-Digest: 6jMftqI7oSaDQ6w4VCjJEtTiJvYpMr0Z1u+lWgsbkjY=
+
+Name: org/eclipse/photran/internal/ui/ContributedAPIDocs.class
+SHA-256-Digest: bc9CkEfFs8cOsT30oTFKNIg/n6mUhqHlqmJZNhmdJz0=
+
+Name: org/eclipse/photran/internal/ui/editor/IDocumentCharSequence.cla
+ ss
+SHA-256-Digest: 4TaJHsXOSPDyY8cJSML68cNTPT2BgAao1zb8EeeTJco=
+
+Name: schema/sourceViewerConfig.exsd
+SHA-256-Digest: K+YYcruL9u8KvcagRQDYepz4ePWSnWdDLA17dEB7GEo=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranTemplateContext.cl
+ ass
+SHA-256-Digest: vIyVF1aiTGUOrFlA6qt7KL26dQkzsy6XeaZCEVoiC58=
+
+Name: icons/full/obj16/f_ovr.gif
+SHA-256-Digest: 3AaHqe3n1yBuPRPN5QsHGA/nOG51qGFyQNmES6/aW6o=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranEditor$FortranSour
+ ceViewerConfiguration.class
+SHA-256-Digest: 1L5JvWZHzGXzZi1BC8pahVsasFoTwh6F+/dolZJowdg=
+
+Name: org/eclipse/photran/internal/ui/editor/FortranHelpContextProvide
+ r$FortranHelpDisplayContext.class
+SHA-256-Digest: /m8YvMt95tXwAKUx121QPXOrWxA5fk9TF9OGSqK1dGA=
+
+Name: icons/full/obj16/f_file_obj.gif
+SHA-256-Digest: 2mTlKoLW1U7xVBTHP+50abLyJoNPQr+BbOBX3+QMQ4A=
+

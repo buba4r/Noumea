@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfwps:WorkflowWps xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfwps="http://fr.ubo.mde.babau.wfwps" name="testWFS" abstract="testsWFS">
+  <localWpsLibrary name="numberFeatures" abstract="number of features" packageName="FCtest" className="helloWorldFC" functionName="numberFeatures">
+    <inputs name="features" abstract="input feature" type="Complex"/>
+    <outputs name="number" abstract="number of features" type="Integer"/>
+  </localWpsLibrary>
+  <wfLibrary name="numberTest" abstract="test on WFS calls">
+    <outputs name="number" abstract="number of features" type="Integer" link="//@wfLibrary.0/@links.1"/>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.0">
+      <inputs link="//@wfLibrary.0/@links.0" input="//@localWpsLibrary.0/@inputs.0"/>
+      <outputs link="//@wfLibrary.0/@links.1" output="//@localWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <links input="//@wfLibrary.0/@remoteData.0" output="//@wfLibrary.0/@wps.0/@inputs.0"/>
+    <links input="//@wfLibrary.0/@wps.0/@outputs.0" output="//@wfLibrary.0/@outputs.0"/>
+    <remoteData xsi:type="wfwps:WFS" link="//@wfLibrary.0/@links.0" url="portail.indigeo.fr/geoserver/LETG-BREST/ows" layer="LETG-BREST:REF_VOUG"/>
+  </wfLibrary>
+</wfwps:WorkflowWps>

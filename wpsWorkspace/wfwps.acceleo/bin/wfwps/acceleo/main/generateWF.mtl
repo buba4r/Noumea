@@ -1,0 +1,249 @@
+[comment encoding = UTF-8 /]
+
+[module generateWF('http://fr.ubo.mde.babau.wfwps')]
+
+[template public typeData(aData: Data)]
+[if(aData.type=WPStype::Complex)]FeatureCollection<SimpleFeatureType, SimpleFeature>[else][if(aData.type=WPStype::Raster)]BufferedImage[else][aData.type/][/if][/if]
+[/template]
+
+[template public versionNumber(aVersion: VersionType)]
+[if(aVersion=VersionType::v1_1_1)]0[/if][if(aVersion=VersionType::v1_3_0)]1[/if]
+[/template]
+
+[template public variableInitialization(aData: Data)]
+[if(aData.type=WPStype::Boolean)]= true[/if][if(aData.type=WPStype::Integer)]= 0[/if][if(aData.type=WPStype::Double)]= 0.0[/if][if(aData.type=WPStype::String)]= ""[/if]
+[/template]
+
+[template public constantAffectation(aLink: Link, anInput : Input, iD : Integer)]
+[if(aLink.input.oclIsTypeOf(BooleanConstant))]
+		[anInput.name/]_wps[iD/]=[aLink.input.oclAsType(BooleanConstant).value/];
+[/if]
+[if(aLink.input.oclIsTypeOf(IntegerConstant))]
+		[anInput.name/]_wps[iD/]=[aLink.input.oclAsType(IntegerConstant).value/];
+[/if]
+[if(aLink.input.oclIsTypeOf(DoubleConstant))]
+		[anInput.name/]_wps[iD/]=[aLink.input.oclAsType(DoubleConstant).value/];
+[/if]
+[if(aLink.input.oclIsTypeOf(StringConstant))]
+		[anInput.name/]_wps[iD/]=[aLink.input.oclAsType(StringConstant).value/];
+[/if]
+[/template]
+
+[template public parseResult(aWPS : WPSReference, iD : Integer)]
+[if(aWPS.outputs->at(1).output.type=WPStype::Boolean)]
+[aWPS.outputs->at(1).output.name/]_wps[iD/] = Boolean.parseBoolean(resultRwps[iD/]);
+[/if][if(aWPS.outputs->at(1).output.type=WPStype::Integer)]
+[aWPS.outputs->at(1).output.name/]_wps[iD/] = Integer.parseInt(resultRwps[iD/]);
+[/if][if(aWPS.outputs->at(1).output.type=WPStype::Double)]
+[aWPS.outputs->at(1).output.name/]_wps[iD/] = Double.parseDouble(resultRwps[iD/]);[/if]
+[if(aWPS.outputs->at(1).output.type=WPStype::String)]
+[aWPS.outputs->at(1).output.name/]_wps[iD/] = resultRwps[iD/];[/if]
+[/template]
+
+[template public generateWF(aWorkFlow : WorkFlow)]
+[comment @main/]
+[file (aWorkFlow.name.concat('_class').toUpperFirst().concat('.java'), false, 'UTF-8')]
+package [aWorkFlow.eContainer().oclAsType(WorkflowWps).name.concat('.WPSpackage')/];
+
+import java.io.IOException;
+import java.util.*;
+
+import org.geotools.process.factory.DescribeParameter;
+import org.geotools.process.factory.DescribeProcess;
+import org.geotools.process.factory.DescribeResult;
+import org.geotools.process.factory.StaticMethodsProcessFactory;
+import org.geotools.text.Text;
+import org.geotools.feature.FeatureCollection;
+import org.opengis.feature.simple.*;
+import java.awt.image.BufferedImage;
+import com.vividsolutions.jts.geom.*;
+
+import com.vividsolutions.jts.io.ParseException;
+
+import remoteWpsCall.*;
+
+[for(aWPS: WPSReference|aWorkFlow.wps)][if (aWPS.oclIsTypeOf(LocalWPSReference))]
+import [aWPS.oclAsType(LocalWPSReference).wps.packageName/].[aWPS.oclAsType(LocalWPSReference).wps.className/];
+[/if][/for]
+
+public class [aWorkFlow.name.concat('_class').toUpperFirst()/] extends StaticMethodsProcessFactory<[aWorkFlow.name.concat('_class').toUpperFirst()/]>
+{
+[for(aWPS: WPSReference|aWorkFlow.wps)][if (aWPS.oclIsTypeOf(LocalWPSReference))]
+		protected static [aWPS.oclAsType(LocalWPSReference).wps.className/] callObject_[i/];
+[/if][if (aWPS.oclIsTypeOf(WorkflowReference))]
+		protected static [aWPS.oclAsType(WorkflowReference).wps.name/]_class callObject_[i/];
+[/if][/for]
+
+	public [aWorkFlow.name.concat('_class').toUpperFirst()/]() {
+		super(Text.text("[aWorkFlow.eContainer().oclAsType(WorkflowWps).abstract/]"),"[aWorkFlow.eContainer().oclAsType(WorkflowWps).name/]",[aWorkFlow.name.concat('_class').toUpperFirst()/].class);
+[for(aWPS: WPSReference|aWorkFlow.wps)][if (aWPS.oclIsTypeOf(LocalWPSReference))]
+		callObject_[i/] = new [aWPS.oclAsType(LocalWPSReference).wps.className/]();
+[/if][if (aWPS.oclIsTypeOf(WorkflowReference))]
+		callObject_[i/] = new [aWPS.oclAsType(WorkflowReference).wps.name/]_class();
+[/if][/for]
+	}
+
+	@DescribeProcess(title="[aWorkFlow.name/]",description="[aWorkFlow.abstract/]")
+	@DescribeResult(name="[aWorkFlow.outputs->at(1).name/]",description="[aWorkFlow.outputs->at(1).abstract/]")
+	public static [typeData(aWorkFlow.outputs->at(1))/] [aWorkFlow.name/]([for(input : Input | aWorkFlow.inputs)
+    separator(',')]@DescribeParameter(name="[input.name/]",description=" [input.abstract/]") [typeData(input)/] [input.name/][/for]) {
+[comment variables declaration for local, remote and workflow WPS/]
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+[let wpsId : Integer = i]
+	[for (input: InputReference | aWPS.inputs)]
+		[if(input.input.type = WPStype::Raster)]
+		BufferedImage  [input.input.name/]_wps[wpsId/];
+		[/if]	
+		[if(input.input.type <> WPStype::Raster)]
+		[typeData(input.input)/] [input.input.name/]_wps[wpsId/] [variableInitialization(input.input)/];	
+		[/if]	
+	[/for]
+	[for (output:OutputReference | aWPS.outputs )]
+		[typeData(output.output)/] [output.output.name/]_wps[wpsId/] [variableInitialization(output.output)/];
+	[/for]
+[/let]
+[/for]
+[comment variables declaration for WMS/]
+[for(aWMS: RemoteData|aWorkFlow.remoteData)]
+	[if (aWMS.oclIsTypeOf(WMS))]
+		BufferedImage  rdImage[i/] = null;
+	[/if]
+[/for]
+[comment variables declaration for WFS/]
+[for(aWMS: RemoteData|aWorkFlow.remoteData)]
+	[if (aWMS.oclIsTypeOf(WFS))]
+		FeatureCollection<SimpleFeatureType, SimpleFeature> wfs_[i/] = null;
+	[/if]
+[/for]
+[comment variables declaration for workflow output/]
+		[typeData(aWorkFlow.outputs->at(1))/] result;
+[comment variables initialization from workflow inputs, for local, remote and workflow WPS inputs/]
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+[let wpsId : Integer = i]
+	[for (input:InputReference | aWPS.inputs)]
+		[for(aLink: Link|aWorkFlow.links)]
+			[if(input=aLink.output and aLink.input.oclIsTypeOf(InputWorkflow))]
+		[input.input.name/]_wps[wpsId/]=[aLink.input.oclAsType(InputWorkflow).name/];
+			[/if]		
+		[/for]
+	[/for]	
+[/let]
+[/for]
+[comment variables initialization from constants, for local, remote and workflow WPS inputs/]
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+[let wpsId : Integer = i]
+	[for (input:InputReference | aWPS.inputs)]
+		[for(aLink: Link|aWorkFlow.links)]
+			[if(input=aLink.output and aLink.input.oclIsKindOf(Constant))]
+[constantAffectation(aLink, input.input, wpsId)/]
+			[/if]		
+		[/for]
+	[/for]	
+[/let]
+[/for]
+[comment WMS variable initialization/]
+[if(not (aWorkFlow.remoteData->select(rd | rd.oclIsKindOf(WMS))->isEmpty()))]
+		try {
+[/if]
+[for(aWMS:RemoteData|aWorkFlow.remoteData)]
+	[if(aWMS.oclIsKindOf(WMS))]
+			WMSrequest aWMSrequest[i/] = new WMSrequest("[aWMS.url/]","[aWMS.layer/]",[versionNumber(aWMS.version)/],"[aWMS.oclAsType(WMS).format/]",[aWMS.oclAsType(WMS).width/],[aWMS.oclAsType(WMS).height/],[aWMS.oclAsType(WMS).transparent/],"[aWMS.oclAsType(WMS).SRS/]",[aWMS.oclAsType(WMS).bboxXmin/],[aWMS.oclAsType(WMS).bboxYmin/],[aWMS.oclAsType(WMS).bboxXmax/],[aWMS.oclAsType(WMS).bboxYmax/]);
+			rdImage[i/]= aWMSrequest[i/].Call();
+	[/if]
+[/for]
+[if(not (aWorkFlow.remoteData->select(rd | rd.oclIsKindOf(WMS))->isEmpty()))]
+		} catch (ServiceException | IOException e) {
+			e.printStackTrace();
+		}
+[/if]
+[comment WMS variable propagation/]
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+	[let wpsId : Integer = i]
+	[for(aWMS:RemoteData|aWorkFlow.remoteData)]
+		[if(aWMS.oclIsKindOf(WMS))]
+		[let wmsId : Integer = i]
+			[for(aLink:Link|aWorkFlow.links)]
+				[if((aWMS = aLink.input) and aLink.output.oclIsTypeOf(InputReference))]
+					[if(aLink.output.oclAsType(InputReference).eContainer()=aWPS)]
+		[aLink.output.oclAsType(InputReference).input.name/]_wps[wpsId/] = rdImage[wmsId/];
+					[/if]
+				[/if]
+			[/for]
+		[/let]
+		[/if]
+	[/for]
+	[/let]
+[/for]
+
+[comment WFS variable initialization/]
+[for(aWFS:RemoteData|aWorkFlow.remoteData)]
+	[if(aWFS.oclIsKindOf(WFS))]
+		wfs_[i/] = (new WFSrequest("[aWFS.url/]","[aWFS.layer/]")).Call();
+	[/if]
+[/for]
+[comment WFS variable propagation/]
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+	[let wpsId : Integer = i]
+	[for(aWFS:RemoteData|aWorkFlow.remoteData)]
+		[if(aWFS.oclIsKindOf(WFS))]
+		[let wfsId : Integer = i]
+			[for(aLink:Link|aWorkFlow.links)]
+				[if((aWFS = aLink.input) and aLink.output.oclIsTypeOf(InputReference))]
+					[if(aLink.output.oclAsType(InputReference).eContainer()=aWPS)]
+		[aLink.output.oclAsType(InputReference).input.name/]_wps[wpsId/] = wfs_[wfsId/];
+					[/if]
+				[/if]
+			[/for]
+		[/let]
+		[/if]
+	[/for]
+	[/let]
+[/for]
+
+[comment WPS call/]	
+[for(aWPS: WPSReference|aWorkFlow.wps)]
+[let wpsId : Integer = i]
+	[if (aWPS.oclIsTypeOf(LocalWPSReference))]
+		[aWPS.outputs->at(1).output.name/]_wps[wpsId/] = callObject_[wpsId/].[aWPS.oclAsType(LocalWPSReference).wps.functionName/]([for(input: InputReference |aWPS.inputs)separator(',')][input.input.name/]_wps[wpsId/][/for]);	
+[comment Workflow call/]			
+	[else] [if (aWPS.oclIsTypeOf(WorkflowReference))]
+		[aWPS.outputs->at(1).output.name/]_wps[wpsId/] = callObject_[wpsId/].[aWPS.oclAsType(WorkflowReference).wps.name/]([for(input: InputReference |aWPS.inputs)separator(',')][input.input.name/]_wps[wpsId/][/for]);	
+[comment RemoteWPS call/]
+	[else]
+	    RemoteWpsCall wpscall[wpsId/]= new RemoteWpsCall("[aWPS.oclAsType(RemoteWPSReference).wps.url/]","[aWPS.oclAsType(RemoteWPSReference).wps.name/]");
+		ArrayList<Object> inputs[wpsId/]= new ArrayList<Object>();
+		[for (input:InputReference | aWPS.inputs )]
+		inputs[wpsId/].add([input.input.name/]_wps[wpsId/]);
+		[/for]
+		String resultRwps[wpsId/];
+		try { 
+			resultRwps[wpsId/] = wpscall[wpsId/].Request(inputs[wpsId/]);
+			[parseResult(aWPS,wpsId)/]
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	[/if][/if]
+[comment propagation des sorties wps-> wps/]
+	[for(aWPS2: WPSReference|aWorkFlow.wps)]
+	[let wpsId2 : Integer = i]
+	[for(aLink: Link|aWorkFlow.links)]
+		[if(aWPS.outputs->includes(aLink.input) and aWPS2.inputs->includes(aLink.output))]
+		[aLink.output.oclAsType(InputReference).input.name/]_wps[wpsId2/]=[aWPS.outputs->at(1).output.name/]_wps[wpsId/];
+		[/if]
+	[/for]	
+	[/let]
+	[/for]	
+[comment propagation des sorties wps-> output workflow/]
+	[for(aLink: Link|aWorkFlow.links)]
+		[if( ( (aLink.output.oclIsTypeOf(OutputWorkflow)) and (aWPS.outputs->includes(aLink.input)) )) ]
+		result=[aWPS.outputs->at(1).output.name/]_wps[wpsId/];	
+		[/if]
+	[/for]
+[/let]		
+[/for]		
+		return result;	
+	}
+}
+[/file]
+[/template]

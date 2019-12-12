@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateLocalWPS" nsURI="wfwps::acceleo::main::generateLocalWPS" startHeaderPosition="30" endHeaderPosition="285">
+    <input>
+      <takesTypesFrom href="http://fr.ubo.mde.babau.wfwps#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="typeData" visibility="Public">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="FeatureCollection&lt;SimpleFeatureType, SimpleFeature>"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EEnum" href="http://fr.ubo.mde.babau.wfwps#//WPStype"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aData" referredVariable="/0/typeData/aData">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Data/type"/>
+          </source>
+          <argument xsi:type="ocl.ecore:EnumLiteralExp">
+            <eType xsi:type="ecore:EEnum" href="http://fr.ubo.mde.babau.wfwps#//WPStype"/>
+            <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="http://fr.ubo.mde.babau.wfwps#//WPStype/Complex"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+        </ifExpr>
+        <else>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="BufferedImage"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EEnum" href="http://fr.ubo.mde.babau.wfwps#//WPStype"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aData" referredVariable="/0/typeData/aData">
+                  <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Data/type"/>
+              </source>
+              <argument xsi:type="ocl.ecore:EnumLiteralExp">
+                <eType xsi:type="ecore:EEnum" href="http://fr.ubo.mde.babau.wfwps#//WPStype"/>
+                <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="http://fr.ubo.mde.babau.wfwps#//WPStype/Raster"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+            </ifExpr>
+            <else>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EEnum" href="http://fr.ubo.mde.babau.wfwps#//WPStype"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aData" referredVariable="/0/typeData/aData">
+                  <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Data/type"/>
+              </body>
+            </else>
+          </body>
+        </else>
+      </body>
+      <parameter name="aData">
+        <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateLocalWPS" visibility="Public" main="true">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package "/>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                  <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/emf/2002/Ecore#//EObject/eContainer"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/15/WorkflowWps">
+                <referredType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".WPSpackage">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;&#xD;&#xA;import org.geotools.process.factory.*;&#xD;&#xA;import org.geotools.text.Text;&#xD;&#xA;import org.geotools.feature.FeatureCollection;&#xD;&#xA;import org.opengis.feature.simple.*;&#xD;&#xA;import java.awt.image.BufferedImage;&#xD;&#xA;&#xD;&#xA;import com.vividsolutions.jts.geom.*;&#xD;&#xA;&#xD;&#xA;import "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Implementable/packageName"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Implementable/className"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;&#xD;&#xA;public class "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_class">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" extends StaticMethodsProcessFactory&lt;"/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_class">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="> {&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;protected static "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Implementable/className"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" callObject;&#xD;&#xA;&#xD;&#xA;&#x9;public "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_class">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="() {&#xD;&#xA;&#x9;&#x9;super(Text.text(&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/emf/2002/Ecore#//EObject/eContainer"/>
+            </source>
+            <argument xsi:type="ocl.ecore:TypeExp" eType="/15/WorkflowWps">
+              <referredType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/abstract"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;),&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/emf/2002/Ecore#//EObject/eContainer"/>
+            </source>
+            <argument xsi:type="ocl.ecore:TypeExp" eType="/15/WorkflowWps">
+              <referredType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,"/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_class">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".class);&#xD;&#xA;&#x9;&#x9;callObject = new "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Implementable/className"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="();&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;@DescribeProcess(title=&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,description=&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/abstract"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)&#xD;&#xA;&#x9;@DescribeResult(name=&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,description=&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/abstract"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)&#xD;&#xA;&#x9;public static "/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/typeData">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="@DescribeParameter(name=&quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/generateLocalWPS/%/%.35/input">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,description=&quot; "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/generateLocalWPS/%/%.35/input">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/abstract"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;) "/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/typeData">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/generateLocalWPS/%/%.35/input">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/generateLocalWPS/%/%.35/input">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+          </body>
+          <loopVariable name="input">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Input)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/inputs"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") {&#xD;&#xA;&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/typeData">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = callObject."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//Implementable/functionName"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/generateLocalWPS/%/%.46/input">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+          </body>
+          <loopVariable name="input">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Input)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+              <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/inputs"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=");&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/29/OrderedSet(Output)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://fr.ubo.mde.babau.wfwps#//WPS/outputs"/>
+            </source>
+            <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/at"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/toUpperFirst">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aWPS" referredVariable="/0/generateLocalWPS/aWPS">
+                  <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://fr.ubo.mde.babau.wfwps#//DescribedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_class">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+            </source>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".java">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <parameter name="aWPS">
+        <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="toUpperFirst">
+        <eAnnotations source="MTL"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="typeData">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/typeData"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aData">
+          <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateLocalWPS">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateLocalWPS"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aWPS">
+          <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="wfwps_Data_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="wfwps_LocalWPS_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="WorkflowWps">
+      <referredType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//WorkflowWps"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Output)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Output"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Input)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//Input"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://fr.ubo.mde.babau.wfwps#//LocalWPS"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/typeData">
+      <details key="start" value="92"/>
+      <details key="end" value="310"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/typeData/%">
+      <details key="start" value="133"/>
+      <details key="end" value="297"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/typeData/%/%">
+      <details key="start" value="166"/>
+      <details key="end" value="217"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/typeData/%/%.1">
+      <details key="start" value="136"/>
+      <details key="end" value="165"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/typeData/%/%.1/%">
+      <details key="start" value="137"/>
+      <details key="end" value="147"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/typeData/%/%.1/%/aData">
+      <details key="start" value="137"/>
+      <details key="end" value="142"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/typeData/%/%.1/%.1">
+      <details key="start" value="148"/>
+      <details key="end" value="164"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/typeData/%/%.2">
+      <details key="start" value="217"/>
+      <details key="end" value="292"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/typeData/%/%.2/%">
+      <details key="start" value="223"/>
+      <details key="end" value="292"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/typeData/%/%.2/%/%">
+      <details key="start" value="255"/>
+      <details key="end" value="268"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/typeData/%/%.2/%/%.1">
+      <details key="start" value="226"/>
+      <details key="end" value="254"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/typeData/%/%.2/%/%.1/%">
+      <details key="start" value="227"/>
+      <details key="end" value="237"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/typeData/%/%.2/%/%.1/%/aData">
+      <details key="start" value="227"/>
+      <details key="end" value="232"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/typeData/%/%.2/%/%.1/%.1">
+      <details key="start" value="238"/>
+      <details key="end" value="253"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/typeData/%/%.2/%/%.2">
+      <details key="start" value="268"/>
+      <details key="end" value="287"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/typeData/%/%.2/%/%.2/%">
+      <details key="start" value="275"/>
+      <details key="end" value="285"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/typeData/%/%.2/%/%.2/%/aData">
+      <details key="start" value="275"/>
+      <details key="end" value="280"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/typeData/aData">
+      <details key="start" value="118"/>
+      <details key="end" value="129"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateLocalWPS">
+      <details key="start" value="314"/>
+      <details key="end" value="2029"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateLocalWPS/%">
+      <details key="start" value="385"/>
+      <details key="end" value="2016"/>
+      <details key="line" value="10"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateLocalWPS/%/%">
+      <details key="start" value="469"/>
+      <details key="end" value="477"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateLocalWPS/%/%.1">
+      <details key="start" value="478"/>
+      <details key="end" value="545"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateLocalWPS/%/%.1/%">
+      <details key="start" value="478"/>
+      <details key="end" value="523"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateLocalWPS/%/%.1/%/%">
+      <details key="start" value="478"/>
+      <details key="end" value="518"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateLocalWPS/%/%.1/%/%/%">
+      <details key="start" value="478"/>
+      <details key="end" value="495"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateLocalWPS/%/%.1/%/%/%/aWPS">
+      <details key="start" value="478"/>
+      <details key="end" value="482"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateLocalWPS/%/%.1/%/%/%.1">
+      <details key="start" value="506"/>
+      <details key="end" value="517"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateLocalWPS/%/%.1/%.1">
+      <details key="start" value="531"/>
+      <details key="end" value="544"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateLocalWPS/%/%.2">
+      <details key="start" value="547"/>
+      <details key="end" value="798"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateLocalWPS/%/%.3">
+      <details key="start" value="799"/>
+      <details key="end" value="815"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateLocalWPS/%/%.3/aWPS">
+      <details key="start" value="799"/>
+      <details key="end" value="803"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateLocalWPS/%/%.4">
+      <details key="start" value="817"/>
+      <details key="end" value="818"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateLocalWPS/%/%.5">
+      <details key="start" value="819"/>
+      <details key="end" value="833"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateLocalWPS/%/%.5/aWPS">
+      <details key="start" value="819"/>
+      <details key="end" value="823"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateLocalWPS/%/%.6">
+      <details key="start" value="835"/>
+      <details key="end" value="853"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateLocalWPS/%/%.7">
+      <details key="start" value="854"/>
+      <details key="end" value="895"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateLocalWPS/%/%.7/%">
+      <details key="start" value="854"/>
+      <details key="end" value="880"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateLocalWPS/%/%.7/%/%">
+      <details key="start" value="854"/>
+      <details key="end" value="863"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateLocalWPS/%/%.7/%/%/aWPS">
+      <details key="start" value="854"/>
+      <details key="end" value="858"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateLocalWPS/%/%.7/%/%.1">
+      <details key="start" value="871"/>
+      <details key="end" value="879"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateLocalWPS/%/%.8">
+      <details key="start" value="897"/>
+      <details key="end" value="934"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateLocalWPS/%/%.9">
+      <details key="start" value="935"/>
+      <details key="end" value="976"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateLocalWPS/%/%.9/%">
+      <details key="start" value="935"/>
+      <details key="end" value="961"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateLocalWPS/%/%.9/%/%">
+      <details key="start" value="935"/>
+      <details key="end" value="944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateLocalWPS/%/%.9/%/%/aWPS">
+      <details key="start" value="935"/>
+      <details key="end" value="939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateLocalWPS/%/%.9/%/%.1">
+      <details key="start" value="952"/>
+      <details key="end" value="960"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateLocalWPS/%/%.10">
+      <details key="start" value="978"/>
+      <details key="end" value="1004"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateLocalWPS/%/%.11">
+      <details key="start" value="1005"/>
+      <details key="end" value="1019"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateLocalWPS/%/%.11/aWPS">
+      <details key="start" value="1005"/>
+      <details key="end" value="1009"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateLocalWPS/%/%.12">
+      <details key="start" value="1021"/>
+      <details key="end" value="1045"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateLocalWPS/%/%.13">
+      <details key="start" value="1046"/>
+      <details key="end" value="1087"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateLocalWPS/%/%.13/%">
+      <details key="start" value="1046"/>
+      <details key="end" value="1072"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateLocalWPS/%/%.13/%/%">
+      <details key="start" value="1046"/>
+      <details key="end" value="1055"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateLocalWPS/%/%.13/%/%/aWPS">
+      <details key="start" value="1046"/>
+      <details key="end" value="1050"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateLocalWPS/%/%.13/%/%.1">
+      <details key="start" value="1063"/>
+      <details key="end" value="1071"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateLocalWPS/%/%.14">
+      <details key="start" value="1089"/>
+      <details key="end" value="1114"/>
+      <details key="line" value="27"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateLocalWPS/%/%.15">
+      <details key="start" value="1115"/>
+      <details key="end" value="1164"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateLocalWPS/%/%.15/%">
+      <details key="start" value="1115"/>
+      <details key="end" value="1155"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateLocalWPS/%/%.15/%/%">
+      <details key="start" value="1115"/>
+      <details key="end" value="1132"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateLocalWPS/%/%.15/%/%/aWPS">
+      <details key="start" value="1115"/>
+      <details key="end" value="1119"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateLocalWPS/%/%.15/%/%.1">
+      <details key="start" value="1143"/>
+      <details key="end" value="1154"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateLocalWPS/%/%.16">
+      <details key="start" value="1166"/>
+      <details key="end" value="1170"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateLocalWPS/%/%.17">
+      <details key="start" value="1171"/>
+      <details key="end" value="1216"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateLocalWPS/%/%.17/%">
+      <details key="start" value="1171"/>
+      <details key="end" value="1211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateLocalWPS/%/%.17/%/%">
+      <details key="start" value="1171"/>
+      <details key="end" value="1188"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateLocalWPS/%/%.17/%/%/aWPS">
+      <details key="start" value="1171"/>
+      <details key="end" value="1175"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateLocalWPS/%/%.17/%/%.1">
+      <details key="start" value="1199"/>
+      <details key="end" value="1210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateLocalWPS/%/%.18">
+      <details key="start" value="1218"/>
+      <details key="end" value="1220"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateLocalWPS/%/%.19">
+      <details key="start" value="1221"/>
+      <details key="end" value="1262"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateLocalWPS/%/%.19/%">
+      <details key="start" value="1221"/>
+      <details key="end" value="1247"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateLocalWPS/%/%.19/%/%">
+      <details key="start" value="1221"/>
+      <details key="end" value="1230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateLocalWPS/%/%.19/%/%/aWPS">
+      <details key="start" value="1221"/>
+      <details key="end" value="1225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generateLocalWPS/%/%.19/%/%.1">
+      <details key="start" value="1238"/>
+      <details key="end" value="1246"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generateLocalWPS/%/%.20">
+      <details key="start" value="1264"/>
+      <details key="end" value="1293"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generateLocalWPS/%/%.21">
+      <details key="start" value="1294"/>
+      <details key="end" value="1308"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generateLocalWPS/%/%.21/aWPS">
+      <details key="start" value="1294"/>
+      <details key="end" value="1298"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/generateLocalWPS/%/%.22">
+      <details key="start" value="1310"/>
+      <details key="end" value="1346"/>
+      <details key="line" value="29"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/generateLocalWPS/%/%.23">
+      <details key="start" value="1347"/>
+      <details key="end" value="1356"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/generateLocalWPS/%/%.23/aWPS">
+      <details key="start" value="1347"/>
+      <details key="end" value="1351"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/generateLocalWPS/%/%.24">
+      <details key="start" value="1358"/>
+      <details key="end" value="1373"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/generateLocalWPS/%/%.25">
+      <details key="start" value="1374"/>
+      <details key="end" value="1387"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/generateLocalWPS/%/%.25/aWPS">
+      <details key="start" value="1374"/>
+      <details key="end" value="1378"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/generateLocalWPS/%/%.26">
+      <details key="start" value="1389"/>
+      <details key="end" value="1416"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateLocalWPS/%/%.27">
+      <details key="start" value="1417"/>
+      <details key="end" value="1441"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateLocalWPS/%/%.27/%">
+      <details key="start" value="1417"/>
+      <details key="end" value="1436"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateLocalWPS/%/%.27/%/%">
+      <details key="start" value="1417"/>
+      <details key="end" value="1429"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/generateLocalWPS/%/%.27/%/%/aWPS">
+      <details key="start" value="1417"/>
+      <details key="end" value="1421"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/generateLocalWPS/%/%.27/%/%.1">
+      <details key="start" value="1434"/>
+      <details key="end" value="1435"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/generateLocalWPS/%/%.28">
+      <details key="start" value="1443"/>
+      <details key="end" value="1458"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/generateLocalWPS/%/%.29">
+      <details key="start" value="1459"/>
+      <details key="end" value="1487"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/generateLocalWPS/%/%.29/%">
+      <details key="start" value="1459"/>
+      <details key="end" value="1478"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/generateLocalWPS/%/%.29/%/%">
+      <details key="start" value="1459"/>
+      <details key="end" value="1471"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/generateLocalWPS/%/%.29/%/%/aWPS">
+      <details key="start" value="1459"/>
+      <details key="end" value="1463"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/generateLocalWPS/%/%.29/%/%.1">
+      <details key="start" value="1476"/>
+      <details key="end" value="1477"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/generateLocalWPS/%/%.30">
+      <details key="start" value="1489"/>
+      <details key="end" value="1508"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/generateLocalWPS/%/%.31">
+      <details key="start" value="1509"/>
+      <details key="end" value="1538"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/generateLocalWPS/%/%.31/%">
+      <details key="start" value="1518"/>
+      <details key="end" value="1537"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/generateLocalWPS/%/%.31/%/%">
+      <details key="start" value="1518"/>
+      <details key="end" value="1530"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/generateLocalWPS/%/%.31/%/%/aWPS">
+      <details key="start" value="1518"/>
+      <details key="end" value="1522"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/generateLocalWPS/%/%.31/%/%.1">
+      <details key="start" value="1535"/>
+      <details key="end" value="1536"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/generateLocalWPS/%/%.32">
+      <details key="start" value="1540"/>
+      <details key="end" value="1541"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/generateLocalWPS/%/%.33">
+      <details key="start" value="1542"/>
+      <details key="end" value="1551"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/generateLocalWPS/%/%.33/aWPS">
+      <details key="start" value="1542"/>
+      <details key="end" value="1546"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/generateLocalWPS/%/%.34">
+      <details key="start" value="1553"/>
+      <details key="end" value="1554"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/generateLocalWPS/%/%.35">
+      <details key="start" value="1554"/>
+      <details key="end" value="1715"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/generateLocalWPS/%/%.35/%">
+      <details key="start" value="1603"/>
+      <details key="end" value="1628"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/generateLocalWPS/%/%.35/%.1">
+      <details key="start" value="1629"/>
+      <details key="end" value="1639"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/generateLocalWPS/%/%.35/%.1/input">
+      <details key="start" value="1629"/>
+      <details key="end" value="1634"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/generateLocalWPS/%/%.35/%.2">
+      <details key="start" value="1641"/>
+      <details key="end" value="1657"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/generateLocalWPS/%/%.35/%.3">
+      <details key="start" value="1658"/>
+      <details key="end" value="1672"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/generateLocalWPS/%/%.35/%.3/input">
+      <details key="start" value="1658"/>
+      <details key="end" value="1663"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/generateLocalWPS/%/%.35/%.4">
+      <details key="start" value="1674"/>
+      <details key="end" value="1677"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/generateLocalWPS/%/%.35/%.5">
+      <details key="start" value="1678"/>
+      <details key="end" value="1693"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/generateLocalWPS/%/%.35/%.5/input">
+      <details key="start" value="1687"/>
+      <details key="end" value="1692"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/generateLocalWPS/%/%.35/%.6">
+      <details key="start" value="1695"/>
+      <details key="end" value="1696"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/generateLocalWPS/%/%.35/%.7">
+      <details key="start" value="1697"/>
+      <details key="end" value="1707"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/generateLocalWPS/%/%.35/%.7/input">
+      <details key="start" value="1697"/>
+      <details key="end" value="1702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/generateLocalWPS/%/%.35/input">
+      <details key="start" value="1559"/>
+      <details key="end" value="1572"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/generateLocalWPS/%/%.35/%.8">
+      <details key="start" value="1575"/>
+      <details key="end" value="1586"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/generateLocalWPS/%/%.35/%.8/aWPS">
+      <details key="start" value="1575"/>
+      <details key="end" value="1579"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/generateLocalWPS/%/%.35/%.9">
+      <details key="start" value="1598"/>
+      <details key="end" value="1601"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/generateLocalWPS/%/%.36">
+      <details key="start" value="1715"/>
+      <details key="end" value="1722"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/generateLocalWPS/%/%.37">
+      <details key="start" value="1723"/>
+      <details key="end" value="1752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/generateLocalWPS/%/%.37/%">
+      <details key="start" value="1732"/>
+      <details key="end" value="1751"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/generateLocalWPS/%/%.37/%/%">
+      <details key="start" value="1732"/>
+      <details key="end" value="1744"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/generateLocalWPS/%/%.37/%/%/aWPS">
+      <details key="start" value="1732"/>
+      <details key="end" value="1736"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/generateLocalWPS/%/%.37/%/%.1">
+      <details key="start" value="1749"/>
+      <details key="end" value="1750"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/generateLocalWPS/%/%.38">
+      <details key="start" value="1754"/>
+      <details key="end" value="1755"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/generateLocalWPS/%/%.39">
+      <details key="start" value="1756"/>
+      <details key="end" value="1780"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/generateLocalWPS/%/%.39/%">
+      <details key="start" value="1756"/>
+      <details key="end" value="1775"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/generateLocalWPS/%/%.39/%/%">
+      <details key="start" value="1756"/>
+      <details key="end" value="1768"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/generateLocalWPS/%/%.39/%/%/aWPS">
+      <details key="start" value="1756"/>
+      <details key="end" value="1760"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/generateLocalWPS/%/%.39/%/%.1">
+      <details key="start" value="1773"/>
+      <details key="end" value="1774"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/generateLocalWPS/%/%.40">
+      <details key="start" value="1782"/>
+      <details key="end" value="1785"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/generateLocalWPS/%/%.41">
+      <details key="start" value="1824"/>
+      <details key="end" value="1826"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/generateLocalWPS/%/%.42">
+      <details key="start" value="1827"/>
+      <details key="end" value="1851"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/generateLocalWPS/%/%.42/%">
+      <details key="start" value="1827"/>
+      <details key="end" value="1846"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/generateLocalWPS/%/%.42/%/%">
+      <details key="start" value="1827"/>
+      <details key="end" value="1839"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/generateLocalWPS/%/%.42/%/%/aWPS">
+      <details key="start" value="1827"/>
+      <details key="end" value="1831"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/generateLocalWPS/%/%.42/%/%.1">
+      <details key="start" value="1844"/>
+      <details key="end" value="1845"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/generateLocalWPS/%/%.43">
+      <details key="start" value="1853"/>
+      <details key="end" value="1867"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/generateLocalWPS/%/%.44">
+      <details key="start" value="1868"/>
+      <details key="end" value="1885"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/generateLocalWPS/%/%.44/aWPS">
+      <details key="start" value="1868"/>
+      <details key="end" value="1872"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/generateLocalWPS/%/%.45">
+      <details key="start" value="1887"/>
+      <details key="end" value="1888"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/generateLocalWPS/%/%.46">
+      <details key="start" value="1888"/>
+      <details key="end" value="1957"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/generateLocalWPS/%/%.46/%">
+      <details key="start" value="1937"/>
+      <details key="end" value="1938"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/generateLocalWPS/%/%.46/%.1">
+      <details key="start" value="1939"/>
+      <details key="end" value="1949"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/generateLocalWPS/%/%.46/%.1/input">
+      <details key="start" value="1939"/>
+      <details key="end" value="1944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/generateLocalWPS/%/%.46/input">
+      <details key="start" value="1893"/>
+      <details key="end" value="1906"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/generateLocalWPS/%/%.46/%.2">
+      <details key="start" value="1909"/>
+      <details key="end" value="1920"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/generateLocalWPS/%/%.46/%.2/aWPS">
+      <details key="start" value="1909"/>
+      <details key="end" value="1913"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/generateLocalWPS/%/%.46/%.3">
+      <details key="start" value="1932"/>
+      <details key="end" value="1935"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/generateLocalWPS/%/%.47">
+      <details key="start" value="1957"/>
+      <details key="end" value="1972"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/generateLocalWPS/%/%.48">
+      <details key="start" value="1973"/>
+      <details key="end" value="1997"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/generateLocalWPS/%/%.48/%">
+      <details key="start" value="1973"/>
+      <details key="end" value="1992"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/generateLocalWPS/%/%.48/%/%">
+      <details key="start" value="1973"/>
+      <details key="end" value="1985"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/generateLocalWPS/%/%.48/%/%/aWPS">
+      <details key="start" value="1973"/>
+      <details key="end" value="1977"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/generateLocalWPS/%/%.48/%/%.1">
+      <details key="start" value="1990"/>
+      <details key="end" value="1991"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/generateLocalWPS/%/%.49">
+      <details key="start" value="1999"/>
+      <details key="end" value="2009"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/generateLocalWPS/%/%.50">
+      <details key="start" value="392"/>
+      <details key="end" value="449"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/generateLocalWPS/%/%.50/%">
+      <details key="start" value="392"/>
+      <details key="end" value="433"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/generateLocalWPS/%/%.50/%/%">
+      <details key="start" value="392"/>
+      <details key="end" value="418"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/generateLocalWPS/%/%.50/%/%/%">
+      <details key="start" value="392"/>
+      <details key="end" value="401"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/generateLocalWPS/%/%.50/%/%/%/aWPS">
+      <details key="start" value="392"/>
+      <details key="end" value="396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/generateLocalWPS/%/%.50/%/%/%.1">
+      <details key="start" value="409"/>
+      <details key="end" value="417"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/generateLocalWPS/%/%.50/%.1">
+      <details key="start" value="441"/>
+      <details key="end" value="448"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/generateLocalWPS/%/%.51">
+      <details key="start" value="458"/>
+      <details key="end" value="465"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/generateLocalWPS/aWPS">
+      <details key="start" value="348"/>
+      <details key="end" value="363"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

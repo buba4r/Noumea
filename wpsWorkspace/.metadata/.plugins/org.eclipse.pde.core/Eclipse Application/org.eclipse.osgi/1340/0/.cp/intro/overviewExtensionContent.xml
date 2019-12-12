@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<introContent>
+  <extensionContent id="org.eclipse.jwt" name="Java Workflow Tooling" alt-style="css/whatsnew.properties" style="css/whatsnew.css" path="whatsnew/@">
+     <group id="jwt-group" style-id="content-group">
+    	<link id="jwt" label="Java Workflow Tooling" url="http://wiki.eclipse.org/JWT_NewNoteworthy_1_2" style-id="content-link">
+           <text>What's new in Java Workflow Tooling 1.2 ?</text>
+        </link>
+     </group>
+  </extensionContent>
+    <extensionContent id="org.eclipse.jwt" name="Java Workflow Tooling" alt-style="css/whatsnew.properties"   style="css/overview.css" path="overview/@">
+     <group id="jwt-group" style-id="content-group">
+    	<link id="jwt" label="Java Workflow Tooling" url="http://www.eclipse.org/jwt" style-id="content-link">
+           <text>Learn more details about JWT!</text>
+        </link>
+     </group>
+  </extensionContent>
+    <extensionContent id="org.eclipse.jwt" name="Java Workflow Tooling" alt-style="css/whatsnew.properties" style="css/tutorials.css" path="tutorials/@">
+     <group id="jwt-group" style-id="content-group" >
+    	<link id="jwt" label="Java Workflow Tooling" url="http://wiki.eclipse.org/JWT_Tutorial" style-id="content-link" >
+           <text>Get started with Java Workflow Tooling...</text>
+        </link>
+     </group>
+  </extensionContent>
+    <extensionContent id="org.eclipse.jwt" name="Java Workflow Tooling" alt-style="css/whatsnew.properties" style="css/samples.css" path="samples/@">
+     <group id="jwt-group" style-id="content-group">
+    	<link id="jwt" label="Java Workflow Tooling" url="http://org.eclipse.ui.intro/JWTsampleCommand?standby=false" style-id="content-link">
+           <text>Open samples from JWT!</text>
+        </link>
+     </group>
+  </extensionContent>
+</introContent>

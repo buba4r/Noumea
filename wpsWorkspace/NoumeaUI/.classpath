@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/gt-main-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-wps-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/net.opengis.wps-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-api-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-metadata-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/net.opengis.ows-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-core-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-wps-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/picocontainer-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.xsd_2.12.0.v20160526-0356.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-ows-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-opengis-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xml-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-gml3-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-gml2-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-wfs-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-filter-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-xsd-fes-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/gt-jts-wrapper-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/jts-1.13.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/gt-referencing-16.4.jar"/>
+	<classpathentry kind="lib" path="lib/jsr-275-1.0-beta-2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

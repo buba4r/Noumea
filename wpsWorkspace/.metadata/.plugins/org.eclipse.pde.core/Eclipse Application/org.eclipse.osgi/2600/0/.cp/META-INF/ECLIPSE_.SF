@@ -1,0 +1,104 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 7N2VIYGDKyfFIxWNanBVvZoMqhd/2
+ eNdXrXzQ9KCgIY=
+SHA-256-Digest-Manifest: YZmrusVNCeEsS6mhDKXGN4RM/Am1O4V9szLZ9ZmtVS4=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: org/objectweb/asm/commons/CodeSizeEvaluator.class
+SHA-256-Digest: kdorWdZzXBvXB2wmvBnn+1PaquRX+T0Qlt5so805u+s=
+
+Name: org/objectweb/asm/commons/TryCatchBlockSorter$1.class
+SHA-256-Digest: BcYu9nkOI8CAf7G5A+SRPkvIWaLqxH9KhFBla5MtC7o=
+
+Name: org/objectweb/asm/commons/FieldRemapper.class
+SHA-256-Digest: WymeriEJcASNDq7fTQdLJU4E1t5tUaZD9T9/zGUW0Qo=
+
+Name: org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation.class
+SHA-256-Digest: gO7TpiRyCARLyWAPPaBj0t3rye+WCMpGS3gzOnlbs6A=
+
+Name: org/objectweb/asm/commons/SimpleRemapper.class
+SHA-256-Digest: CeT1CCe936NTRHBPG6A7QPhgHYaxMic0uyo+HzQRkUM=
+
+Name: org/objectweb/asm/commons/InstructionAdapter.class
+SHA-256-Digest: yv0rbohV0BqXufxa3MUOw7dTc5LGlpUX7SCnYNvBfbU=
+
+Name: org/objectweb/asm/commons/AnnotationRemapper.class
+SHA-256-Digest: O2t/6odYpYA6PwjT+cB3AbAFBaBM1O3Wx1T9kPMn8iU=
+
+Name: org/objectweb/asm/commons/ModuleHashesAttribute.class
+SHA-256-Digest: OyWEBF3fDsPK42d9bMAW2okqwcVb18ccRQqv16ZtM/0=
+
+Name: org/objectweb/asm/commons/JSRInlinerAdapter.class
+SHA-256-Digest: sQRgpp2v4nDSsT+/KKvKtAEJ5nsNOeJHJCQc/rmVT3g=
+
+Name: org/objectweb/asm/commons/StaticInitMerger.class
+SHA-256-Digest: WCfunjCS81hlhzXHkDmq0XyECH4MkG+Nr3UBEk1kw9M=
+
+Name: module-info.class
+SHA-256-Digest: E6IOnSEMm8tZJkGVJ2Yun2iueVIKLoT00WRaMuaPjUI=
+
+Name: org/objectweb/asm/commons/ClassRemapper.class
+SHA-256-Digest: nwaxFHYvFsF5/Jud+r0im3alvAuVPGcOdcbZUVqa9Ek=
+
+Name: org/objectweb/asm/commons/Method.class
+SHA-256-Digest: YhOw9+Pjw546n3GxgFun6s2cs4bv5kNHRw8r9fsYJq4=
+
+Name: org/objectweb/asm/commons/MethodRemapper.class
+SHA-256-Digest: RF7Ev1fWJFYe/APUYFrZbOipdKV1ciAhIuzXp3fHTKk=
+
+Name: org/objectweb/asm/commons/TableSwitchGenerator.class
+SHA-256-Digest: KGo7FQn96+OneV5n/0iAYlWdsXWkVYftSFe6BE1pCcU=
+
+Name: org/objectweb/asm/commons/AnalyzerAdapter.class
+SHA-256-Digest: 0jY7PG2dVcdT3g4GHnLEVKRDmZh8R6dqhOccjBmKXOc=
+
+Name: about_files/LICENSE.txt
+SHA-256-Digest: 7ob1rSXTgfq9i3PrfU+aq6L490kND6LcjKVO3QGFNGY=
+
+Name: about.html
+SHA-256-Digest: WQhSEQyk0+p1xEaCtpxIqEZFYZyapM1RFmm+O+J1skM=
+
+Name: org/objectweb/asm/commons/SerialVersionUIDAdder.class
+SHA-256-Digest: B5wfp/OmRrMW/ozXD/QKNrF8tvuWkOOfzHstep0NNxQ=
+
+Name: org/objectweb/asm/commons/ModuleResolutionAttribute.class
+SHA-256-Digest: Il8zsS12pcqaLzFFTCzwKEAM2MY/EJSIlFbTyJW8cBw=
+
+Name: org/objectweb/asm/commons/LocalVariablesSorter.class
+SHA-256-Digest: dUBXrazharm5SOvHvwgjqdAWMkOdoseanf/B35T54zs=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.commo
+ ns/pom.properties
+SHA-256-Digest: 2h5iDkapxRDFvhu1GYp5l8HfuvEKOWYlrcC1DN0J1Bc=
+
+Name: org/objectweb/asm/commons/SignatureRemapper.class
+SHA-256-Digest: A8H7vAXhgYu/bxK2Ht/knojuGF37xYvYSO2nUAe4plY=
+
+Name: org/objectweb/asm/commons/SerialVersionUIDAdder$Item.class
+SHA-256-Digest: jEuOiIoH/vy6d0jxYI7Xh36cfpi4bQbemszBXLVtrOU=
+
+Name: org/objectweb/asm/commons/GeneratorAdapter.class
+SHA-256-Digest: pFiMuv9VYrvzF1sFPHoextIJg/NAGIPUOna1Un5MF+g=
+
+Name: org/objectweb/asm/commons/ModuleRemapper.class
+SHA-256-Digest: r8wZT5DRBuCe0sKak0UFqPkyad/A0xcUjk18blQgp3M=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.commo
+ ns/pom.xml
+SHA-256-Digest: IrDdVaj8YQo1kRuKSHziSxw7wrVavLkhS7noI56CyMI=
+
+Name: org/objectweb/asm/commons/Remapper.class
+SHA-256-Digest: j2u1dQL0/IH9WNx7pV9SiEsW5+2WlDpvn5xELFj/TXc=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: AW5qQjzQBD6enH7d4yvPMlNX1FafgyIHfJM+72e4r+g=
+
+Name: org/objectweb/asm/commons/AdviceAdapter.class
+SHA-256-Digest: YXoSvK1m7QWlN6p3apJbyx/6HFzNSf6h0rNft7DKV5c=
+
+Name: org/objectweb/asm/commons/TryCatchBlockSorter.class
+SHA-256-Digest: SiB2PYOUO3g7osw1wcVcfCamC7wgItEQDnrCGRxJd1U=
+
+Name: org/objectweb/asm/commons/ModuleTargetAttribute.class
+SHA-256-Digest: VspJVWF2x7KGQ2ZuWHpJUhFlSGF7We/Hh7IW4j32hPE=
+

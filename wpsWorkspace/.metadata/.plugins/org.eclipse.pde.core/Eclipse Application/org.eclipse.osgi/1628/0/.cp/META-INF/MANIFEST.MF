@@ -1,0 +1,160 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.objectteams.otre
+Bundle-SymbolicName: org.eclipse.objectteams.otre
+Export-Package: org.eclipse.objectteams.otre;version="2.4.0",org.eclip
+ se.objectteams.otre.bcel;version="2.4.0",org.eclipse.objectteams.otre
+ .jplis;version="2.4.0",org.eclipse.objectteams.otre.util;version="2.4
+ .0"
+Bundle-Name: %pluginName
+Bundle-Version: 2.7.0.201806120901
+Bundle-Localization: plugin
+Require-Bundle: org.apache.bcel;bundle-version="[5.2.0,5.3.0)",org.ecl
+ ipse.objectteams.runtime;bundle-version="[2.4.0,3.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/object
+ teams/org.eclipse.objectteams.git;path="plugins/org.eclipse.objecttea
+ ms.otre";tag=builds/201806120901
+Bundle-Vendor: %providerName
+
+Name: org/eclipse/objectteams/otre/util/RoleBaseBinding.class
+SHA-256-Digest: wOB3gWiUlKyQkhBmx+oyLAlq1sAmIUui67KHBdxUdrk=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection$1.class
+SHA-256-Digest: 34jq5+A+I1fi6YGGuzQZJeSTUJ1G/RfLvpGmXwOK3cU=
+
+Name: org/eclipse/objectteams/otre/jplis/otreAgent.class
+SHA-256-Digest: EbeqMEKAjeaxIxsfyphE7PGCCHNzmh6T0+Wol3Cxz8c=
+
+Name: org/eclipse/objectteams/otre/ClassEnhancer.class
+SHA-256-Digest: LX8LnTcrDZF+58ZN/9CBxdNUZ0OiR8+DOw3uqe1zxbQ=
+
+Name: org/eclipse/objectteams/otre/util/AnnotationHelper.class
+SHA-256-Digest: LWYrx4dsoxPZSYOuIqj87/Y3HuxBwdilYLlT+og245U=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$1.class
+SHA-256-Digest: UnvT2rqA45viVSsXFWb9SmcIBNPhIEetyjfqh+ICSd4=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection$IHPair.class
+SHA-256-Digest: F9eq1GQOsriewrxHeBr3ywxpOyhP2X2jNjp+Z0KTk2A=
+
+Name: org/eclipse/objectteams/otre/util/DebugUtil.class
+SHA-256-Digest: zYZuzEQrGgcIt3hDvv75/DV+5pva/m008Fx6dMa24U8=
+
+Name: org/eclipse/objectteams/otre/util/ListValueHashMap.class
+SHA-256-Digest: PFaW4rHL9pmDev6qX2UYUUHKKwKIaug8OckiRcE73zU=
+
+Name: org/eclipse/objectteams/otre/SubBoundBaseMethodRedefinition.clas
+ s
+SHA-256-Digest: 9NdcZIOf64L+0jrmoqZrxxj6GA5GFh8s7tj2N6h/1g0=
+
+Name: org/eclipse/objectteams/otre/LiftingParticipantTransformation.cl
+ ass
+SHA-256-Digest: PDuAGjyPs1BmyyvzaY77Ad71WHmUm+pWXCTuKax+BzU=
+
+Name: org/eclipse/objectteams/otre/RepositoryAccess.class
+SHA-256-Digest: 7U0zBl/JTWHnF5uPeE34x9jwbX/c8J5nF1MmeEvBMX8=
+
+Name: org/eclipse/objectteams/otre/BaseMethodTransformation.class
+SHA-256-Digest: IEeMB77LMN6c2PNXguNrsYGj0gG+m5Ot4kV+tTeLsE8=
+
+Name: org/eclipse/objectteams/otre/OTConstants.class
+SHA-256-Digest: Jx7wnnV2G2wlQN3aDPq+hSCxLDAiCKCD1MQyls7udcg=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$Pair.clas
+ s
+SHA-256-Digest: WnYAg/dpd5Ls1h8+jKi8HLY+UWbLbk5DuxIFSAC4vVI=
+
+Name: org/eclipse/objectteams/otre/util/FieldDescriptor.class
+SHA-256-Digest: 1B6eQOUoq8rF+W9mkX2OTaMePO9uVsHpPjC+SkUy1LU=
+
+Name: org/eclipse/objectteams/otre/util/AttributeReadingGuard.class
+SHA-256-Digest: EmgsENgPI5Mzjzhg8TEibnbVEaRfVc4PXGE775vPUUI=
+
+Name: plugin.properties
+SHA-256-Digest: BRINhbNnV7LxuOAx2vnRGkgMx1ljeiB/KIYkDSZOmms=
+
+Name: org/eclipse/objectteams/otre/ClassLoaderAccess.class
+SHA-256-Digest: ryUJ3mnXnRloV52bL/rVK1xEnnxf0pLrVw3EKlRSelE=
+
+Name: org/eclipse/objectteams/otre/TeamInterfaceImplementation.class
+SHA-256-Digest: A70qJs23ExzlXZ7Cmgke4EcoXxKs8HORpsoKejibm9Q=
+
+Name: org/eclipse/objectteams/otre/bcel/ConstantPool.class
+SHA-256-Digest: l7SJuUfnWRA1ZXEsV9zgNPPx2SNt40bAdoZk3/FaGjg=
+
+Name: org/eclipse/objectteams/otre/StaticSliceBaseTransformation.class
+SHA-256-Digest: xXjapa/2LK0uJq5ZYkwozTPthKjEE2Oipk1/FsVKEzQ=
+
+Name: org/eclipse/objectteams/otre/util/CallinBindingManager.class
+SHA-256-Digest: oXa0kQQVfgyg6r18UwWYGrYfVxLkprg4STFSkUdHnzg=
+
+Name: about.html
+SHA-256-Digest: M30GmY97/EWGpX9xUgtV9sWRu1h9ooPFRRTFF8iCPV4=
+
+Name: org/eclipse/objectteams/otre/jplis/JPLISEnhancer.class
+SHA-256-Digest: RevI1NPF9NW8DK6NRxsPQt85ojJ+CzLUrpchNQPyC1s=
+
+Name: org/eclipse/objectteams/otre/jplis/ObjectTeamsTransformer$1.clas
+ s
+SHA-256-Digest: Yn4wsp7TPjVC6eq0QDs+26YHhCsyDO/PfiGj41h2Z9s=
+
+Name: org/eclipse/objectteams/otre/Decapsulation.class
+SHA-256-Digest: +U2WXnMvcJHvJPEe5HQzY1IO9bRhUbYlB5y+Ih9NmOA=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$BaseMetho
+ dInfo.class
+SHA-256-Digest: AM7LhUZxYOajFqpBQu6vIIXuRXGRM8YXiWwXntdebcc=
+
+Name: org/eclipse/objectteams/otre/bcel/DietClassLoaderRepository.clas
+ s
+SHA-256-Digest: ZA9V7qAtz6dbIH/gDKEqgOcBAVA/1Etf9PriJ/ktMuo=
+
+Name: org/eclipse/objectteams/otre/Decapsulation$DecapsulationDescript
+ or.class
+SHA-256-Digest: PTX7fVSpu3HwIAFr3Q2YSogbLL6JAW6ugj0aJBcxGbg=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation.class
+SHA-256-Digest: cDfW5IiUnidbIfWLhXcj8UvD6Re9SKJIb+u/Tk4TMlI=
+
+Name: org/eclipse/objectteams/otre/util/MethodBinding.class
+SHA-256-Digest: W7C0HDT86FaSxZ7fCdUjZd0ND2k0NEZ+6SJmifR24Ns=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$ImplicitA
+ ctivationMode.class
+SHA-256-Digest: CL4Cm9syNRwxN7uFHnOXm5CLV3+Y3ldRjQOPgOL6RLQ=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: G2hFTVPngfh5NUf96Pyy87A7XIE083udjEBFy4pUc/M=
+
+Name: org/eclipse/objectteams/otre/util/BoundMethod.class
+SHA-256-Digest: rag+mcjZdSGjmhI4i+8LaeuUEtH68PVFwXmtpv3jLgY=
+
+Name: org/eclipse/objectteams/otre/ThreadActivation.class
+SHA-256-Digest: 5DlzBjSV6+Sg2e20w3p9YMYsBknLo8rG1A8qfXEAaQk=
+
+Name: org/eclipse/objectteams/otre/bcel/DietJavaClass.class
+SHA-256-Digest: dy6QTAMgmoWXrYPJzOxtn1cfv+urqFvX8F5lzXV5Wbk=
+
+Name: org/eclipse/objectteams/otre/util/BoundClass.class
+SHA-256-Digest: gMJrOFgkXkhc7ZibvydXr/ZkiwwOH4/D5r5liwJ3JsA=
+
+Name: org/eclipse/objectteams/otre/util/TeamIdDispenser.class
+SHA-256-Digest: 7rSHZOkEG7/bZLrcC017kHyM7NHEl1fX3pUI4TtNDwM=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection.class
+SHA-256-Digest: 3CK6x93vn68KWkArNiwmRtVoRgBWZreTxAzKhvK6ryo=
+
+Name: org/eclipse/objectteams/otre/util/SuperMethodDescriptor.class
+SHA-256-Digest: ZJ1nVNITGnmQdf+/UnHpYJ8y8wv1Qtozrto//gZVCe8=
+
+Name: org/eclipse/objectteams/otre/bcel/DietClassParser.class
+SHA-256-Digest: 9vt7+w/dVS7Zkx+xm85NPsLKQpRh7Gu2eFhJ6WZg7R0=
+
+Name: org/eclipse/objectteams/otre/jplis/ObjectTeamsTransformer.class
+SHA-256-Digest: OuIAM9hwA6n7xXMoDWjxJaIKSLrJRus702gFZyqBwMs=
+
+Name: org/eclipse/objectteams/otre/util/CallinBindingManager$BoundSupe
+ rKind.class
+SHA-256-Digest: JL8scXB2xdeSshScyPIGDsd5kZ9FCbJhGEHA6fANGS8=
+

@@ -1,0 +1,147 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: uTO3HUU7QCKlQIQ7PQ51olbM9SPKx
+ /jS1lF4Ya6EZWQ=
+SHA-256-Digest-Manifest: o2atvf+8wODc5v6ynm1SMVpGH+TPNmXZZQ9KrCebCbE=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: org/eclipse/objectteams/otre/util/RoleBaseBinding.class
+SHA-256-Digest: YFLUjfIRvs9mMA5fl/UEib8n7EP5OJzDcodxw4W8XX8=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection$1.class
+SHA-256-Digest: Km5r3/OpTTSzQorzo0dGkdzHh48vANT7A0szfhc1kG4=
+
+Name: org/eclipse/objectteams/otre/jplis/otreAgent.class
+SHA-256-Digest: U3JDn5nQkAJ3LeQW+LnncbU759YIjcktHWWqk7msYqg=
+
+Name: org/eclipse/objectteams/otre/ClassEnhancer.class
+SHA-256-Digest: 0gt72uehzd1EONFAlerGg95tgLmKnd9XKeoJYARcaXY=
+
+Name: org/eclipse/objectteams/otre/util/AnnotationHelper.class
+SHA-256-Digest: YqE4UEUdIKw2p9O+k1BIPGtg3LiXjX5YCyrYHo4WO6I=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$1.class
+SHA-256-Digest: U+dGdWEW8GXHgPQWn1YKLMFp6IEYseqrMOMJ1zyCgCs=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection$IHPair.class
+SHA-256-Digest: BUnZG4BRGzUTh7PhfjaA26nEAfkXLpC0onetKtPJq4Q=
+
+Name: org/eclipse/objectteams/otre/util/DebugUtil.class
+SHA-256-Digest: OPvlZ+s4rgGQ3hyWWyHPD38Ok+w3WnxxidD9mZwMzwk=
+
+Name: org/eclipse/objectteams/otre/util/ListValueHashMap.class
+SHA-256-Digest: blbgC2SH4eS0p3qGK8BRP02OGtGyR1AMTU6I34O9k5w=
+
+Name: org/eclipse/objectteams/otre/SubBoundBaseMethodRedefinition.clas
+ s
+SHA-256-Digest: VpbRfFqXWijCovzNSAccW5WDMEgnfocUNri6NCBVhOo=
+
+Name: org/eclipse/objectteams/otre/LiftingParticipantTransformation.cl
+ ass
+SHA-256-Digest: 3hDbHwAd9/srE6OGcEIDxT1uhxojjEswh2+rGdaQyNA=
+
+Name: org/eclipse/objectteams/otre/RepositoryAccess.class
+SHA-256-Digest: wrd/Z6xLdv6weJaVJi4MsvpzF4pbQNM7yiiVDLNhlUo=
+
+Name: org/eclipse/objectteams/otre/BaseMethodTransformation.class
+SHA-256-Digest: PKdSO0xEM+dXwZKOIDb1UTFYz1dDuDvB/hkfHm4FEgA=
+
+Name: org/eclipse/objectteams/otre/OTConstants.class
+SHA-256-Digest: UnM6KxSsYMQBp4b9dbix7iIWbzBJPMlj7MCq88kzlnU=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$Pair.clas
+ s
+SHA-256-Digest: IL1+/dHpvN+dxQuVYtjGifUV8yV5dixsDV6hOl86ccs=
+
+Name: org/eclipse/objectteams/otre/util/FieldDescriptor.class
+SHA-256-Digest: WEmJCqa6IJ7rkfY4xWhp84hTuDkoSLhiaDn/4IaDgls=
+
+Name: org/eclipse/objectteams/otre/util/AttributeReadingGuard.class
+SHA-256-Digest: v17ko9ZtQ1uJj4n28nQ8pwdfIrcSHq1GH0iC4PYWOwQ=
+
+Name: plugin.properties
+SHA-256-Digest: 8PxLexgif2Y+OqPE9GKf5uNkESe5ZeBzWz2Sx7GzRBA=
+
+Name: org/eclipse/objectteams/otre/ClassLoaderAccess.class
+SHA-256-Digest: Q52tiF6brafKoNtEc7V/5/JTPriQFkY3BrLERRrMiWE=
+
+Name: org/eclipse/objectteams/otre/TeamInterfaceImplementation.class
+SHA-256-Digest: iHt0uGTrLPlAu/9zHbq7880dzJxSW7LUfSZYqCrnLDk=
+
+Name: org/eclipse/objectteams/otre/bcel/ConstantPool.class
+SHA-256-Digest: fs7D1V3JZbMzolg9GZqtEd8SAT6xXkB0ayQnGQze1Lw=
+
+Name: org/eclipse/objectteams/otre/StaticSliceBaseTransformation.class
+SHA-256-Digest: 5vSfpZ0YeriN3rbxhVQjYG1rrM8jAFzqI0aMcwd/bhs=
+
+Name: org/eclipse/objectteams/otre/util/CallinBindingManager.class
+SHA-256-Digest: G1oRFWhgR/KzeD1p0iv/MsjBTBvJh2yUNgke94yYi8A=
+
+Name: about.html
+SHA-256-Digest: Gj2MdM49aPjhYri9p83l/Ub4Fn9nGlzTICt6LNudPi4=
+
+Name: org/eclipse/objectteams/otre/jplis/JPLISEnhancer.class
+SHA-256-Digest: 1I5lfBusI8jrApH5qxrry8xzUOIoKaQ+vZLUmJ6+JM0=
+
+Name: org/eclipse/objectteams/otre/jplis/ObjectTeamsTransformer$1.clas
+ s
+SHA-256-Digest: 1VlXdm2Li0m7JE/LBWux8QIreuBXvRiNWKWSZgJ6Hh8=
+
+Name: org/eclipse/objectteams/otre/Decapsulation.class
+SHA-256-Digest: VzhWOHfXG1D1bgEIdHntIFgWa+K3r2wAsFFa7dQPVcE=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$BaseMetho
+ dInfo.class
+SHA-256-Digest: TplNYhvYJuJBxMuA/7M9aoXcvCpM1uONYZgDw2X/jac=
+
+Name: org/eclipse/objectteams/otre/bcel/DietClassLoaderRepository.clas
+ s
+SHA-256-Digest: oI19yzWRTr9rrH9IXA0mCX7/5gq0wAPGf1zsvc2T40k=
+
+Name: org/eclipse/objectteams/otre/Decapsulation$DecapsulationDescript
+ or.class
+SHA-256-Digest: 5eIShjsvyqrPZtz74OAVdgrp82GjYYMK23BYFnK/J10=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation.class
+SHA-256-Digest: dutyVbjRp6ESv3VuQXcGfDJ5J3raSml7QT2doLJVjlA=
+
+Name: org/eclipse/objectteams/otre/util/MethodBinding.class
+SHA-256-Digest: 8oby91SE+8tkZYJnQVmk7WrCnueZ45caMqT2scj6qgo=
+
+Name: org/eclipse/objectteams/otre/ObjectTeamsTransformation$ImplicitA
+ ctivationMode.class
+SHA-256-Digest: Qtgik5qJaCRXaq9ygfdcVwT4LmWgO75iod0OXHF/G6I=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: ak2bzOGDjLurhLXRsFA/N7TRhvaP+YA1QdnivLjcXtk=
+
+Name: org/eclipse/objectteams/otre/util/BoundMethod.class
+SHA-256-Digest: DnxaGmHSGyPuF2ApvD3Lc2y9PqGgvGn1+XkwKAu3rlw=
+
+Name: org/eclipse/objectteams/otre/ThreadActivation.class
+SHA-256-Digest: U6sLmu/UvrK+JRqQxrQiZV7r+W7PiD76cBAlEEojyjQ=
+
+Name: org/eclipse/objectteams/otre/bcel/DietJavaClass.class
+SHA-256-Digest: A+3yuZPD2mfzlGU3M6caWJ3mYmYQbbAcXselFPjGi+4=
+
+Name: org/eclipse/objectteams/otre/util/BoundClass.class
+SHA-256-Digest: 3p2H1krPHiXXhi1Vsrt+uGUuwH/mCQBZe2utwQ0/7ew=
+
+Name: org/eclipse/objectteams/otre/util/TeamIdDispenser.class
+SHA-256-Digest: VQsQACFl4oil2nY06fri/AnaDjoz0zIzsMHQAfynozY=
+
+Name: org/eclipse/objectteams/otre/BaseCallRedirection.class
+SHA-256-Digest: pvOzPqRODw1Hm3HmYB/wsQbtVxjoWphxvCpHxNHv4WI=
+
+Name: org/eclipse/objectteams/otre/util/SuperMethodDescriptor.class
+SHA-256-Digest: s+0j0e6MgWX2o2uYbVvVHtnpP15il6SQ0WEhL5TrU8Y=
+
+Name: org/eclipse/objectteams/otre/bcel/DietClassParser.class
+SHA-256-Digest: QjUokOrrr/15IGGfaiJXdBX5jAQHmyodZlQHfWTE6Rw=
+
+Name: org/eclipse/objectteams/otre/jplis/ObjectTeamsTransformer.class
+SHA-256-Digest: hSDv3uQH5joCO4zUTPYhJS/oRRgRdV5ysUDdXiMnOWg=
+
+Name: org/eclipse/objectteams/otre/util/CallinBindingManager$BoundSupe
+ rKind.class
+SHA-256-Digest: GKmv77uGBFa8v+KIMXezYfvLkaSwr0QyNRbndsKymEI=
+

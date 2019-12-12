@@ -1,0 +1,147 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.jwt.branding;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: genie.jwt
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0",org.ec
+ lipse.ui;bundle-version="3.5.0",org.eclipse.ui.ide,org.eclipse.core.r
+ esources;bundle-version="3.5.0",org.eclipse.ui.forms,org.eclipse.emf.
+ common;bundle-version="2.4.0",org.eclipse.emf.common.ui;bundle-versio
+ n="2.4.0",org.eclipse.ui.intro;bundle-version="3.3.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Eclipse JWT
+Export-Package: org.eclipse.jwt.examples,org.eclipse.jwt.examples.l10n
+ ,org.eclipse.jwt.examples.wizards
+Bundle-Name: JWT Branding plugin
+Bundle-Version: 1.6.0.201605250940
+Bundle-Localization: plugin
+Bundle-ClassPath: .
+Bundle-Activator: org.eclipse.jwt.examples.JWTExamplePlugin
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_51
+
+Name: org/eclipse/jwt/examples/action/OpenJWTExampleWizard.class
+SHA-256-Digest: q/+jsISeDWzCRgEdKfhdJno6mrkh0uaZZm1P2Yn2GyA=
+
+Name: plugin.xml
+SHA-256-Digest: FYiPfX+OQYTOW4JywoxP75Pa55Pj0eTmGfSiIqE8fGQ=
+
+Name: intro/css/pix/jwt48x48-hover.gif
+SHA-256-Digest: 2sXfLo6ijTDPoEP8VXZ2ROyRRiUewhwq4pPu00Pn2kk=
+
+Name: org/eclipse/jwt/examples/JWTExamplePlugin.class
+SHA-256-Digest: V8Of3YexaCTyca37IkTWTQAEYn8YKA8FhPb37/n/KZw=
+
+Name: intro/css/overview.properties
+SHA-256-Digest: pYv4hllra78MN87SSDXsyaaPN0DkYgBP+vU5Y616k8k=
+
+Name: org/eclipse/jwt/examples/wizards/FormBrowser$1.class
+SHA-256-Digest: iGXmdGf6be+ZnBlMQgslacnFTR5hda+S3hOcEzNjHjs=
+
+Name: org/eclipse/jwt/examples/wizards/NewExampleWizard$1.class
+SHA-256-Digest: JSkHmmg1YVXJQs7vBdtEKU7Q4zKeghu7Pbiv6BJexbQ=
+
+Name: org/eclipse/jwt/examples/wizards/ImageCanvas$1.class
+SHA-256-Digest: m7DPiz4s3ia9oCoS0QK66F4Xf2SNvGdZ/fzc07nJRAQ=
+
+Name: icons/jwt16x16.gif
+SHA-256-Digest: SF90FrFgnpW3A/Bury/thMvbf5Lr6gTNaE0w9zxaN9I=
+
+Name: org/eclipse/jwt/examples/wizards/ImageCanvas$4.class
+SHA-256-Digest: mQgLwLql8mzqzsleT7b0k/rv8QNYFLYULt1C0/xD5QA=
+
+Name: org/eclipse/jwt/examples/wizards/JWTExample.class
+SHA-256-Digest: tjPpiAMhj27kuGHNwC6fnI/kPCITpexd0Enq9XsPfvA=
+
+Name: intro/css/tutorials.css
+SHA-256-Digest: GdjpvsTrNOn365Grehf9uXgHTZKolcK81C6+aFSEz28=
+
+Name: icons/jwt32x32.gif
+SHA-256-Digest: 4OnUUbt/4z6aZfyir5HglLdrWKKqXmGHhyy6OBijDjI=
+
+Name: org/eclipse/jwt/examples/wizards/JWTExampleWizardPage$1.class
+SHA-256-Digest: vFA9Y87vQ+kL4CwdtiLssYzIUEOfTX1QRKyHOE/Wij0=
+
+Name: about.ini
+SHA-256-Digest: XKjyBdczsvPBxq8TBuU/K+WdFszFm8uqO5yIq6TpZw8=
+
+Name: notice.html
+SHA-256-Digest: RilFBPf4x8DqZRjN6oFvQkcuOAKOVSoHMGA+zT971L8=
+
+Name: plugin.properties
+SHA-256-Digest: jxljgyS/78yJk5MsFVs0HWbOfNXitPYlOx8X9P8igf8=
+
+Name: org/eclipse/jwt/examples/wizards/ImageCanvas.class
+SHA-256-Digest: kt48p79pQAkTuIkIcJHQ94KMMwbpFzo3wNh4viJGXOs=
+
+Name: intro/css/samples.css
+SHA-256-Digest: GdjpvsTrNOn365Grehf9uXgHTZKolcK81C6+aFSEz28=
+
+Name: org/eclipse/jwt/examples/l10n/Messages.properties
+SHA-256-Digest: KARyO5EDiOU5o13LJMXyK0wQc8MDe7hKbWYzZzAwg14=
+
+Name: org/eclipse/jwt/examples/wizards/FormBrowser.class
+SHA-256-Digest: AnjYa97+JpT8ZStzQcJ5TM0sC4y2lJmTggaYyrdv97k=
+
+Name: about.html
+SHA-256-Digest: QO7BRwhv47EqsRDiTn65LCKfy93HxnWjsGYqh4Bc8L0=
+
+Name: org/eclipse/jwt/examples/wizards/ImageCanvas$2.class
+SHA-256-Digest: JQ6NTJuALi5jRfjEF3jgtgnFRdgx++PCddkxveWKB6s=
+
+Name: org/eclipse/jwt/examples/wizards/NewExampleWizard$2.class
+SHA-256-Digest: XwJuHEuqZN6UkuakqhzLoQBhiMlLSkEi7wKebAlFTSg=
+
+Name: intro/css/overview.css
+SHA-256-Digest: GdjpvsTrNOn365Grehf9uXgHTZKolcK81C6+aFSEz28=
+
+Name: org/eclipse/jwt/examples/wizards/JWTExampleWizardPage.class
+SHA-256-Digest: NC6EGnJiRtceYXWtyelEEOH2ChNg2WfFZOjcV2A26xQ=
+
+Name: intro/css/pix/jwt48x48.gif
+SHA-256-Digest: Yi9T2GZUCBp3C0bfu7cppCoe6dfIOgGcEOOMyrpys1s=
+
+Name: intro/overviewExtensionContent.xml
+SHA-256-Digest: WbEcalp1nGJJJDNQ8OgcbSN5c8MQjvq5FcWCDRNg5Hs=
+
+Name: licence/licence
+SHA-256-Digest: sihWHSRVDxTpo5HFBY2x8w3Ut5/YIxy/vRkZjetGefU=
+
+Name: org/eclipse/jwt/examples/wizards/JWTExampleWizardPage$2.class
+SHA-256-Digest: 3qkGHeI1LA0GW17Myl1q0HSuF1pKfEMcDZC8fSpqmkg=
+
+Name: intro/css/whatsnew.css
+SHA-256-Digest: GdjpvsTrNOn365Grehf9uXgHTZKolcK81C6+aFSEz28=
+
+Name: org/eclipse/jwt/examples/l10n/Messages.class
+SHA-256-Digest: SA8YOhfo4JZyCDm6SEI3cWPyJBixQLwn8BxYAut2q+M=
+
+Name: META-INF/maven/org.eclipse.jwt/org.eclipse.jwt.branding/pom.prop
+ erties
+SHA-256-Digest: DoauD/jUQFzFg+F+h1Y919zQZvApwzYyxdD82u3TJ/A=
+
+Name: org/eclipse/jwt/examples/wizards/NewExampleWizard.class
+SHA-256-Digest: sFNmY4HNbhHT6bnr8nyLxCd/HkWM1H4yhBqLIfVnvgQ=
+
+Name: intro/css/samples.properties
+SHA-256-Digest: pYv4hllra78MN87SSDXsyaaPN0DkYgBP+vU5Y616k8k=
+
+Name: epl-v10.html
+SHA-256-Digest: T9ZK7tNA1ipkqNpLNx7+D20NdF9NLb76y6hsZG02vHI=
+
+Name: intro/css/whatsnew.properties
+SHA-256-Digest: pYv4hllra78MN87SSDXsyaaPN0DkYgBP+vU5Y616k8k=
+
+Name: org/eclipse/jwt/examples/wizards/ImageCanvas$3.class
+SHA-256-Digest: C8Hlo7eXTSSLU25pYuR6TGtwfyDqE3p+dymS+zfdz3I=
+
+Name: schema/org.eclipse.jwt.JWTExample.exsd
+SHA-256-Digest: TmuC44zbi0kEhNFQMpRMsV7PRmtd3+1hvWPsGJPXt2E=
+
+Name: intro/css/tutorials.properties
+SHA-256-Digest: pYv4hllra78MN87SSDXsyaaPN0DkYgBP+vU5Y616k8k=
+
+Name: META-INF/maven/org.eclipse.jwt/org.eclipse.jwt.branding/pom.xml
+SHA-256-Digest: xX90PnYcS56nFi94g0WvVX+TFer9MLuXPJlU/mbZLMk=
+

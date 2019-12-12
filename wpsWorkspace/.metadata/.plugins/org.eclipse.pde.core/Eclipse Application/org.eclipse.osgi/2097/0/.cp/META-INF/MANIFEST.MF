@@ -1,0 +1,131 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.qvtd.examples
+Bundle-SymbolicName: org.eclipse.qvtd.examples;singleton:=true
+Built-By: default
+Require-Bundle: org.eclipse.core.resources;bundle-version="[3.5.0,4.0.
+ 0)",org.eclipse.core.runtime;bundle-version="[3.5.0,4.0.0)",org.eclip
+ se.ui;bundle-version="[3.5.0,4.0.0)",org.eclipse.ui.ide;bundle-versio
+ n="[3.5.0,4.0.0)",org.eclipse.ui.intro;bundle-version="[3.4.0,4.0.0)"
+ ,org.eclipse.emf.common.ui;bundle-version="[2.7.0,3.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:https://git.eclipse.org/c/mmt/org.ec
+ lipse.qvtd.git;path="examples/org.eclipse.qvtd.examples";commitId=ea4
+ 7ffa80aeabc3b490fc590510b4ba236a68ce9
+Bundle-Vendor: %providerName
+Export-Package: org.eclipse.qvtd.examples,org.eclipse.qvtd.examples.qv
+ tc.wizards,org.eclipse.qvtd.examples.qvtr.wizards,org.eclipse.qvtd.ex
+ amples.wizards
+Bundle-Name: %pluginName
+Bundle-Version: 0.20.0.v20190910-1018
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.qvtd.examples.QVTDeclarativeExamplesPlug
+ in
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_202
+
+Name: about.properties
+SHA-256-Digest: Mg5heuMkMNkRt04ydFA6JBUIs6p3/xW+VDk3q6hPPQM=
+
+Name: zips/qvtr/empty.zip
+SHA-256-Digest: rm/MKDdChm+CjMi6U5XxU34/iuqeeHIUVI97CIBEgms=
+
+Name: plugin.xml
+SHA-256-Digest: 3juNqk9uQdiBsVfg3JEhseWhVpkwU1FUOAnOAaAquyA=
+
+Name: icons/QVTcModelFile.gif
+SHA-256-Digest: wfejQxNIa5iFU5ApBEIWFYqqdLpEUAygPq4T8wh7Pf4=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/EmptyExampleWizard.class
+SHA-256-Digest: 7SNevjTdaG7PLaD5gtC4aH6VjrRClX5nmXKGds0/Mdg=
+
+Name: org/eclipse/qvtd/examples/QVTDeclarativeExamplesPlugin.class
+SHA-256-Digest: k4OFHXgsdZ4b9y1LMJg/RTu4LBPlLFflysnPs/2AdM8=
+
+Name: zips/qvtr/modelmorf.zip
+SHA-256-Digest: C6IhvxehhQd1y8AphSoVzQd6RmSA5Ct+Q08rhOn9bjY=
+
+Name: about.mappings
+SHA-256-Digest: mJE2e7QwmZtPZGGPx8Jy64QFL0s7YaPObBoiL2ta+Lc=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/RelToCoreExampleWizard.cl
+ ass
+SHA-256-Digest: FasNq/UrcqOrClp5pjTXO5O7p99eCZXjqGts4tW1TMI=
+
+Name: zips/umlx/hstm2fstm.zip
+SHA-256-Digest: 2PQ97CBcvYn1ESNXGqHBbfIVY4/5xtjZn3pmE7TaDSU=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/ModelMorfExampleWizard.cl
+ ass
+SHA-256-Digest: axg2ChpKuwJTxcYLmeo/RE1to1ipALi1Ik1um7DTlDs=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1.class
+SHA-256-Digest: bGPgEt1pPUCjrv06GCtbQCW+SSGaETkhH+t6vpUZuW0=
+
+Name: build.properties
+SHA-256-Digest: Fhi8QXYCkF0nXKUMoVqGBSBlGZmaTrXvdViTL19Ntfw=
+
+Name: about.ini
+SHA-256-Digest: eHHHTqN7Y2eiBZGYdFDZeacrMj29Mm7niUh+P3i42Ao=
+
+Name: icons/UMLXModelFile.gif
+SHA-256-Digest: IzOyOXTYDRyfuYByUi4d9CMOnfvatSPiMmJI9yRUMn8=
+
+Name: plugin.properties
+SHA-256-Digest: YzApnQnCswe2AiNpO/959QXtBaH6VOrH++tZib8oWz8=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/EmptyExampleWizard.class
+SHA-256-Digest: hlsuj3XHSi7SXk81K7jPKeH9quvf6I+fS0THK8OslXM=
+
+Name: modeling32.png
+SHA-256-Digest: saSrfvJ79Uzl2BFpCbuVBho1UTuf14LrjD+wGJG44Ok=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1$1.clas
+ s
+SHA-256-Digest: Cnp/qQQPZw7d9AWHyqrGxuXdZIxjst3DzUZzbLDV1Dc=
+
+Name: about.html
+SHA-256-Digest: 7CEK6E6xqBJuRsKTra8uYhPBjmnf94uqKZZenI1HJWY=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/UML2RDBMSExampleWizard.cl
+ ass
+SHA-256-Digest: aTQr8IT8tQ51PQEA81FGg7GBtxKBuZyIB7liyEbyGQs=
+
+Name: zips/qvtc/empty.zip
+SHA-256-Digest: DadtNe3/jzYtJCoprmLvOh9BNqMguGmV3cQBI3dyXJ8=
+
+Name: icons/OCLModelFile.gif
+SHA-256-Digest: QZGt+OujBLuPG0ae5Chmh1moywUt9px0PUxgvt4cP+E=
+
+Name: intro/css/graphics/tx.gif
+SHA-256-Digest: 5/zT3UZYK2PCz4tR35oe5hmglcFDglJHa7ddkEyhoao=
+
+Name: zips/qvtr/hstm2fstm.zip
+SHA-256-Digest: Os6WqLc6AkE9Cb5WX1W6zW1u3IoIiLUMVmgsZe1g/dk=
+
+Name: zips/readme.txt
+SHA-256-Digest: QBRRbkY24561T+nibzoqRnvs/mPboZA8+WH5XfUAAVw=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard.class
+SHA-256-Digest: JHVqoNjB+mxvjvVm3C9y6DopOXczZHHMaS1bEzzN868=
+
+Name: intro/css/sample.css
+SHA-256-Digest: JmGjiZ5ufUUt9a5ayGnGVYH4iczaeLbFWNbkotE2Cuo=
+
+Name: icons/QVTrModelFile.gif
+SHA-256-Digest: CVUAUCiZ5QIkKowpmZQgweXNoTcvOvn3kI4D/2L4O4s=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$ProjectD
+ escriptor.class
+SHA-256-Digest: mnt6Smln1LoB+UuZQIHaORY5Fx7+U9rg5GvZ10E43Aw=
+
+Name: intro/sample.xml
+SHA-256-Digest: DiE23eB3GeKtdVKIl48i2em/SvlRzcVn7P7ONVXTIJU=
+
+Name: zips/qvtc/uml2rdbms.zip
+SHA-256-Digest: GpvMXTvrMYNkMTRL6kAHeItaW7zZhRlhyzvVCUQBNYo=
+
+Name: zips/qvtr/reltocore.zip
+SHA-256-Digest: xqDU1QL+NmMcYSbnCyD4/VG2ASClVwB0pH99ciBTR6o=
+

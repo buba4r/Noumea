@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfwps:WorkflowWps xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfwps="http://fr.ubo.mde.babau.wfwps" name="TestWPS" abstract="WPS">
+  <localWpsLibrary name="addInt" abstract="integers" packageName="Math" className="MathUtils" functionName="intAddBody">
+    <inputs name="input1i" abstract="operand" type="Integer" defaultValue="1"/>
+    <inputs name="input2i" abstract="operand" type="Integer" defaultValue="1"/>
+    <outputs name="resultAi" abstract="inputs" type="Integer"/>
+  </localWpsLibrary>
+  <localWpsLibrary name="addFloat" abstract="double" packageName="Math" className="MathUtils" functionName="doubleAddBody">
+    <inputs name="input1d" abstract="operand" type="Double" defaultValue="1"/>
+    <inputs name="input2d" abstract="operand" type="Double" defaultValue="1"/>
+    <outputs name="resultAd" abstract="inputs" type="Double"/>
+  </localWpsLibrary>
+  <localWpsLibrary name="HelloWorld" abstract="WPS" packageName="Tests" className="HW" functionName="helloWorld">
+    <inputs name="input" abstract="input" type="String"/>
+    <outputs name="result" abstract="input" type="String"/>
+  </localWpsLibrary>
+  <remoteWpsLibrary name="TestWPS:addInt" abstract="inputs" url="http://localhost:8080/geoserver/ows">
+    <inputs name="v1" abstract="operand" type="Integer"/>
+    <inputs name="v2" abstract="operand" type="Integer"/>
+    <outputs name="resultRi" abstract="integers" type="Integer"/>
+  </remoteWpsLibrary>
+  <wfLibrary name="testGeneration" abstract="WPS">
+    <inputs name="input1" abstract="operand" type="Integer" link="//@wfLibrary.0/@links.1"/>
+    <inputs name="input2" abstract="operand" type="Integer" link="//@wfLibrary.0/@links.0"/>
+    <outputs name="result" abstract="operands" type="Integer" link="//@wfLibrary.0/@links.3"/>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.0">
+      <inputs link="//@wfLibrary.0/@links.1" input="//@localWpsLibrary.0/@inputs.0"/>
+      <inputs link="//@wfLibrary.0/@links.0" input="//@localWpsLibrary.0/@inputs.1"/>
+      <outputs link="//@wfLibrary.0/@links.5" output="//@localWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.0">
+      <inputs link="//@wfLibrary.0/@links.4" input="//@localWpsLibrary.0/@inputs.0"/>
+      <inputs link="//@wfLibrary.0/@links.2" input="//@localWpsLibrary.0/@inputs.1"/>
+      <outputs link="//@wfLibrary.0/@links.3" output="//@localWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <wps xsi:type="wfwps:RemoteWPSReference" wps="//@remoteWpsLibrary.0">
+      <inputs link="//@wfLibrary.0/@links.5" input="//@remoteWpsLibrary.0/@inputs.0"/>
+      <inputs link="//@wfLibrary.0/@links.6" input="//@remoteWpsLibrary.0/@inputs.1"/>
+      <outputs link="//@wfLibrary.0/@links.4" output="//@remoteWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <wps xsi:type="wfwps:WorkflowReference" wps="//@wfLibrary.1">
+      <outputs link="//@wfLibrary.0/@links.6" output="//@wfLibrary.1/@outputs.0"/>
+    </wps>
+    <links input="//@wfLibrary.0/@inputs.1" output="//@wfLibrary.0/@wps.0/@inputs.1"/>
+    <links input="//@wfLibrary.0/@inputs.0" output="//@wfLibrary.0/@wps.0/@inputs.0"/>
+    <links input="//@wfLibrary.0/@constants.0" output="//@wfLibrary.0/@wps.1/@inputs.1"/>
+    <links input="//@wfLibrary.0/@wps.1/@outputs.0" output="//@wfLibrary.0/@outputs.0"/>
+    <links input="//@wfLibrary.0/@wps.2/@outputs.0" output="//@wfLibrary.0/@wps.1/@inputs.0"/>
+    <links input="//@wfLibrary.0/@wps.0/@outputs.0" output="//@wfLibrary.0/@wps.2/@inputs.0"/>
+    <links input="//@wfLibrary.0/@wps.3/@outputs.0" output="//@wfLibrary.0/@wps.2/@inputs.1"/>
+    <constants xsi:type="wfwps:IntegerConstant" link="//@wfLibrary.0/@links.2" name="pi" abstract="pi value" value="14"/>
+  </wfLibrary>
+  <wfLibrary name="Test" abstract="Add a description">
+    <outputs name="result" abstract="Add a description" type="Integer" link="//@wfLibrary.1/@links.2"/>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.0">
+      <inputs link="//@wfLibrary.1/@links.0" input="//@localWpsLibrary.0/@inputs.0"/>
+      <inputs link="//@wfLibrary.1/@links.1" input="//@localWpsLibrary.0/@inputs.1"/>
+      <outputs link="//@wfLibrary.1/@links.2" output="//@localWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <links input="//@wfLibrary.1/@constants.0" output="//@wfLibrary.1/@wps.0/@inputs.0"/>
+    <links input="//@wfLibrary.1/@constants.0" output="//@wfLibrary.1/@wps.0/@inputs.1"/>
+    <links input="//@wfLibrary.1/@wps.0/@outputs.0" output="//@wfLibrary.1/@outputs.0"/>
+    <constants xsi:type="wfwps:IntegerConstant" link="//@wfLibrary.1/@links.0 //@wfLibrary.1/@links.1" name="val0" abstract="Add a description"/>
+  </wfLibrary>
+</wfwps:WorkflowWps>

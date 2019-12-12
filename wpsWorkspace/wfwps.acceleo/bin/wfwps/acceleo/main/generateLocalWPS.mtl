@@ -1,0 +1,43 @@
+[comment encoding = UTF-8 /]
+[module generateLocalWPS('http://fr.ubo.mde.babau.wfwps')]
+
+[template public typeData(aData: Data)]
+[if(aData.type=WPStype::Complex)]FeatureCollection<SimpleFeatureType, SimpleFeature>[else][if(aData.type=WPStype::Raster)]BufferedImage[else][aData.type/][/if][/if]
+[/template]
+
+[template public generateLocalWPS(aWPS : LocalWPS)]
+[comment @main/]
+[file (aWPS.name.concat('_class').toUpperFirst().concat('.java'), false, 'UTF-8')]
+package [aWPS.eContainer().oclAsType(WorkflowWps).name.concat('.WPSpackage')/];
+
+import org.geotools.process.factory.*;
+import org.geotools.text.Text;
+import org.geotools.feature.FeatureCollection;
+import org.opengis.feature.simple.*;
+import java.awt.image.BufferedImage;
+
+import com.vividsolutions.jts.geom.*;
+
+import [aWPS.packageName/].[aWPS.className/];
+
+public class [aWPS.name.concat('_class').toUpperFirst()/] extends StaticMethodsProcessFactory<[aWPS.name.concat('_class').toUpperFirst()/]> {
+	
+	protected static [aWPS.className/] callObject;
+
+	public [aWPS.name.concat('_class').toUpperFirst()/]() {
+		super(Text.text("[aWPS.eContainer().oclAsType(WorkflowWps).abstract/]"),"[aWPS.eContainer().oclAsType(WorkflowWps).name/]",[aWPS.name.concat('_class').toUpperFirst()/].class);
+		callObject = new [aWPS.className/]();
+	}
+
+	@DescribeProcess(title="[aWPS.name/]",description="[aWPS.abstract/]")
+	@DescribeResult(name="[aWPS.outputs->at(1).name/]",description="[aWPS.outputs->at(1).abstract/]")
+	public static [typeData(aWPS.outputs->at(1))/] [aWPS.name/]([for(input : Input | aWPS.inputs) separator(',')]@DescribeParameter(name="[input.name/]",description=" [input.abstract/]") [typeData(input)/] [input.name/][/for]) {
+		[typeData(aWPS.outputs->at(1))/] [aWPS.outputs->at(1).name/];
+[comment cast de wps en local wps/]		
+		[aWPS.outputs->at(1).name/] = callObject.[aWPS.functionName/]([for(input : Input | aWPS.inputs) separator(',')] [input.name/][/for]);
+
+		return [aWPS.outputs->at(1).name/];
+	}
+}
+[/file]
+[/template]

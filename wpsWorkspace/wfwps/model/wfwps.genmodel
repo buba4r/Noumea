@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/wfwps/src" modelPluginID="wfwps" modelName="Wfwps"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>wfwps.ecore</foreignModel>
+  <genPackages prefix="Wfwps" disposableProviderFactory="true" ecorePackage="wfwps.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="wfwps.ecore#//WPStype">
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Double"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/String"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Geometry"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Raster"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//WPStype/Complex"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="wfwps.ecore#//ImageFormatType">
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//ImageFormatType/png"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//ImageFormatType/jpeg"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="wfwps.ecore#//VersionType">
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//VersionType/v1_1_1"/>
+      <genEnumLiterals ecoreEnumLiteral="wfwps.ecore#//VersionType/v1_3_0"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//DescribedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//DescribedElement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//DescribedElement/abstract"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//WorkflowWps">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkflowWps/localWpsLibrary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkflowWps/remoteWpsLibrary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkflowWps/wfLibrary"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//Implementable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Implementable/packageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Implementable/className"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Implementable/functionName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//WPS">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WPS/inputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WPS/outputs"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//LocalWPS"/>
+    <genClasses ecoreClass="wfwps.ecore#//RemoteWPS">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RemoteWPS/isVersion1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RemoteWPS/url"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Data/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Data/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Data/upperBound"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//Input">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Input/optional"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//Input/defaultValue"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference wfwps.ecore#//Input/wps"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//Output"/>
+    <genClasses ecoreClass="wfwps.ecore#//InputWorkflow"/>
+    <genClasses ecoreClass="wfwps.ecore#//OutputWorkflow"/>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//WPSReference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WPSReference/inputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WPSReference/outputs"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//LocalWPSReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//LocalWPSReference/wps"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//RemoteWPSReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//RemoteWPSReference/wps"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//WorkflowReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkflowReference/wps"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//InputReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//InputReference/input"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//OutputReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//OutputReference/output"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//WorkFlow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/inputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/outputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/wps"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/links"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/remoteData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wfwps.ecore#//WorkFlow/constants"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//InputLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//InputLink/link"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//OutputLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//OutputLink/link"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//RemoteData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RemoteData/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RemoteData/layer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RemoteData/version"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//WMS">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/SRS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/bboxXmin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/bboxXmax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/bboxYmin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/bboxYmax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/transparent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//WMS/styles"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//WFS"/>
+    <genClasses ecoreClass="wfwps.ecore#//Link">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//Link/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wfwps.ecore#//Link/output"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="wfwps.ecore#//Constant"/>
+    <genClasses ecoreClass="wfwps.ecore#//IntegerConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//IntegerConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//DoubleConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//DoubleConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//StringConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//StringConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//BooleanConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//BooleanConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//GeometryConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//GeometryConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="wfwps.ecore#//RasterConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wfwps.ecore#//RasterConstant/fileName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

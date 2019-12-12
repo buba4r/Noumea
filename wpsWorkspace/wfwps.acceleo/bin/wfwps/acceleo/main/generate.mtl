@@ -1,0 +1,16 @@
+[comment encoding = UTF-8 /]
+[module generate('http://fr.ubo.mde.babau.wfwps')]
+
+[import wfwps::acceleo::main::generateLocalWPS/]
+[import wfwps::acceleo::main::generateWF/]
+
+[template public generate(aWorkflowWps : WorkflowWps)]
+[comment @main/]
+[for (aWPS : LocalWPS | aWorkflowWps.localWpsLibrary)]
+[generateLocalWPS(aWPS)/]
+[/for]
+[for (aWorkFlow : WorkFlow | aWorkflowWps.wfLibrary)]
+[generateWF(aWorkFlow)/]
+[/for]
+
+[/template]

@@ -1,0 +1,137 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: x6QfQHyQJlK9pP2pUNzgWUwe6XZ+f
+ YcJgDp9/8Sk0cs=
+SHA-256-Digest-Manifest: TSK81C6ND621P7W3B4zEblzDVsRK5YNC6P48EcHRMqM=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: org/objectweb/asm/tree/MethodNode$1.class
+SHA-256-Digest: qPmy3ewleie0wpdvdBkrl4uL2kdhs30jwcun0CnjFJw=
+
+Name: org/objectweb/asm/tree/InsnList.class
+SHA-256-Digest: z6KX8ffZ7XvMxpXZeDmsL97+Jh7ynntpMyk1vjunK0c=
+
+Name: org/objectweb/asm/tree/FieldInsnNode.class
+SHA-256-Digest: A7ctpkzP2FeGXEKpZ+Ps170vFKtddzwPbetC8KtYjcc=
+
+Name: org/objectweb/asm/tree/ModuleRequireNode.class
+SHA-256-Digest: S/FI2mK6jwziRRhlv1bz2qccLvdBM3iuQtCTGd4hGgM=
+
+Name: org/objectweb/asm/tree/LineNumberNode.class
+SHA-256-Digest: +fcn88JYCWFxvs3ZQhYPXNyVXmEJBAoh+DlipN1LdKo=
+
+Name: org/objectweb/asm/tree/LocalVariableNode.class
+SHA-256-Digest: 3CCDZy8j/rznzlLQMUz9CN4EmTr8IMmZK4w0tBiNwFI=
+
+Name: org/objectweb/asm/tree/LocalVariableAnnotationNode.class
+SHA-256-Digest: +eJByjrH3pZ4oytILba0lmWgW0kcKbxBa4yYaAmg8Is=
+
+Name: org/objectweb/asm/tree/FieldNode.class
+SHA-256-Digest: dn5LQ7ubZ/REH+0ix6jxvM6qADnmT3jFBmQ7qEnCXAw=
+
+Name: org/objectweb/asm/tree/TableSwitchInsnNode.class
+SHA-256-Digest: TewBvoeP+vy/pdMHw0nZhONcjcm4+wtS3LurFBtBlL0=
+
+Name: org/objectweb/asm/tree/JumpInsnNode.class
+SHA-256-Digest: QJ4UtMgU/mtNdvJiosDu0IT3LB79AD9kJZqrKZCtDy0=
+
+Name: org/objectweb/asm/tree/MethodNode.class
+SHA-256-Digest: aMqwCY4xebF6X2Ax+e+CAGrZtDySjYzVEgIzrNP67Xw=
+
+Name: org/objectweb/asm/tree/ClassNode.class
+SHA-256-Digest: hrkeWkfpsVbvB1k1BKVs/jXSHPV7kSoYWsaBtbIDGbo=
+
+Name: module-info.class
+SHA-256-Digest: iy9j7BlUTdNtXc+iTBrmGaszDD0l4FtXO81h6Uy/dfw=
+
+Name: org/objectweb/asm/tree/IntInsnNode.class
+SHA-256-Digest: IMIopRypRMNanPFgRqf4O/kIkqD+G3WlDjbu+s+ZEzw=
+
+Name: org/objectweb/asm/tree/ModuleProvideNode.class
+SHA-256-Digest: scPwrLRGlzIy/wDVwx2Lv8w1Px1/c/PRgiLRswSPDNs=
+
+Name: org/objectweb/asm/tree/InsnNode.class
+SHA-256-Digest: RBRngi8dKzAgecsz1w3I2vEIev1Z3X6iw0ghlKSVsAg=
+
+Name: org/objectweb/asm/tree/Util.class
+SHA-256-Digest: dTp2bLFVfydqN6raLyPm64ZsoOWaK79cQfUKt33kiZM=
+
+Name: org/objectweb/asm/tree/MethodInsnNode.class
+SHA-256-Digest: 0f6gjQXWiqFI2S6DpCuomulKRkBtbVn/Fww97fMNg88=
+
+Name: org/objectweb/asm/tree/FrameNode.class
+SHA-256-Digest: 4GKvDse/d4evZlEu5PRG0mt1ji5y+N5YUSAQdNVcOfA=
+
+Name: about_files/LICENSE.txt
+SHA-256-Digest: 7ob1rSXTgfq9i3PrfU+aq6L490kND6LcjKVO3QGFNGY=
+
+Name: org/objectweb/asm/tree/AnnotationNode.class
+SHA-256-Digest: C3dbk4gzhutYH8hcwB/WwqHXrxV/uK4EdG8EV/jd81Y=
+
+Name: org/objectweb/asm/tree/TypeInsnNode.class
+SHA-256-Digest: Gfvw5JFSv+xv7zE8uzv01Zu1kZ2YQbackO3+KBeThYM=
+
+Name: about.html
+SHA-256-Digest: irSWBMrOXJKYo36Cl5l9rtOv7UP4AMwpA90HQX3rKJg=
+
+Name: org/objectweb/asm/tree/TypeAnnotationNode.class
+SHA-256-Digest: PFQAtNjN36XPC3CyXgesWa2Tf/DFrRWvFEpKdFdo3Mw=
+
+Name: org/objectweb/asm/tree/ModuleNode.class
+SHA-256-Digest: Mmezgt+h1+SvS9SKSCQ1lEqnGNro77lvkqoq/m92mt4=
+
+Name: org/objectweb/asm/tree/InvokeDynamicInsnNode.class
+SHA-256-Digest: Kl8iFlM3U7VY7H3oC4hSBur9xpAt5UamVb8+bjMyv8w=
+
+Name: org/objectweb/asm/tree/VarInsnNode.class
+SHA-256-Digest: S8VrNPVW2UustGEyjDabHqBMO90TA2RDHCKhsa/Al44=
+
+Name: org/objectweb/asm/tree/ModuleOpenNode.class
+SHA-256-Digest: tWCubrXaIUd48cO/1qYYOOog8a/ndFSlketbTa9d6bE=
+
+Name: org/objectweb/asm/tree/TryCatchBlockNode.class
+SHA-256-Digest: U+4a4sU38H5LA3neFzWJCiIyfniE7S13RfvuX6AsgFQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.tree/
+ pom.properties
+SHA-256-Digest: Urk+t5nI51seOZIGA8387MAFoWNvpskoUBEAMoAHGjM=
+
+Name: org/objectweb/asm/tree/LdcInsnNode.class
+SHA-256-Digest: tjwl0wj2AGYsWLRlXf0mkQLosnJ5nsfoCSEg+GxqzWA=
+
+Name: org/objectweb/asm/tree/InnerClassNode.class
+SHA-256-Digest: vWh7XL8zAJMWdj9Zle3a/TpCE7hBrSSYBcffafuJxa8=
+
+Name: org/objectweb/asm/tree/LookupSwitchInsnNode.class
+SHA-256-Digest: B0bCsr4sdkOCWBwvPgnBOmAclS5ZN98R6YTfsZzzRe0=
+
+Name: org/objectweb/asm/tree/MultiANewArrayInsnNode.class
+SHA-256-Digest: xQgEjm7wrgwsy5xf4BuGW/x39tIC1BfWookMeyQ6rwY=
+
+Name: org/objectweb/asm/tree/InsnList$InsnListIterator.class
+SHA-256-Digest: 8DzMWnhkAHM4xgAjEWVkOfJrRLsWeGFNRG9rEMOTxdc=
+
+Name: org/objectweb/asm/tree/LabelNode.class
+SHA-256-Digest: p+N51cGKq/EgDwuIQVozJJwWWjwCFdS96KXikeloneM=
+
+Name: org/objectweb/asm/tree/ModuleExportNode.class
+SHA-256-Digest: xcMs/AO8lX04wwICrW3Qn44Lj24VgLd3UA7gDixwR88=
+
+Name: org/objectweb/asm/tree/AbstractInsnNode.class
+SHA-256-Digest: DgDXMPkBLxff+nIZ5dHKzXeI07FoXIT1e1CN+fY5sHo=
+
+Name: org/objectweb/asm/tree/ParameterNode.class
+SHA-256-Digest: zPf8YFXDZOmoOL1pPezS0fn4E9XIg3upXsbjPeKWy1M=
+
+Name: org/objectweb/asm/tree/UnsupportedClassVersionException.class
+SHA-256-Digest: 41ZzOPf6rYDrj7/JZKTAgUcoKUhAwTo8tMYNlBQFqGE=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.tree/
+ pom.xml
+SHA-256-Digest: lbp2FPrKNIJts0y4umw/axm0WzttcvsMSnZHgljOdoE=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: OTFGbTLuSct4Ib8jDRwJMhLKi2HyTlzYwFEOcOInYOg=
+
+Name: org/objectweb/asm/tree/IincInsnNode.class
+SHA-256-Digest: YudzOfXNCCTof0lNEuZl0et5EEKq7bdvGJy+urLwyTI=
+

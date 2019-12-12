@@ -1,0 +1,379 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.objectteams.otredyn
+Bundle-SymbolicName: org.eclipse.objectteams.otredyn
+Require-Bundle: org.eclipse.objectteams.runtime;bundle-version="[2.7.3
+ ,3.0.0)",org.objectweb.asm;bundle-version="[7.1.0,8.0.0)",org.objectw
+ eb.asm.tree;bundle-version="[7.1.0,8.0.0)",org.objectweb.asm.commons;
+ bundle-version="[7.1.0,8.0.0)",org.objectweb.asm.util;bundle-version=
+ "[7.1.0,8.9.0)",org.objectweb.asm.analysis;bundle-version="[7.1.0,8.0
+ .0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/object
+ teams/org.eclipse.objectteams.git;path="plugins/org.eclipse.objecttea
+ ms.otredyn"
+Bundle-Vendor: %providerName
+Export-Package: org.eclipse.objectteams.otredyn.bytecode,org.eclipse.o
+ bjectteams.otredyn.bytecode.asm,org.eclipse.objectteams.otredyn.trans
+ former,org.eclipse.objectteams.otredyn.transformer.jplis,org.eclipse.
+ objectteams.otredyn.transformer.names,org.eclipse.objectteams.otredyn
+ .util
+Bundle-Name: %pluginName
+Bundle-Version: 1.3.6.201909081329
+Bundle-Localization: plugin
+Bundle-ClassPath: .
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/ASMByteCodeAnalyzer
+ .class
+SHA-256-Digest: PQhpf09Ms0MxVd89bzy8hv7pvtCVHqJPfTzvAfJ0APA=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/OtreRedefineStrategy.cl
+ ass
+SHA-256-Digest: JyrXfDNHYG50W3m+4NPRWfCSFs3EibDKxsKLkq17mOU=
+
+Name: org/eclipse/objectteams/otredyn/transformer/names/ConstantMember
+ s.class
+SHA-256-Digest: xsNn0NK1gwWO3E1VghEKdW7rJnxCL8wNZirCUG08M4s=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/verify/OTCheckClass
+ Adapter$ShyLoader.class
+SHA-256-Digest: XicyeO9/E9d2bZ28UEa3sS6eu/bG95ih6yCHMd5qZ98=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddImplicitActivati
+ onAdapter.class
+SHA-256-Digest: zXGjwQ+EIomEJsJeqCtSLcC9U1Y8y6XCcEHqjAVdg6k=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmTypeHelper.class
+SHA-256-Digest: ClJfi8eJYqhTejpJM4r0NByEZ9eZAkVaiLM8+HNKUEE=
+
+Name: org/eclipse/objectteams/otredyn/transformer/IWeavingContext.clas
+ s
+SHA-256-Digest: WlpJVmcM6XS8OV8PtQtnRoyMNQRE8bOfk2NgeVRPJBc=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/ReplaceWickedSuperC
+ allsAdapter$1.class
+SHA-256-Digest: 6cLjUSRXEaoLK/BKyTHl6oZ+QQgn2eC+ice27El75Pg=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$OTSpecia
+ lAccessAttribute$DecapsField.class
+SHA-256-Digest: FzxCuWvFpH4kfjLgvqwrPMc/SVVlFAIszK/DacYUUds=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSwitchForCall
+ AllBindingsNode.class
+SHA-256-Digest: EiEdATGu+SY4bW00EbmeLNbjdSfKS7KMkkTI2PqXLXk=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/AbstractBoundClass.clas
+ s
+SHA-256-Digest: 70q5sonc5hIUtBXXwfURHOJ2kfZE1nVdOxizOx9SmsM=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateMethodAccessA
+ dapter.class
+SHA-256-Digest: Z9RRoUpgSqbW+mZy5HUDZmhPaFbmgNCpTIDYTSTJTf8=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/Field.class
+SHA-256-Digest: GGcIALmnk6EJXFEj5PB1zf5vG/cO9wFAEtx4FAH8+P0=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddFieldAdapter.cla
+ ss
+SHA-256-Digest: DUNxLmwEMQDTVXYyCLAPsqTkbdcCg3zKA8Yq33mRlSQ=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$OTSpecia
+ lAccessAttribute.class
+SHA-256-Digest: cACArD84dU0YdHZBz6cGSvQ10FIBDNDK/JrYfsWWGok=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/LiftingParticipantA
+ dapter$1.class
+SHA-256-Digest: 3r/XDhI031KzT/gHUAXgJeSMF0GDkFHxbHF9ND4b8B0=
+
+Name: org/eclipse/objectteams/otredyn/transformer/jplis/ObjectTeamsTra
+ nsformer$1.class
+SHA-256-Digest: 54AFcc8BtQXkYdS6d9Vi26MnDS6cw9MAiACyykEQh80=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddEmptyMethodAdapt
+ er.class
+SHA-256-Digest: yjZwe4Dn4BfA0NSP0lTx3zzMEb0gK78oczmijcfOxJo=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmClassVisitor.cla
+ ss
+SHA-256-Digest: HZb0s0NAW7RQ1l53AuX0DNpzSBNHadCyjWg7C0+CJpY=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSuperCallAdap
+ ter.class
+SHA-256-Digest: 3cGAHSkdQPt84dzdFjgE6ZfMIF9FZneZ4EaoTeCCnz8=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddGlobalTeamActiva
+ tionAdapter.class
+SHA-256-Digest: 5fx79UUERMDuMdz0Z8MnhLUDQs9hAYByV78tw8q0tg0=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateDispatchCodeI
+ nOrgMethodAdapter.class
+SHA-256-Digest: Ns5legGQWArIrnruNPAm6ZHYLA6fclUHdOB4TWOQaTM=
+
+Name: plugin.properties
+SHA-256-Digest: 8UMBCrXedzwmkqusL266WEhnhN+tRAXGBK41ZbH2Pt4=
+
+Name: org/eclipse/objectteams/otredyn/util/SMAPConstants.class
+SHA-256-Digest: 2G8EbkGc8O2NCo0s7i374btBiJMt8iXR0zdxEdMg/LU=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmClassVisitor$1.c
+ lass
+SHA-256-Digest: Y8HD83BxKIgnpOH8fNi9aaG+59iwGynf2fWPgKbtU7k=
+
+Name: org/eclipse/objectteams/otredyn/transformer/jplis/otreAgent.clas
+ s
+SHA-256-Digest: nRStle0BaEzGfMgYiSRWCzL6ZC7vxFDxiSizwJib5FU=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/MoveCodeToCallOrigA
+ dapter$1.class
+SHA-256-Digest: nn379y9tKdF9OZBR6DYftO+SNHg7uvNkutS4QcM4mqo=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/ASMByteCodeAnalyzer
+ $ClassInformation.class
+SHA-256-Digest: ibEeTPAob7kBdehBW1EFldm7v5vhSFnnXSqnFQvIY+Q=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/verify/OTCheckClass
+ Adapter$CapturingPrintWriter.class
+SHA-256-Digest: DX+SxgkfYV59I17jsG7yc9Q3bA3QN2jwEACzBdfWbLI=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/Binding.class
+SHA-256-Digest: MqK0WKz1F/vO/DxmYTALyayNDT+EEMkAyk8d4JmWpko=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/LoaderAwareClassWri
+ ter.class
+SHA-256-Digest: R73dkicq4DArcFLgyuluYSAkcQs7fHAjKJZ0mhq/+3Y=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/InMemoryBytecodeProvide
+ r.class
+SHA-256-Digest: BFYQmHcR92UMgts40NqBNCogXF1T8rG+XtrvmC+4Blg=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmClassRepository.
+ class
+SHA-256-Digest: U60FkO/3gBWu014Ka/Fk6JFoTqIOtRDxXbWLmFfuJ/4=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/Types.class
+SHA-256-Digest: avcdmvccSHGP2TiKF3uy3bKImsRBpAUCvJpBzjiABNI=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddGlobalTeamActiva
+ tionAdapter$1.class
+SHA-256-Digest: OMqgy5qib66bw37RSfqFM61qNeGn1WpVm/0qBvNgiws=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmWritableBoundCla
+ ss$2.class
+SHA-256-Digest: zLrgJumTxP1SxGYyrCsTZ/PsFR8F8d2CLojnUIKzoN0=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmWritableBoundCla
+ ss.class
+SHA-256-Digest: v03BQ0/4eKxAyIss25nO4WLEqQBDqhtzu6EaBAlD/FY=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/verify/OTCheckClass
+ Adapter$OTVerifier.class
+SHA-256-Digest: caJEajiqEPq/LAp+lzEukNgLMxWPmlhNbxN02PdrUoo=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/ClassRepository.class
+SHA-256-Digest: M/LsLeUc2Jeu+rn8HjEy1YwnyEZDFE51hOruzfjni3E=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddAfterClassLoadin
+ gHook.class
+SHA-256-Digest: LfSYfi66mcPR796+9VqEnJchwue9uAehcJfxMSzYtQA=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$CallinBi
+ ndingsAttribute$MultiBinding.class
+SHA-256-Digest: danNSr7vdqwFWrGf+Gfqb+ucu2bme05W4RQqyfjDUbs=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AbstractCreateDispa
+ tchCodeAdapter.class
+SHA-256-Digest: vIiWflbm5ghrVuYU41/SWi62E7LgSz/DzQrrP7yUOQg=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/AbstractBoundClass$1.cl
+ ass
+SHA-256-Digest: TUHxcdYrvY3mTtMou00j0j472AUBRvULKGvqAz9ueuY=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/IBytecodeProvider.class
+SHA-256-Digest: CvhnTITzlB8NbykwW3hkh8ZpFJO5dwbaxujEYYCsWuI=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/verify/OTCheckClass
+ Adapter.class
+SHA-256-Digest: 9ZmeVOc9/BEoS3OWkBXdQvBS9SQbV5QUVrL82DI8dTI=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateCallAllBindin
+ gsCallInOrgMethod.class
+SHA-256-Digest: YHbxRCmcwRQc3KeEWju/14Xy2Nmeg9PaHylFSx42kWs=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$CallinBi
+ ndingsAttribute.class
+SHA-256-Digest: 6JeHzSMpwiuO3P0QJ50HAuT0u+Zyq4FAEefhfMZU5kI=
+
+Name: org/eclipse/objectteams/otredyn/transformer/OTREInternalError.cl
+ ass
+SHA-256-Digest: LVExA3ZJOnrOhM1YG7jFqiDqgcU3fsFObL29W9S09u4=
+
+Name: org/eclipse/objectteams/otredyn/util/ArrayUtil.class
+SHA-256-Digest: gZqgXySbvFiYKO8HUMBB6uYbjOszss88886cPcJGUa4=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSpecificSuper
+ CallInCallOrigAdapter.class
+SHA-256-Digest: wXY9FX8EnHNF9aZdek7yfnFrKEAXFsvHf4eM5kFbnrA=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$RoleBase
+ BindingsAttribute.class
+SHA-256-Digest: ADJHcv1ZbzHm7loWFB7akIs1DcAIQLhUE28JCE6Ch7Y=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/AbstractTeam.class
+SHA-256-Digest: dI9dfkVK09sJxM3TUejs/OOmCqsL+ZXCEwRGJVu32Wg=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes.class
+SHA-256-Digest: PiSHPfhy4T7sBXxWLgTI09EmamTWxNfX2BPHXgPstM8=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSuperCallInCa
+ llOrigAdapter.class
+SHA-256-Digest: /KhkHMpXzmlTTxX7gnQX236UDnYVESFN7/NMDEgX2dU=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSwitchForAcce
+ ssAdapter.class
+SHA-256-Digest: +YWglsrjc+n9E++HuPrYYoDhoaUCNMyYjSm3ZbkWL/E=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/Method.class
+SHA-256-Digest: ycww8r/WTc+gLIbcWSsa0CGeiGrgQFsxYHwUGb4aO0A=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/IRedefineStrategy.class
+SHA-256-Digest: 9c/fAfOokK27GAzvzpORfmRnnpDrl21MaYvTczE+Pvc=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddThreadNotificati
+ onAdapter.class
+SHA-256-Digest: 0aY48zLYxP8WxZ4MdO9pZkn04OUAbGqGsPdBHiIP1Tc=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/RedefineStrategyFactory
+ .class
+SHA-256-Digest: suN0Nl6sGdJQsPiVUlvLfvPMQgSsZqOpBvhMFZzeB/c=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/ReplaceWickedSuperC
+ allsAdapter.class
+SHA-256-Digest: 67Cjh8xobaIkrsNWx5nL0qPXRc50YEw0RsAX0LK1pws=
+
+Name: org/eclipse/objectteams/otredyn/transformer/jplis/ObjectTeamsTra
+ nsformer.class
+SHA-256-Digest: +dRYrYvp6zSE/2TMnrZFlFqf1Yo+DToAukpuu8KkusU=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateFieldAccessAd
+ apter.class
+SHA-256-Digest: iWaIdQ82WpomD78kuHS1wJaaaqrVpahm1YoJewxiW2M=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AbstractTransformab
+ leClassNode$IBoundMethodIdInsnProvider.class
+SHA-256-Digest: dEZSB/YWJ+NI15rOIQiV2y3DIo6cyPoOy2unGmC+V1k=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/AbstractBoundClass$Weav
+ ingTask.class
+SHA-256-Digest: jiSRplrDTwYfAVLQljIhhgvpJWCPW+ih2epiikjCZaA=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddThreadNotificati
+ onAdapter$2.class
+SHA-256-Digest: 8EvCKF+P46RCdTc8B78x5l8ee+jw73Ivpms2j3IDJ8A=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddImplicitActivati
+ onAdapter$ImplicitActivationMode.class
+SHA-256-Digest: qdwpfmmGttMunQMqud1tpXpJeVXSAL9csLvFFD8TEnw=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmBoundClass.class
+SHA-256-Digest: +lSwx/PhzkdbVxcc9noVwd4hse9b0AQ4L3sNJ1Ot+wo=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/verify/OTCheckClass
+ Adapter$ShyLoader$LoadAttempted.class
+SHA-256-Digest: bAkBuxRGxQPPADbDQ+UkQZgnLV7iVSDR4vqr/LpXo5Y=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateSwitchAdapter
+ .class
+SHA-256-Digest: 5v18eiXO23Yx9HTier5nsMV3KDffq9Fl0ne8q+wTYzk=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$OTSpecia
+ lAccessAttribute$DecapsMethod.class
+SHA-256-Digest: tDXNfwMgZ86RxXKsjHrEyRzcBV3sFgFfVP9on5GIa2c=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddImplicitActivati
+ onAdapter$1.class
+SHA-256-Digest: ROuGDkCmKa3mOVDI9w76GB82/BqJIa6fxpLshPeJpo0=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AsmWritableBoundCla
+ ss$1.class
+SHA-256-Digest: JulTVj0um872PtErGg6IUD5bp4DahfrSC3GQlb2wTFs=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$CallinPr
+ ecedenceAttribute.class
+SHA-256-Digest: Ktmsgqxpcq1UZheKYgFTjZ0EczfClMwsC/LIUW6w1AY=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddAfterClassLoadin
+ gHook$1.class
+SHA-256-Digest: CfeSbkokJbNEyGQP5ylmPAIoZgf+BKmo5vRglhHmikQ=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/MultiClassAdapter.c
+ lass
+SHA-256-Digest: qy0+WHrwGwBFb1w7G2yq3eOoZKUDLN8HQ0xnNbinfj4=
+
+Name: about.html
+SHA-256-Digest: M30GmY97/EWGpX9xUgtV9sWRu1h9ooPFRRTFF8iCPV4=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/BytecodeProviderFactory
+ .class
+SHA-256-Digest: OSrCCMHioiWdfCKaWfAtjCZePorsRSTuG43/LH7SnJs=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddInterfaceAdapter
+ .class
+SHA-256-Digest: R+sQEysXjpV8BiASG6fe7typKkcZQmShTUxGChsLz4k=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AddThreadNotificati
+ onAdapter$1.class
+SHA-256-Digest: bHDdlnYdoHEr8aK8w/63R5mfD9X5M4SIskzWHKBv4Uc=
+
+Name: org/eclipse/objectteams/otredyn/transformer/names/ClassNames.cla
+ ss
+SHA-256-Digest: jHaYf1/48vWFfWcszODAK7Sit1PlLvq2kpTMZo+tNEw=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateDispatchCodeI
+ nCallAllBindingsAdapter.class
+SHA-256-Digest: 00+de+eh7xpoxx8N7ZHDbpACq327VVUjSZq3xg98314=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/StackBalanceAnalyze
+ r.class
+SHA-256-Digest: MteF4inAO4w5Jw9Ng/HOvCVu1dKyOYPFnAwmldcxOXk=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: G2hFTVPngfh5NUf96Pyy87A7XIE083udjEBFy4pUc/M=
+
+Name: org/eclipse/objectteams/otredyn/util/ListValueHashMap.class
+SHA-256-Digest: 9zKqwTaByDsoYxMxqKtpXKifdmSTIa669oMb2j5W+6E=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/WeavableRegionReade
+ r.class
+SHA-256-Digest: OutZjKYwPzwFgRs3FfaFp2ruVlFMuMC1ZXu+vRitNOg=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/AbstractBoundClass$Weav
+ ingTaskType.class
+SHA-256-Digest: H6ug9TCTS+o+2ZQlN+qwPo0oq7tetTMe0dmNhRxbJS4=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/AbstractTransformab
+ leClassNode.class
+SHA-256-Digest: 6YbNF9ZevRp8Bu9IipIDmKWXQnb4F4TdPLLynp4oP2c=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/Member.class
+SHA-256-Digest: sLrEeDKXkWDnafREZoUrDiMwVhxUUM6Arj1NAmU11Aw=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$OTClassF
+ lagsAttribute.class
+SHA-256-Digest: MVWn6h9xjbt+PM5rkXA3QToU5D1QoNB/j3v7wJHmxmo=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/Attributes$OTCompil
+ erVersion.class
+SHA-256-Digest: 8PHWwFEbEiJCzc3HgQqaSoP2rzXfaaZF7V/WR2bngK8=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/CreateAddRemoveRole
+ Method.class
+SHA-256-Digest: VNYum0WlkLVXktvo2y6CtpTipNz30wfnfHVogjqWU5U=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/MoveCodeToCallOrigA
+ dapter.class
+SHA-256-Digest: 4gxO6LBjLFWyUgSQstbg3OcQBU5gV/LdMcO5xGxYSzc=
+
+Name: org/eclipse/objectteams/otredyn/bytecode/asm/LiftingParticipantA
+ dapter.class
+SHA-256-Digest: BOzZ0hmIyGXq3x4SxtQlGZmTR7LfRMD8blR0+er0Ht4=
+

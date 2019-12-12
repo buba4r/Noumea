@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="org.eclipse.jwt.JWTExample" name="org.eclipse.jwt.JWTExample" schema="schema/org.eclipse.jwt.JWTExample.exsd"/>
+
+   <extension point="org.eclipse.ui.intro.configExtension">
+      <action
+      	 name="JWTsampleCommand"
+      	 replaces="runAction?pluginId=org.eclipse.jwt&amp;class=org.eclipse.jwt.examples.action.OpenJWTExampleWizard">
+      </action>    
+   </extension>
+   <extension point="org.eclipse.ui.intro.configExtension">  
+      <configExtension
+         configId="org.eclipse.ui.intro.universalConfig"
+         content="$nl$/intro/overviewExtensionContent.xml">
+      </configExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.jwt.examples"
+            name="Java Workflow Tooling"
+            parentCategory="org.eclipse.ui.Examples">
+      </category>
+      <wizard
+            category="org.eclipse.ui.Examples/org.eclipse.jwt.examples"
+            class="org.eclipse.jwt.examples.wizards.NewExampleWizard"
+            icon="icons/jwt16x16.gif"
+            id="org.eclipse.jwt.examples.wizards.NewExample"
+            name="JWT Examples"
+            preferredPerspectives="org.eclipse.jwt.we.perspective">
+         <description>
+            Creates a project with a JWT example.
+         </description>
+      </wizard>
+   </extension>
+
+</plugin>

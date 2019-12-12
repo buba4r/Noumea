@@ -1,0 +1,122 @@
+Manifest-Version: 1.0
+Implementation-Title: Usefull class adapters based on ASM, a very smal
+ l and fast Java bytecode manipulation framework
+Automatic-Module-Name: org.objectweb.asm.commons
+Bundle-SymbolicName: org.objectweb.asm.commons
+Implementation-Version: 7.1
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-DocURL: http://asm.ow2.org
+Bundle-Vendor: %bundleVendor
+Import-Package: org.objectweb.asm;version="[7.1.0,7.2)",org.objectweb.
+ asm.signature;version="[7.1.0,7.2)",org.objectweb.asm.tree;version="[
+ 7.1.0,7.2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Module-Requires: org.objectweb.asm;transitive=true,org.objectweb.asm.t
+ ree;transitive=true,org.objectweb.asm.tree.analysis;transitive=true
+Export-Package: org.objectweb.asm.commons;version="7.1.0";uses:="org.o
+ bjectweb.asm,org.objectweb.asm.signature,org.objectweb.asm.tree"
+Bundle-Name: %bundleName
+Bundle-Version: 7.1.0.v20190412-2143
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_192
+
+Name: org/objectweb/asm/commons/CodeSizeEvaluator.class
+SHA-256-Digest: 3pGdiyqCmMhCeGRmMD+re34ntpVY8KpbKoYNwjqcQv4=
+
+Name: org/objectweb/asm/commons/TryCatchBlockSorter$1.class
+SHA-256-Digest: j7zdytlwFUm1id+T5EwTL4oeeO8DS/WGfOQYxzgBVYo=
+
+Name: org/objectweb/asm/commons/FieldRemapper.class
+SHA-256-Digest: XJO0MEjxQcPNjzbfEfxuHtfchAZvpPi5gu6lokHYX1Y=
+
+Name: org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation.class
+SHA-256-Digest: y/JLF7nfptnMUdEtA0p2y+RHsEStpUnHVxouOQsLbrM=
+
+Name: org/objectweb/asm/commons/SimpleRemapper.class
+SHA-256-Digest: ha4zh0JyRTXlSWLJcEbndPqCbXjywlt3zBUw2ixUdq0=
+
+Name: org/objectweb/asm/commons/InstructionAdapter.class
+SHA-256-Digest: AWFePzmt1tPF4p1ppv3xbZ172TgeXfxr8gFuYL2dXMA=
+
+Name: org/objectweb/asm/commons/AnnotationRemapper.class
+SHA-256-Digest: F3LG2LFkbSbFS2EIbrOnD8xdUJhI2mmzBrguWj/ypYA=
+
+Name: org/objectweb/asm/commons/ModuleHashesAttribute.class
+SHA-256-Digest: HvMVB0g5RR2xeoG2k00pytadyyiqiILkwtXaJuCw4MM=
+
+Name: org/objectweb/asm/commons/JSRInlinerAdapter.class
+SHA-256-Digest: m8Vdv9wr2uqpMVARnrKYO2pr4BZC0R+fxA5CFgH9AZE=
+
+Name: org/objectweb/asm/commons/StaticInitMerger.class
+SHA-256-Digest: UDysPROt0PY/hcZr10jBrT2FLcrg2hdWfseV53WIucM=
+
+Name: module-info.class
+SHA-256-Digest: U0+m4/9Ns7ouBbIE8vWj7RnrgCxIEfs8Bql66YUIGJM=
+
+Name: org/objectweb/asm/commons/ClassRemapper.class
+SHA-256-Digest: t2+djEMsVcV99afgPuO0R9ycrwp1NuGo/fK/C/F6VAM=
+
+Name: org/objectweb/asm/commons/Method.class
+SHA-256-Digest: Z6lphREDFX0pphbgjDtO54ZGM1dlwZ7J3cnyS56as/I=
+
+Name: org/objectweb/asm/commons/MethodRemapper.class
+SHA-256-Digest: Hib8B2/xYqx7RNBgrtOjNg+aQrT3Qc0HsTW0LSzpFnQ=
+
+Name: org/objectweb/asm/commons/TableSwitchGenerator.class
+SHA-256-Digest: b3AxuH1kW1tsbtGuu3pSUVTaVjVH/l+mG2kfCJU09Ro=
+
+Name: org/objectweb/asm/commons/AnalyzerAdapter.class
+SHA-256-Digest: vrbYh5MBlGd6ffgEYGZc/+7R2U5fixNHX9ZS9LgfEHs=
+
+Name: about_files/LICENSE.txt
+SHA-256-Digest: jJIAFadJhR7eqT9xEW1F3Na+76YGm2uvUmwK3K8ml5w=
+
+Name: about.html
+SHA-256-Digest: 1ALkMBKzmq0MfyuJqTnSgcfjfSDPXR4Ry5jbN012W9g=
+
+Name: org/objectweb/asm/commons/SerialVersionUIDAdder.class
+SHA-256-Digest: +qPib3GVM5ZVtnq45evxt4lSP5Tqz6HRUxtJDNCAi4Y=
+
+Name: org/objectweb/asm/commons/ModuleResolutionAttribute.class
+SHA-256-Digest: HmmmVS1MW61Qy18MNi5cD38n+zS3pBhWxfepf5Oyq54=
+
+Name: org/objectweb/asm/commons/LocalVariablesSorter.class
+SHA-256-Digest: w6T1C60N5R8w5zSsaZK4QrUeyOCMVfbaUr+FfU2bD5A=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.commo
+ ns/pom.properties
+SHA-256-Digest: OncnRenGgpmCHtpQcClSaSDW+nRUWVoGGe+QFLaL44I=
+
+Name: org/objectweb/asm/commons/SignatureRemapper.class
+SHA-256-Digest: be485BMNcuanpLpx0Ebh7cG4hExtqCSP4vUY6lNyJgc=
+
+Name: org/objectweb/asm/commons/SerialVersionUIDAdder$Item.class
+SHA-256-Digest: EzZb10aPobPg7ypz5u7pIZq5MlD13M4t4wI+aPEXuzY=
+
+Name: org/objectweb/asm/commons/GeneratorAdapter.class
+SHA-256-Digest: 9obbNPHmLcaGbX2fZhB+M5ig/0FEuN3k509VO70L60U=
+
+Name: org/objectweb/asm/commons/ModuleRemapper.class
+SHA-256-Digest: 462LcWoOLMq7yZTH2n40zyj4XS/wvjzl/iJnOIfpwUM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.commo
+ ns/pom.xml
+SHA-256-Digest: /eSMFZ8XsY6iFd3jD5buNZUMZbLIqglruUHPmXsjnpk=
+
+Name: org/objectweb/asm/commons/Remapper.class
+SHA-256-Digest: Dkm87ZD9ilyS25SD5osw2kkuB6mSDBOl9TrmpVFUGhs=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: RY+leAG3W3qXrE+E0OfKiKjybh+i34rZ9xjiunfls+A=
+
+Name: org/objectweb/asm/commons/AdviceAdapter.class
+SHA-256-Digest: HZ8FYEubx8Z+AxZk4wwWb60wLGOEpJpphgfX7ujoB/o=
+
+Name: org/objectweb/asm/commons/TryCatchBlockSorter.class
+SHA-256-Digest: sGOMbPZ/OUY98TInFfuncC8kpywV8BGEQ56YN5SWpTA=
+
+Name: org/objectweb/asm/commons/ModuleTargetAttribute.class
+SHA-256-Digest: 70qJ4nv1p4FyiOBRCgZepbh6XPAGTS6N+UcGOtnw6a4=
+

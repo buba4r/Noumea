@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfwps:WorkflowWps xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfwps="http://fr.ubo.mde.babau.wfwps" name="CoastLine" abstract="coast line analysis">
+  <localWpsLibrary name="DistancesToCSV" abstract="Add a description of DistancesToCSV" packageName="tools" className="CoastLinesTracking" functionName="distancesToCSV">
+    <inputs name="distances" abstract="distance to the reference line" type="Complex"/>
+    <outputs name="result" abstract="distances in a CSV format" type="String"/>
+  </localWpsLibrary>
+  <localWpsLibrary name="DrawRadial" abstract="Add a description of DrawRadial" packageName="tools" className="CoastLinesTracking" functionName="drawRadial">
+    <inputs name="referenceLine" abstract="the reference Line" type="Complex"/>
+    <inputs name="length" abstract="length of radial" type="Double"/>
+    <inputs name="distance" abstract="distance between two radials" type="Double"/>
+    <inputs name="direction" abstract="direction of the radial"/>
+    <outputs name="result" abstract="set of radials" type="Complex"/>
+  </localWpsLibrary>
+  <localWpsLibrary name="GetDistances" abstract="Add a description of GetDistances" packageName="tools" className="CoastLinesTracking" functionName="getDistances">
+    <inputs name="radials" abstract="set of radials" type="Complex"/>
+    <inputs name="coastLines" abstract="set of coast lines" type="Complex"/>
+    <outputs name="result" abstract="distances to the reference line" type="Complex"/>
+  </localWpsLibrary>
+  <wfLibrary name="CoastLineEvolution" abstract="coast line analysis">
+    <inputs name="coastLines" abstract="Add a description" type="Complex" link="//@wfLibrary.0/@links.6"/>
+    <inputs name="referenceLine" abstract="Add a description" type="Complex" link="//@wfLibrary.0/@links.7"/>
+    <outputs name="result" abstract="distances to the reference line in CSV format" type="String" link="//@wfLibrary.0/@links.0"/>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.1">
+      <inputs link="//@wfLibrary.0/@links.7" input="//@localWpsLibrary.1/@inputs.0"/>
+      <inputs link="//@wfLibrary.0/@links.3" input="//@localWpsLibrary.1/@inputs.1"/>
+      <inputs link="//@wfLibrary.0/@links.4" input="//@localWpsLibrary.1/@inputs.2"/>
+      <inputs link="//@wfLibrary.0/@links.5" input="//@localWpsLibrary.1/@inputs.3"/>
+      <outputs link="//@wfLibrary.0/@links.2" output="//@localWpsLibrary.1/@outputs.0"/>
+    </wps>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.2">
+      <inputs link="//@wfLibrary.0/@links.2" input="//@localWpsLibrary.2/@inputs.0"/>
+      <inputs link="//@wfLibrary.0/@links.6" input="//@localWpsLibrary.2/@inputs.1"/>
+      <outputs link="//@wfLibrary.0/@links.1" output="//@localWpsLibrary.2/@outputs.0"/>
+    </wps>
+    <wps xsi:type="wfwps:LocalWPSReference" wps="//@localWpsLibrary.0">
+      <inputs link="//@wfLibrary.0/@links.1" input="//@localWpsLibrary.0/@inputs.0"/>
+      <outputs link="//@wfLibrary.0/@links.0" output="//@localWpsLibrary.0/@outputs.0"/>
+    </wps>
+    <links input="//@wfLibrary.0/@wps.2/@outputs.0" output="//@wfLibrary.0/@outputs.0"/>
+    <links input="//@wfLibrary.0/@wps.1/@outputs.0" output="//@wfLibrary.0/@wps.2/@inputs.0"/>
+    <links input="//@wfLibrary.0/@wps.0/@outputs.0" output="//@wfLibrary.0/@wps.1/@inputs.0"/>
+    <links input="//@wfLibrary.0/@constants.0" output="//@wfLibrary.0/@wps.0/@inputs.1"/>
+    <links input="//@wfLibrary.0/@constants.1" output="//@wfLibrary.0/@wps.0/@inputs.2"/>
+    <links input="//@wfLibrary.0/@constants.2" output="//@wfLibrary.0/@wps.0/@inputs.3"/>
+    <links input="//@wfLibrary.0/@inputs.0" output="//@wfLibrary.0/@wps.1/@inputs.1"/>
+    <links input="//@wfLibrary.0/@inputs.1" output="//@wfLibrary.0/@wps.0/@inputs.0"/>
+    <constants xsi:type="wfwps:DoubleConstant" link="//@wfLibrary.0/@links.3" name="distance200" abstract="Add a description" value="200.0"/>
+    <constants xsi:type="wfwps:DoubleConstant" link="//@wfLibrary.0/@links.4" name="distance20" abstract="Add a description" value="20.0"/>
+    <constants xsi:type="wfwps:BooleanConstant" link="//@wfLibrary.0/@links.5" name="true" abstract="directionTrue" value="true"/>
+  </wfLibrary>
+  <wfLibrary name="VougayCLE" abstract="coast line analysis">
+    <outputs name="result" abstract="distances to the reference line in CSV format" type="String" link="//@wfLibrary.1/@links.0"/>
+    <wps xsi:type="wfwps:WorkflowReference" wps="//@wfLibrary.0">
+      <inputs link="//@wfLibrary.1/@links.1" input="//@wfLibrary.0/@inputs.0"/>
+      <inputs link="//@wfLibrary.1/@links.2" input="//@wfLibrary.0/@inputs.1"/>
+      <outputs link="//@wfLibrary.1/@links.0" output="//@wfLibrary.0/@outputs.0"/>
+    </wps>
+    <links input="//@wfLibrary.1/@wps.0/@outputs.0" output="//@wfLibrary.1/@outputs.0"/>
+    <links input="//@wfLibrary.1/@remoteData.1" output="//@wfLibrary.1/@wps.0/@inputs.0"/>
+    <links input="//@wfLibrary.1/@remoteData.0" output="//@wfLibrary.1/@wps.0/@inputs.1"/>
+    <remoteData xsi:type="wfwps:WFS" link="//@wfLibrary.1/@links.2" url="portail.indigeo.fr/geoserver/LETG-BREST/ows" layer="LETG-BREST:REF_VOUG"/>
+    <remoteData xsi:type="wfwps:WFS" link="//@wfLibrary.1/@links.1" url="portail.indigeo.fr/geoserver/LETG-BREST/ows" layer="LETG-BREST:TDC_VOUG"/>
+  </wfLibrary>
+</wfwps:WorkflowWps>

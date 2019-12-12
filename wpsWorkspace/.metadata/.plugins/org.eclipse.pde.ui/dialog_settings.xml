@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="org.eclipse.pde.ui.PLUGIN_STATUS_DIALOG">
+		<item key="DIALOG_X_ORIGIN" value="520"/>
+		<item key="DIALOG_Y_ORIGIN" value="171"/>
+		<item key="DIALOG_WIDTH" value="400"/>
+		<item key="DIALOG_HEIGHT" value="371"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+	</section>
+	<section name="pde_compiler_errorwarnings_block">
+		<item key="0" value="false"/>
+		<item key="1" value="false"/>
+		<item key="2" value="false"/>
+		<item key="3" value="true"/>
+		<item key="4" value="false"/>
+	</section>
+</section>

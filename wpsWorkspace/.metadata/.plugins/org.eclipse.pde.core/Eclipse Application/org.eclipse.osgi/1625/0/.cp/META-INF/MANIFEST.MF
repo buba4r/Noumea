@@ -1,0 +1,222 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.objectteams.otdt.ui.help;singleton:=t
+ rue
+Require-Bundle: org.eclipse.ui;bundle-version="[3.7.0,4.0.0)",org.ecli
+ pse.core.runtime;bundle-version="[3.7.0,4.0.0)",org.eclipse.ui.intro;
+ bundle-version="[3.4.100,4.0.0)",org.eclipse.ui.cheatsheets;bundle-ve
+ rsion="[3.4.100,4.0.0)",org.eclipse.help;bundle-version="[3.5.100,4.0
+ .0)",org.eclipse.core.resources;bundle-version="[3.7.0,4.0.0)",org.ec
+ lipse.ui.ide;bundle-version="[3.7.0,4.0.0)",org.eclipse.ui.browser;bu
+ ndle-version="[3.3.100,4.0.0)",org.eclipse.ui.workbench.texteditor;bu
+ ndle-version="[3.7.0,4.0.0)",org.eclipse.jface.text;bundle-version="[
+ 3.7.0,4.0.0)",org.eclipse.jdt.ui;bundle-version="[3.7.0,4.0.0)",org.e
+ clipse.jdt.core;bundle-version="[3.7.0.v_OTDT_r200,4.0.0)",org.eclips
+ e.objectteams.otdt.ui;bundle-version="[2.5.0,3.0.0)",org.eclipse.obje
+ ctteams.otequinox;bundle-version="[2.5.0,3.0.0)",org.eclipse.objectte
+ ams.otdt.doc;bundle-version="2.4.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/object
+ teams/org.eclipse.objectteams.git;path="plugins/org.eclipse.objecttea
+ ms.otdt.ui.help";tag=builds/201606070956
+Bundle-Vendor: %providerName
+Export-Package: org.eclipse.objectteams.otdt.internal.ui.help.actions;
+ x-internal:=true,org.eclipse.objectteams.otdt.internal.ui.help.views;
+ x-internal:=true,org.eclipse.objectteams.otdt.ui.help
+Bundle-Name: %pluginName
+Bundle-Version: 2.5.0.201606070956
+Bundle-Localization: plugin
+Bundle-Classpath: .
+Bundle-Activator: org.eclipse.objectteams.otdt.ui.help.OTHelpPlugin
+
+Name: plugin.xml
+SHA-256-Digest: Xrc+mej0REin//3BcZOGaxiuQTI0E16XDff5AbBJLE0=
+
+Name: icons/clcl16/nav_forward.gif
+SHA-256-Digest: 6MU1H4bh5aTwmIBz34CQvyEcZii36Hrq08aYpUeRlZY=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/Messages.class
+SHA-256-Digest: BhD6tgYDf74RM1UqhBCeyV5xyOUooMSJB8E2HZ6gZ7o=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$ProblemHoverAdaptor.class
+SHA-256-Digest: 8WF+seDN9iHPMiSyDQMpI5SaUDk1OmWC8XpHtlk+0sA=
+
+Name: css/graphics/obj_48/otjdev_obj.gif
+SHA-256-Digest: bBt5CNXguK0eoxHizlHBG6pZ4HneqNqDk6jKYAB5JdU=
+
+Name: css/tutorials.css
+SHA-256-Digest: JYFof11f78GVZlMKJBikJFiNx+SUNEOXsY781XZj5J4=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/views/OTJLDView.cl
+ ass
+SHA-256-Digest: gbWeprD35JH88Xyw/qDUGY20G8TOCMVrVj2WjU9GxpM=
+
+Name: intro/css/graphics/obj_48/otapp_obj.gif
+SHA-256-Digest: dqhurPzxmLYZko2T+ixJLbcpnVmlRDCmR9gtEnRXmDE=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$TSuper__OT__Team.class
+SHA-256-Digest: Y3YGZjVE9cdYhiXqIdFRwWYleVXRJOCeiFIiDrdwBEk=
+
+Name: plugin.properties
+SHA-256-Digest: +9K0L3D+addeNwDIVi5MbNTgsKXi/Mk1drCA4pzFxKg=
+
+Name: org/eclipse/objectteams/otdt/ui/help/OTHelpPlugin.class
+SHA-256-Digest: 1CKoznOSjdtFhTipzenLvReFHK4afcOA6+o2T6anyqQ=
+
+Name: css/graphics/obj_48/othov_obj.gif
+SHA-256-Digest: wsvrieJf9UTDSX6x5iGqJ/xMaDpHOI5ccfHOpcc6GG4=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$ILowerable.class
+SHA-256-Digest: 3oAFbJtw+7ZkVaNjpQwiuHYqgNLjWCSyZ7Lw4xLeP4Q=
+
+Name: intro/tutorialsExtensionContentOT.xml
+SHA-256-Digest: B5/f2++0g5YLBT+i6M7DPFrq8AM+MSPH48HWDNumUA0=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/OTJLDViewA
+ ctionDelegate.class
+SHA-256-Digest: jSuCgEh/fyiUX30ds7TgF3oybYHMnXvprspUNtU2Vv4=
+
+Name: intro/css/graphics/obj_48/otdthov_obj.png
+SHA-256-Digest: oevfyom39/Mrmsscc0s/8vL9lDycOrFw6OUEkozeiWo=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$Confined.class
+SHA-256-Digest: 63kMCGQKs59jpy2u+pNKqIFrbYSFkT5qTJtpXH0CWMI=
+
+Name: css/root_swt.properties
+SHA-256-Digest: tbYID1Y6OCCcW72vNuq5o8+oEBwre6iSjSzZDX3dFVE=
+
+Name: css/swt.properties
+SHA-256-Digest: DUCDlyOyk92LZOxlXmXrYnKw8AroJlsSyetK4bHdi+I=
+
+Name: icons/clcl16/nav_backward.gif
+SHA-256-Digest: +iO/Fww/lP9xuNrzQI2zs0XXAE0j5xW5b7u8yQANonw=
+
+Name: intro/overviewExtensionContent.xml
+SHA-256-Digest: Kfi57hvVaSq2xd3N8IvD3Zafxqz/2gDD7V67D+TQMGI=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$__OT__Confined.class
+SHA-256-Digest: 4LK9oaAsug60SmRRP2TZp0JcUOUhQcYcBbpuwCZ5lRk=
+
+Name: css/graphics/obj_48/ot_obj.gif
+SHA-256-Digest: w3oMSVvyqUMW05RUohZCw2b53K+lLNZ7PU3bLixosqA=
+
+Name: intro/css/swt-intro.properties
+SHA-256-Digest: G5BI4Rr6GqXx+kkN0jPiCSi1I4ziTagAjD85SJG0zvc=
+
+Name: icons/dlcl16/nav_backward.gif
+SHA-256-Digest: mHTKpTYGmVXipn7R3mUWSvlV6l8TreZx5wskpn/wu5g=
+
+Name: icons/elcl16/nav_forward.gif
+SHA-256-Digest: 6MU1H4bh5aTwmIBz34CQvyEcZii36Hrq08aYpUeRlZY=
+
+Name: intro/css/welcome.css
+SHA-256-Digest: 5j8br7SvPFiCod8YaZ85bLCqWJSWMUILdl+qZW50PI4=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$IConfined.class
+SHA-256-Digest: x/kadTixJm7QioZmxX4cFvAuyHmV56ydaizEf5e9OKc=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/UpdateRule
+ rAction.class
+SHA-256-Digest: j6URAHluBNcA2Dd6XMpYO6sW/FIJpd93rSQ8UQumLFk=
+
+Name: icons/clcl16/nav_home.gif
+SHA-256-Digest: Cz0UenPxG4KnttPizoZ4TPkumzJD11vQXrL5dVxvj94=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or.class
+SHA-256-Digest: C509jQw2a3f7QGXzNKb+3JepUXW4Mg/9DyKtXSiundI=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/messages.propertie
+ s
+SHA-256-Digest: uyehm0UZhHd1YrJYtCIbyFSBprp/MVPd1AiakEzOqs8=
+
+Name: css/ot-overview.properties
+SHA-256-Digest: PMlSVPkScjJoq2QHFU1E3Tz2vBeENxUvRFvwFqhUJVE=
+
+Name: intro/whatsnewExtensionContent.xml
+SHA-256-Digest: AFaLbJiZ3ey+SBkMcR2N8XW4u3ADNIogh6H2y+qK4Ng=
+
+Name: icons/elcl16/nav_backward.gif
+SHA-256-Digest: +iO/Fww/lP9xuNrzQI2zs0XXAE0j5xW5b7u8yQANonw=
+
+Name: intro/css/graphics/obj_48/otdt_obj.png
+SHA-256-Digest: pwMFPBpwcq1wNrLPxi9F+OOjos+3mnVQKmrOb1bwLDA=
+
+Name: intro/css/graphics/obj_48/othov_obj.gif
+SHA-256-Digest: U4nnSM4tTOPeCj0HN13SvIoq6WUmf496+2j7yHybCvU=
+
+Name: css/overview.css
+SHA-256-Digest: 9MvTxFzeLrriH+uu4vMeDBN/m0xin6P+Vgsk6v6NiuQ=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/ShowOTJLDA
+ ction.class
+SHA-256-Digest: hL++Yt1bnXnzFIz5KATnLfZwyEaczzdmAwme2SypqpA=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/OTJLDError.class
+SHA-256-Digest: xl4BH5qzLC7v8sMo/TM/PQhYBW2Y0KlGzIhHugcv/Qo=
+
+Name: icons/dlcl16/nav_home.gif
+SHA-256-Digest: ODmrypAtk2nxH2caO9a1iD9zFGqg+RWtcbtaRhMe5G0=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$RoFi__OT__.class
+SHA-256-Digest: 0Xl2oJO5BWTza9uhMpucTx2uKdYGojbrULF3iJwxkbQ=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/ShowOTJLDA
+ ction$1.class
+SHA-256-Digest: ZG5itRhse1KeBzeGBK+scdN7hqs1PGBPw75UxG+sB8o=
+
+Name: about.html
+SHA-256-Digest: M30GmY97/EWGpX9xUgtV9sWRu1h9ooPFRRTFF8iCPV4=
+
+Name: css/book.css
+SHA-256-Digest: EcdBtavEQ8e3/fvzjPXGGPQ7n8D7YnEkc0ehMMDzDJU=
+
+Name: icons/dlcl16/nav_forward.gif
+SHA-256-Digest: HCSXx+fKjySNDlreRmwFBKtf5DslC2npp5V/02WmHGI=
+
+Name: icons/elcl16/nav_home.gif
+SHA-256-Digest: Cz0UenPxG4KnttPizoZ4TPkumzJD11vQXrL5dVxvj94=
+
+Name: icons/ot_paragraph.gif
+SHA-256-Digest: Uf9/ZCEy4JIugtoQweJ5OIKBWZp9Lw29e+hKAYiNTUs=
+
+Name: intro/css/graphics/obj_48/otapphov_obj.png
+SHA-256-Digest: 5pHc/R/9AgxfkkA4B3BYe37AQ1bW0vGidCQy+iPJrHA=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/OTJLDError$OTURL.c
+ lass
+SHA-256-Digest: S6PZAM36FP0L9irKQO7/A90EGfWzNi6wTvO/RzfyJ9E=
+
+Name: org/eclipse/objectteams/otdt/internal/ui/help/actions/HoverAdapt
+ or$__OT__ProblemHoverAdaptor.class
+SHA-256-Digest: 4S4gw//T3tVyYvSW8XBXXtu7HGX9O1VPydjDCDMPve4=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: G2hFTVPngfh5NUf96Pyy87A7XIE083udjEBFy4pUc/M=
+
+Name: css/graphics/obj_48/otjdevhov_obj.gif
+SHA-256-Digest: XOmBoq4O5b/DhmLMZt6tOeNxHDy0sfKwm432z8d4ON8=
+
+Name: icons/sample.gif
+SHA-256-Digest: 6jMftqI7oSaDQ6w4VCjJEtTiJvYpMr0Z1u+lWgsbkjY=
+
+Name: css/root.css
+SHA-256-Digest: qlP2BPRG3PRcDDf26EmeHPTkfaighv4X1mTS3UX5WL8=
+
+Name: css/shared.css
+SHA-256-Digest: u7ksurTwnaVyJ4vRP7uCdSsMQ3mQf5qEOwji5ctQXVA=
+
+Name: intro/css/graphics/obj_48/ot_obj.gif
+SHA-256-Digest: tAxTeZirlBjgVfzbM4yjKisbazEwte/W6qxsPWaefss=
+
+Name: cheatsheets/SimpleOTApplication.xml
+SHA-256-Digest: OahUMFidTIpEjZ6rGi9POyl18AS2ridRXlQ5hdzQLNE=
+

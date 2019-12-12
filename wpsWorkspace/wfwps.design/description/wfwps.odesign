@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="wfwpsGraphicalEditor" version="11.1.1.201610211630">
+  <ownedViewpoints name="wfwpsViewPoint" label="wfwps view point" modelFileExtension="wfwps">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="libraryDiagram" initialisation="true" domainClass="wfwps.WorkflowWps">
+      <metamodel href="../../wfwps/model/wfwps.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="localWpsNode" semanticCandidatesExpression="feature:localWpsLibrary" domainClass="wfwps.LocalWPS">
+          <borderedNodeMappings name="input1" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.Input">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="output1" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.Output">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" showIcon="false" labelPosition="node" resizeKind="NSEW" width="15" height="7">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="remoteWPSNode" semanticCandidatesExpression="feature:remoteWpsLibrary" domainClass="wfwps.RemoteWPS">
+          <borderedNodeMappings name="inputRemote1" label="inputRemote1" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.Input">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="outputRemote1" label="outputRemote1" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.Output">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="wfwps.design/resources/remoteWPS.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="WorkflowNode" semanticCandidatesExpression="feature:wfLibrary" doubleClickDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='libraryDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='WFEditor']" domainClass="wfwps.WorkFlow">
+          <borderedNodeMappings name="inputWF1" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.InputWorkflow">
+            <style xsi:type="style:DotDescription" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="outputWF1" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.OutputWorkflow">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="paletteWPS" label="WPS palette">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creationWorkflow" label="new Workflow" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='libraryDiagram']/@defaultLayer/@nodeMappings[name='WorkflowNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.WorkFlow" referenceName="wfLibrary">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation input WF" label="new Workflow Input" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='libraryDiagram']/@defaultLayer/@nodeMappings[name='WorkflowNode']/@borderedNodeMappings[name='inputWF1']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.InputWorkflow" referenceName="inputs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation output WF" label="new Workflow Output" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='libraryDiagram']/@defaultLayer/@nodeMappings[name='WorkflowNode']/@borderedNodeMappings[name='outputWF1']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.OutputWorkflow" referenceName="outputs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="WFEditor" mappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='libraryDiagram']/@defaultLayer/@nodeMappings[name='WorkflowNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="workflowDiagram" initialisation="true" domainClass="wfwps.WorkFlow">
+      <metamodel href="../../wfwps/model/wfwps.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="refLocalWpsNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delNode']" semanticCandidatesExpression="feature:wps" doubleClickDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='dcWPS']" domainClass="wfwps.LocalWPSReference">
+          <borderedNodeMappings name="input2" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.InputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="output2" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.OutputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.wps.name/]" labelPosition="node" resizeKind="NSEW" width="15" height="7">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="refRemoteWPSNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delNode']" semanticCandidatesExpression="feature:wps" doubleClickDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='dcRWPS']" domainClass="wfwps.RemoteWPSReference">
+          <borderedNodeMappings name="inputRemote2" label="inputRemote2" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.InputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="outputRemote2" label="outputRemote2" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.OutputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.wps.name/]" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="wfwps.design/resources/remoteWPS.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="refWorkflowNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delNode']" semanticCandidatesExpression="feature:wps" doubleClickDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='dcWWPS']" domainClass="wfwps.WorkflowReference">
+          <borderedNodeMappings name="inputWorflow2" label="inputWorflow2" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.InputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[input.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[input.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="outputWorkflow2" label="outputWorkflow2" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.OutputReference">
+            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Boolean/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Integer/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Double/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::String/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Geometry/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Raster/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[output.type=wfwps::WPStype::Complex/]">
+              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[output.name/]" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[self.wps.name/]" sizeComputationExpression="10" resizeKind="NSEW" workspacePath="wfwps.design/resources/workflow.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="wmsDataNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delRemote']" semanticCandidatesExpression="feature:remoteData" domainClass="wfwps.WMS">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:url" sizeComputationExpression="7" workspacePath="wfwps.design/resources/wms.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="wfsDataNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delRemote']" semanticCandidatesExpression="feature:remoteData" domainClass="wfwps.WFS">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:url" sizeComputationExpression="7" workspacePath="wfwps.design/resources/wfs.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="wfInput" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delIO']" semanticCandidatesExpression="feature:inputs" domainClass="wfwps.InputWorkflow">
+          <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="wfOutput" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delIO']" semanticCandidatesExpression="feature:outputs" domainClass="wfwps.OutputWorkflow">
+          <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Boolean/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Integer/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Double/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::String/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Geometry/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Raster/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[type=wfwps::WPStype::Complex/]">
+            <style xsi:type="style:DotDescription" showIcon="false" sizeComputationExpression="2" strokeSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="BooleanConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.BooleanConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:value" sizeComputationExpression="" labelPosition="node" width="3" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="IntegerConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.IntegerConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:value" sizeComputationExpression="" labelPosition="node" width="5" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="DoubleConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.DoubleConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:value" sizeComputationExpression="" labelPosition="node" width="5" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="StringConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.StringConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:value" sizeComputationExpression="" labelPosition="node" width="10" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="GeometryConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.GeometryConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:value" sizeComputationExpression="" labelPosition="node" width="20" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="RasterConstantNode" deletionDescription="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@toolSections.0/@ownedTools[name='delConstant']" semanticCandidatesExpression="feature:constants" domainClass="wfwps.RasterConstant">
+          <style xsi:type="style:SquareDescription" showIcon="false" sizeComputationExpression="" labelPosition="node" width="15" height="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Linkwps" semanticCandidatesExpression="feature:links" sourceMapping="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refLocalWpsNode']/@borderedNodeMappings[name='output2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refRemoteWPSNode']/@borderedNodeMappings[name='outputRemote2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refWorkflowNode']/@borderedNodeMappings[name='outputWorkflow2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wmsDataNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wfsDataNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wfInput'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='IntegerConstantNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='DoubleConstantNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='StringConstantNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='BooleanConstantNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='GeometryConstantNode'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='RasterConstantNode']" targetMapping="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refLocalWpsNode']/@borderedNodeMappings[name='input2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refRemoteWPSNode']/@borderedNodeMappings[name='inputRemote2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refWorkflowNode']/@borderedNodeMappings[name='inputWorflow2'] //@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wfOutput']" targetFinderExpression="feature:output" sourceFinderExpression="feature:input" domainClass="wfwps.Link" useDomainElement="true">
+          <style sizeComputationExpression="2" foldingStyle="SOURCE" endsCentering="Target" centeredSourceMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refLocalWpsNode']/@borderedNodeMappings[name='output2']">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="paletteWorkflow" label="Workflow palette">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation ref local wps" label="Local WPS call" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refLocalWpsNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.LocalWPSReference" referenceName="wps"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creationRemoteWps" label="Remote WPS call" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refRemoteWPSNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.RemoteWPSReference" referenceName="wps"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creationWorkflow" label="Workflow call" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refWorkflowNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.WorkflowReference" referenceName="wps"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation wmsData" label="WMS call" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wmsDataNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.WMS" referenceName="remoteData"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation wfsData" label="WFS call" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='wfsDataNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.WFS" referenceName="remoteData"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation boolean " label="Boolean Value" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='BooleanConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.BooleanConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation integer " label="Integer Value" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='IntegerConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.IntegerConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation double " label="Double Value" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='DoubleConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.DoubleConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation string " label="String Value" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='StringConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.StringConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation geometry creation" label="Geometry" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='GeometryConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.GeometryConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="creation raster " label="Image" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='RasterConstantNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.RasterConstant" referenceName="constants">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="abstract" valueExpression="['Add a description'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="linkCreation" label="new Link" edgeMappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@edgeMappings[name='Linkwps']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[target/]">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="[target.oclIsTypeOf(wfwps::InputReference)/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[target.eContainer().eContainer()/]">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.Link" referenceName="links">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="var:source"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="var:target"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                  <cases conditionExpression="[target.oclIsTypeOf(wfwps::OutputWorkflow)/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[target.eContainer()/]">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.Link" referenceName="links">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="var:source"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="var:target"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                  <default/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:For" expression="[ target.link.eContainer(WorkFlow).links/]">
+                  <subModelOperations xsi:type="tool_1:If" conditionExpression="[(i.oclAsType(Link)).input=null or (i.oclAsType(Link)).output=null /]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[i/]">
+                      <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="dcWPS" mappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refLocalWpsNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="[self.oclAsType(WPSReference).inputs->isEmpty()/]">
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(LocalWPSReference).wps.inputs/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.InputReference" referenceName="inputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="[i/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(LocalWPSReference).wps.outputs/]" iteratorName="out">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.OutputReference" referenceName="outputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="[out/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="dcRWPS" mappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refRemoteWPSNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="[self.oclAsType(WPSReference).inputs->isEmpty()/]">
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(RemoteWPSReference).wps.inputs/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.InputReference" referenceName="inputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="[i/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(RemoteWPSReference).wps.outputs/]" iteratorName="out">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.OutputReference" referenceName="outputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="[out/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="dcWWPS" mappings="//@ownedViewpoints[name='wfwpsViewPoint']/@ownedRepresentations[name='workflowDiagram']/@defaultLayer/@nodeMappings[name='refWorkflowNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="[self.oclAsType(WPSReference).inputs->isEmpty()/]">
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(WorkflowReference).wps.inputs/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.InputReference" referenceName="inputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="[i/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:For" expression="[self.oclAsType(WorkflowReference).wps.outputs/]" iteratorName="out">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="wfwps.OutputReference" referenceName="outputs">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="[out/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="delNode" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:For" expression="[element.eContainer(WorkFlow).links/]">
+                  <subModelOperations xsi:type="tool_1:If" conditionExpression="[element.inputs->includes(i.oclAsType(Link).output) or element.outputs->includes(i.oclAsType(Link).input)/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[i/]">
+                      <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:For" expression="[element.eContainer(WorkFlow).links/]">
+                  <subModelOperations xsi:type="tool_1:If" conditionExpression="[(i.oclAsType(Link)).input=null or (i.oclAsType(Link)).output=null /]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[i/]">
+                      <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="delConstant" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:For" expression="[element.eContainer(WorkFlow).links/]">
+                  <subModelOperations xsi:type="tool_1:If" conditionExpression="[element=(i.oclAsType(Link).input)/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[i/]">
+                      <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="delRemote" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                <subModelOperations xsi:type="tool_1:For" expression="[element.eContainer(WorkFlow).links/]">
+                  <subModelOperations xsi:type="tool_1:If" conditionExpression="[element=(i.oclAsType(Link).input)/]">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[i/]">
+                      <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="delIO" precondition="[false/]">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[element/]"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="wfwps.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

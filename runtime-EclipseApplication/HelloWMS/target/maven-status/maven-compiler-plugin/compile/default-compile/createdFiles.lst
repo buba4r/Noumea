@@ -1,0 +1,10 @@
+remoteWpsCall\CDATAEncoder.class
+remoteWpsCall\testWFSCall.class
+remoteWpsCall\WMSrequest.class
+remoteWpsCall\testWMS.class
+remoteWpsCall\TestRemoteWpsCall.class
+tests\testImages.class
+testWMS\WPSpackage\ImageResolution_class.class
+Images\ImageUtils.class
+remoteWpsCall\WFSrequest.class
+remoteWpsCall\RemoteWpsCall.class

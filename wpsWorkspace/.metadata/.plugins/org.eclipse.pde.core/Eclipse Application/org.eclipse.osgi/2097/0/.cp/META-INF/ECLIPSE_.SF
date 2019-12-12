@@ -1,0 +1,110 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 3HsGMZ0lGdhGh4Gay99zdJ1A0Y3Tf
+ yoEps0gq04/Y+U=
+SHA-256-Digest-Manifest: DZCCBqN4mMAVZ2rwPKIPX7D56OqZN5ce7vk6n1epkpA=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: about.properties
+SHA-256-Digest: tNtiwrnb7RLtvl6yW50JMaa5yCS+WTGSGltUCjyGc50=
+
+Name: zips/qvtr/empty.zip
+SHA-256-Digest: 3L3wGPWoku9US0MKnvUReTkwMPexl/lhC5gsck4jwZQ=
+
+Name: plugin.xml
+SHA-256-Digest: 0UNklxWtXqhg3U2ugoz7v7mJ2huO67h6eqX8iBPFVUA=
+
+Name: icons/QVTcModelFile.gif
+SHA-256-Digest: paQXe7UQF2L/wAxLWzQVH69tGgkvjY1AGBsHro/XDCE=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/EmptyExampleWizard.class
+SHA-256-Digest: BIeyU2USuGlIE8GuqtMBGr9THXSJNOAnBMAN3tBZrbc=
+
+Name: org/eclipse/qvtd/examples/QVTDeclarativeExamplesPlugin.class
+SHA-256-Digest: wGojAqLYlI6agrvHBj2TdQIr3WUEtrZYnAGFNesYvJk=
+
+Name: zips/qvtr/modelmorf.zip
+SHA-256-Digest: f3qBeQ0rUo1KRcrBsKhl+tRtg2LgvwyCPQ8DyZmICnE=
+
+Name: about.mappings
+SHA-256-Digest: 0HL/2685gl2xVhgkscrE0TXBlIYcs/F2BxdTBY4FAZE=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/RelToCoreExampleWizard.cl
+ ass
+SHA-256-Digest: 9v5qOcWK1rbVk4cMDbX3NTYLNAZ5t/XRmdqMGdOp3uk=
+
+Name: zips/umlx/hstm2fstm.zip
+SHA-256-Digest: A8n2m/ZD+fvB+OhFlqZ1vB0zQx0UxEw+kY6UPI0l7R0=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/ModelMorfExampleWizard.cl
+ ass
+SHA-256-Digest: tkjNXoDkQ7EftN+9sXsIIXwQuZdBK14eceomqxd7BOY=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1.class
+SHA-256-Digest: 3rdxq46f2onb6AM+y4LRG6T7VXJplfE7L1PlWAwLBJY=
+
+Name: build.properties
+SHA-256-Digest: wXNWfP9BzrFXan4kq2rcJp7l9aLV3SJqROoxXe5SRSM=
+
+Name: about.ini
+SHA-256-Digest: iKQzL98AJf1c8iyc1ac+clIi4OtMFAeKwvSIxPhDOWI=
+
+Name: icons/UMLXModelFile.gif
+SHA-256-Digest: 9hxOsE7bqf6tDwtKSUwpIM+o0b6+9tjnDBQkhK3g9QQ=
+
+Name: plugin.properties
+SHA-256-Digest: dbzCZ7gtEVdq4/0kHk8cne7Tc+zUFStnVCkMAJyxkg0=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/EmptyExampleWizard.class
+SHA-256-Digest: HnMfdRjGIfERiuxJE1wx09YagUAiY0+xueP8xUX68sc=
+
+Name: modeling32.png
+SHA-256-Digest: CgS/5RX+HpcveJj25BP7XwIrPI3o7AtCMO2apmBLMZ0=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1$1.clas
+ s
+SHA-256-Digest: iAIPkN6l3EsO3Ll4JAIUkq7jOMduTVR/MGCC31iu/eE=
+
+Name: about.html
+SHA-256-Digest: X9QvIL4PRwKWhUVXFQrdsatTT00yjDcsGekCdwJwfCM=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/UML2RDBMSExampleWizard.cl
+ ass
+SHA-256-Digest: lk2uvmsrEUgqM+2F/8bys2353yznca4Em3B20nLc0uM=
+
+Name: zips/qvtc/empty.zip
+SHA-256-Digest: c3h4Q2W4IkcUdW85ox2YAzIySa1JMMN+B3ke6m0eLvM=
+
+Name: icons/OCLModelFile.gif
+SHA-256-Digest: BfTXQy3CSWgZXzdYbS1P0ugcV8cbrSFlyAtitxN+Bqo=
+
+Name: intro/css/graphics/tx.gif
+SHA-256-Digest: 6ZHkz38P71tagkR7bLsCOXQP5GGeysOaY1taiZhSNRk=
+
+Name: zips/qvtr/hstm2fstm.zip
+SHA-256-Digest: KeDhMJbqTmMV+us0c4h3PgbzqN8JPSAh6wsQlF8+zVc=
+
+Name: zips/readme.txt
+SHA-256-Digest: 6nL1wzK7WPqJJtWP3TFWmcx9k2d1vXwkOyfNMVce6lE=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard.class
+SHA-256-Digest: yJTEaUS0gU8f0W2mEki1ZG4SRI20dDg/ep/hlT+YTVU=
+
+Name: intro/css/sample.css
+SHA-256-Digest: NG7HNfuNbPctpJxXekvrk9OBfJTJeTNTBTOCP0TuvmQ=
+
+Name: icons/QVTrModelFile.gif
+SHA-256-Digest: HLYCalNrMlRTNh5YXk5e0O6l2pqM0skFMLEnEiKcoD4=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$ProjectD
+ escriptor.class
+SHA-256-Digest: szCubvtCWhdgL7iTQUfL6tra+2NyHXkzCJSr8VUsBlc=
+
+Name: intro/sample.xml
+SHA-256-Digest: z0wbje3bySNAO7L9ZeJSWPPjz/foFI6bs75AgnV7ENI=
+
+Name: zips/qvtc/uml2rdbms.zip
+SHA-256-Digest: Y4REa/M9wnsgSvAPIEJbbvYjJkrrzXhGbD7+y57X/XM=
+
+Name: zips/qvtr/reltocore.zip
+SHA-256-Digest: WgybDwi26Q4xQFXVamy5jQ8Z/qdrzfJ0UVnFYowEarg=
+
