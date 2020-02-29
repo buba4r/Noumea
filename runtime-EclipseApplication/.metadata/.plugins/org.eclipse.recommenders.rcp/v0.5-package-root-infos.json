@@ -1,0 +1,2342 @@
+[
+  {
+    "symbolicName": "it.geosolutions.jaiext.warp.jt-warp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ccd50b305b7b4c0b4055e447de38ce6e16f18a19",
+    "jarFileModificationDate": "2019-10-23T23:55:42+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/warp/jt-warp/1.0.15/jt-warp-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-process-raster",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fdab45e6b61ad04bb9ca9365d1d7cf65e787446a",
+    "jarFileModificationDate": "2019-10-23T23:54:59+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-process-raster/17.2/gt-process-raster-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.utilities.jt-utilities",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d7af893ce8f757c4f0d6af534463af73b5fbff6b",
+    "jarFileModificationDate": "2019-10-23T23:55:41+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/utilities/jt-utilities/1.0.15/jt-utilities-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.zonal.jt-zonal",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2cd851fb5a655299a48aeea36c82c743cb6b87d4",
+    "jarFileModificationDate": "2019-10-23T23:55:42+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/zonal/jt-zonal/1.0.15/jt-zonal-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xml-commons-resolver-1.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3d0f97750b3a03e0971831566067754ba4bfd68c",
+    "jarFileModificationDate": "2019-10-23T23:55:22+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/apache/xml/xml-commons-resolver/1.2/xml-commons-resolver-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.imageio-ext.imageio-ext-utilities",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "daa28e97fd188569e33834894804f6b0031813ab",
+    "jarFileModificationDate": "2019-10-23T23:55:31+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.17/imageio-ext-utilities-1.1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.bandmerge.jt-bandmerge",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "701f60539449c5bcaf0789fcae76fa781bbf1c4b",
+    "jarFileModificationDate": "2019-10-23T23:55:34+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/bandmerge/jt-bandmerge/1.0.15/jt-bandmerge-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "net.sf.ehcache",
+    "version": {
+      "major": 2,
+      "minor": 10,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cf74f9a4a049f181833b147a1d9aa62159c9d01d",
+    "jarFileModificationDate": "2019-10-23T23:56:19+02:00",
+    "location": "/Users/lastking24/.m2/repository/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 17,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9c6ef172e8de35fd8d4d8783e4821e57cdef7445",
+    "jarFileModificationDate": "2019-10-23T23:56:26+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.fileupload",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "384faa82e193d4e4b0546059ca09572654bc3970",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-wcs1_0",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "557441639177cd580c97b3819c07ed8006fb0500",
+    "jarFileModificationDate": "2019-10-23T23:56:06+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-wcs1_0/2.11.2/gs-wcs1_0-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-web-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "49cd2430884b77172aa81e3fc33ef668ea1dab30",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-filter",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "464296f1204cc7be27a32a33e1cf99d6d183ac4c",
+    "jarFileModificationDate": "2019-10-23T23:54:26+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-filter/17.2/gt-xsd-filter-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "227a835c5e2565564c967b1d2aa693456444f81f",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.codehaus.jettison.jettison",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0cf0d3b18dd6876d18639d4b283b468bac686916",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/codehaus/jettison/jettison/1.0.1/jettison-1.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-wps",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4fe7ed856160dab04494580d8a0f9fc06a79c964",
+    "jarFileModificationDate": "2019-10-23T23:55:13+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-wps/17.2/gt-wps-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-wcs2_0",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7f394494dc4a592681a35ca2be6f59ffbb127d9c",
+    "jarFileModificationDate": "2019-10-23T23:56:04+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-wcs2_0/2.11.2/gs-wcs2_0-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.binarize.jt-binarize",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5b17ba927b308758f38ddce21f24523a4f82f130",
+    "jarFileModificationDate": "2019-10-23T23:55:42+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/binarize/jt-binarize/1.0.15/jt-binarize-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fd51f906669f49a4ffd06650666c3b8147a6106e",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-render",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9554d0fe1d2c1c5ce089cffb9079381ea2e58291",
+    "jarFileModificationDate": "2019-10-23T23:55:01+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-render/17.2/gt-render-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-attributeop",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d834b0b5a1b1543712ecaff3c6ec991e5fe5ca6b",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-attributeop/1.4.0/jt-attributeop-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "net.sf.ezmorph.ezmorph",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 6,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "01e55d2a0253ea37745d33062852fd2c90027432",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-beanutils-1.7.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5675fd96b29656504b86029551973d60fb41339b",
+    "jarFileModificationDate": "2019-10-23T23:54:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jai_codec-1.1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "34a67ba62097778e4695c951156bf189c2c8e016",
+    "jarFileModificationDate": "2019-10-23T23:55:10+02:00",
+    "location": "/Users/lastking24/.m2/repository/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-fes",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9a06a8c29641eb913c97b0f532afc4613a622218",
+    "jarFileModificationDate": "2019-10-23T23:54:25+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-fes/17.2/gt-xsd-fes-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-geojson",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2315fdd5f378262ac4e4c8c4c6181072b5d29695",
+    "jarFileModificationDate": "2019-10-23T23:55:07+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-geojson/17.2/gt-geojson-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hsqldb.hsqldb",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "93306187b1a782f2b929d12536022185487037d2",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.bandselect.jt-bandselect",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "81825f188f8e9e2acb1883d52f7dd77adcf39bbf",
+    "jarFileModificationDate": "2019-10-23T23:55:34+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/bandselect/jt-bandselect/1.0.15/jt-bandselect-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-contour",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2df274de5540073f05c6b20c5bfe69f8ad375180",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-contour/1.4.0/jt-contour-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "10a9b93b0fc02699c8b15eb6a83479d68a460064",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d73e27ae80ff189098ba99ded6e022bb18e50c4c",
+    "jarFileModificationDate": "2019-11-09T14:21:38+01:00",
+    "location": "/System/Library/Java/Extensions/MRJToolkit.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "picocontainer-1.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c55e869dcdddd735acd8789b74863cde8d15d444",
+    "jarFileModificationDate": "2019-10-23T23:54:55+02:00",
+    "location": "/Users/lastking24/.m2/repository/picocontainer/picocontainer/1.2/picocontainer-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-wcs",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3b8f6111c4ecb03baf9c32da55925c53fe582b89",
+    "jarFileModificationDate": "2019-10-23T23:56:05+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-wcs/2.11.2/gs-wcs-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-transform",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dc838b0730fa7abc55d2c221f93b868435c2f4e2",
+    "jarFileModificationDate": "2019-10-23T23:54:16+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-transform/17.2/gt-transform-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-data",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7d6758ba0822d40beeb51849bbe51664d7e06808",
+    "jarFileModificationDate": "2019-10-23T23:53:50+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-data/17.2/gt-data-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-wcs1_1",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "83e2f83fb3ccc2e0a5238f6fcc0a29cd78a715c7",
+    "jarFileModificationDate": "2019-10-23T23:56:05+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-wcs1_1/2.11.2/gs-wcs1_1-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-expression-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a42bdfb833d0be6c18429aea3fb0fba81f85c6e8",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-expression/4.2.5.RELEASE/spring-expression-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "50fe4d8e9752c971d04e1de0a27ac4124f93cd8b",
+    "jarFileModificationDate": "2019-10-05T12:39:50+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.logging",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4bfc12adfe4842bf07b657f0369c4cb522955686",
+    "jarFileModificationDate": "2019-10-23T23:56:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-process-geometry",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "097a96146a57431754e7b0b3d59dd9c90973e525",
+    "jarFileModificationDate": "2019-10-23T23:53:55+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-process-geometry/17.2/gt-process-geometry-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.imageio-ext.imageio-ext-geocore",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e7906ef1dfe00c4ecb6662c12a5e46b108832c33",
+    "jarFileModificationDate": "2019-10-23T23:55:31+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/imageio-ext/imageio-ext-geocore/1.1.17/imageio-ext-geocore-1.1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.errordiffusion.jt-errordiffusion",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2dfaed9c34abe329e3f79895803a5b95785da744",
+    "jarFileModificationDate": "2019-10-23T23:55:44+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/errordiffusion/jt-errordiffusion/1.0.15/jt-errordiffusion-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.googlecode.efficient-java-matrix-library.core",
+    "version": {
+      "major": 0,
+      "minor": 26,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2df89c44ad92900f025a61e228bbbcd6abca3efd",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-epsg-hsql",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6e91e300e720e4f4eeb44e2528fc228553f3103b",
+    "jarFileModificationDate": "2019-10-23T23:54:08+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-epsg-hsql/17.2/gt-epsg-hsql-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "652b5d5f4538b3bb6b8bf6b3194854d339e21bff",
+    "jarFileModificationDate": "2019-10-05T12:39:50+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.dbcp",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "30be73c965cc990b153a100aaaaafcf239f82d39",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-rangelookup",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "443cba4f363c4a77009dd31a3db2914aefd06bbc",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-rangelookup/1.4.0/jt-rangelookup-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "stax-api-1.0.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "49c100caf72d658aca8e58bd74a4ba90fa2b0d70",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "45f7d098b49636b5d7e3717501b6f7b659549bc0",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/nashorn.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.geotools.gt-metadata",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8c155492ad9a235d1ebc15d569410455d7c0a5e5",
+    "jarFileModificationDate": "2019-10-23T23:53:33+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-metadata/17.2/gt-metadata-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5af35056b4d257e4b64b9e8069c0746e8b08629f",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "mail-1.4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1aa1579ae5ecd41920c4f355b0a9ef40b68315dd",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "672ff58a800f0cac55c9dd7029a9fbb4bbb3da9e",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.h2",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 119,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c1841760f5d99d4bb9d3c7daf45053e27d9da5b2",
+    "jarFileModificationDate": "2019-10-23T23:56:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/h2database/h2/1.1.119/h2-1.1.119.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-gml2",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6cc0387b81751acfe3ef27b9b28b4b7882a00ce4",
+    "jarFileModificationDate": "2019-10-23T23:54:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-gml2/17.2/gt-xsd-gml2-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.imageio-ext.imageio-ext-arcgrid",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "711e915ef6d3f7b4f973466517ef2e6a84a3594f",
+    "jarFileModificationDate": "2019-10-23T23:56:07+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/imageio-ext/imageio-ext-arcgrid/1.1.17/imageio-ext-arcgrid-1.1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-webmvc-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0cf463cce3e4453eb4b9a69de2dcdfd60c3c57e0",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-graph",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ecd9b2b1f3d75ec1c7830b82c4a92e1b30fbd2c1",
+    "jarFileModificationDate": "2019-10-23T23:54:54+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-graph/17.2/gt-graph-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xpp3_min-1.1.4c",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "19d4e90b43059058f6e056f794f0ea4030d60b86",
+    "jarFileModificationDate": "2018-01-24T15:15:38+01:00",
+    "location": "/Users/lastking24/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-referencing",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3ab8b603908548253673842963a4a48b8ceaeb4b",
+    "jarFileModificationDate": "2019-10-23T23:53:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-referencing/17.2/gt-referencing-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-api",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bf71ab15cb7d876bc4ae8e4ebe223a4724224a36",
+    "jarFileModificationDate": "2019-10-23T23:53:25+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-api/17.2/gt-api-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-security-core-4.0.4.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "67e6eccc73a9887a7ca262c7cac20f9b36ce5a5d",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/security/spring-security-core/4.0.4.RELEASE/spring-security-core-4.0.4.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-wps",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e95253fe2210a6aa57e4d604fd4237c22d7faafc",
+    "jarFileModificationDate": "2019-10-23T23:54:51+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-wps/17.2/gt-xsd-wps-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-wms",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95e17fe5c7545054bf788e341f0254b46e4cb84f",
+    "jarFileModificationDate": "2019-10-23T23:54:10+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-wms/17.2/gt-wms-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "204c3d6c5c12e23faf0bb03478d4800b77ddef13",
+    "jarFileModificationDate": "2019-10-05T12:39:50+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/cldrdata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.lookup.jt-lookup",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9fdf053cf9cef19b0b2fd0a43eabef23283b3989",
+    "jarFileModificationDate": "2019-10-23T23:55:38+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/lookup/jt-lookup/1.0.15/jt-lookup-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-vectorize",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cb36435cf9f4f2bb626b9fd138404d5f4612a0ed",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-vectorize/1.4.0/jt-vectorize-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "json",
+    "version": {
+      "major": 20160810,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aca5eb39e2a12fddd6c472b240afe9ebea3a6733",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/json/json/20160810/json-20160810.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "activation-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e6cb541461c2834bdea3eb920f1884d1eb508b50",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-aop-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "858d6c70909b3ce7e07b59fc936f8ccfcd81c0aa",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.extension.gs-wps-core",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dea793731135e4ea56f1071c887bcc66dddff046",
+    "jarFileModificationDate": "2019-10-23T23:55:51+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/extension/gs-wps-core/2.11.2/gs-wps-core-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore",
+    "version": {
+      "major": 2,
+      "minor": 6,
+      "micro": 1,
+      "qualifier": "v20100914-1218"
+    },
+    "jarFileFingerprint": "8bb44787cb01bf3ed5f29624c818f346f35ea3c3",
+    "jarFileModificationDate": "2019-10-23T23:54:51+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/eclipse/emf/ecore/2.6.1/ecore-2.6.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-coverage",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b6fc08f78a96a197d37241b01aa46f804efbb66",
+    "jarFileModificationDate": "2019-10-23T23:53:39+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-coverage/17.2/gt-coverage-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-security-web-4.0.4.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c52e77d38a48b33f955ab25156f15e564c9b616f",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/security/spring-security-web/4.0.4.RELEASE/spring-security-web-4.0.4.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.classifier.jt-classifier",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8eb093e425985f1ab3a16e8f92fbc522c39cc917",
+    "jarFileModificationDate": "2019-10-23T23:55:45+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/classifier/jt-classifier/1.0.15/jt-classifier-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.jxpath",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c22d7d0f0f40eb7059a23cfa61773a416768b137",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-beans-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fa992ae40f6fc47117282164e0433b71da385e94",
+    "jarFileModificationDate": "2019-10-23T23:56:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdom-1.1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8bdfeb39fa929c35f5e4f0b02d34350db39a1efc",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jdom/jdom/1.1.3/jdom-1.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.scale.jt-scale",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df3ae129ecf6cc80d29fdbb0e1ce331f3bbac1ea",
+    "jarFileModificationDate": "2019-10-23T23:55:40+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/scale/jt-scale/1.0.15/jt-scale-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3e0211e7b67fc1e54575d290297d173aa45f8c50",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jai_imageio-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "27d867283f9043b05a8fb210773d0ef72b767a58",
+    "jarFileModificationDate": "2019-10-23T23:53:52+02:00",
+    "location": "/Users/lastking24/.m2/repository/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "cglib-nodep-2.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "59afed7ab65e7ec6585d5bc60556c3cbd203532b",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "json-lib-2.2.3-jdk15",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e9c10548f3d5b260d604818057060cd0ab3b733c",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/net/sf/json-lib/json-lib/2.2.3/json-lib-2.2.3-jdk15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.piecewise.jt-piecewise",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bb4ac071215c0ab67e31c237b7bd6a4773787bd2",
+    "jarFileModificationDate": "2019-10-23T23:55:45+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/piecewise/jt-piecewise/1.0.15/jt-piecewise-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-collections-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f951934aa5ae5a88d7e6dfaa6d32307d834a88be",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.imageio-ext.imageio-ext-streams",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fbd63b2450a647d1b06732fefa8fca389940058c",
+    "jarFileModificationDate": "2019-10-23T23:56:08+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/imageio-ext/imageio-ext-streams/1.1.17/imageio-ext-streams-1.1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.vectorbin.jt-vectorbin",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ecdecd43f8ca267caf47a10fbb35caa2fe99b219",
+    "jarFileModificationDate": "2019-10-23T23:55:49+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/vectorbin/jt-vectorbin/1.0.15/jt-vectorbin-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.concurrent-tile-cache.jt-concurrent-tile-cache",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0e269ea740d4737f8501a166104998cc850acacd",
+    "jarFileModificationDate": "2019-10-23T23:55:57+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/concurrent-tile-cache/jt-concurrent-tile-cache/1.0.15/jt-concurrent-tile-cache-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be6a271b14c90b707ab5f2de7d62eff7c14dd2f4",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "xstream",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 10,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dfecae23647abc9d9fd0416629a4213a3882b101",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d52a5ea9a4105e9247e29bc855618f65d651f1e6",
+    "jarFileModificationDate": "2019-09-11T09:07:43+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/jfxrt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.bandcombine.jt-bandcombine",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9572e83872f6946b4d7cefa25ee2949abecf920a",
+    "jarFileModificationDate": "2019-10-23T23:55:35+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/bandcombine/jt-bandcombine/1.0.15/jt-bandcombine-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.algebra.jt-algebra",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "36304ebc64efd7192c28910c4e0fd320d07c9cb6",
+    "jarFileModificationDate": "2019-10-23T23:55:33+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/algebra/jt-algebra/1.0.15/jt-algebra-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.colorindexer.jt-colorindexer",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7287e40c911d7935784e547250b9ccd0c3cdcc9c",
+    "jarFileModificationDate": "2019-10-23T23:55:44+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/colorindexer/jt-colorindexer/1.0.15/jt-colorindexer-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-wfs-ng",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "18df57ff0798e919a30b2f36e7f1ce6bc78d8054",
+    "jarFileModificationDate": "2019-10-23T23:53:58+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-wfs-ng/17.2/gt-wfs-ng-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.net.opengis.wcs",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cc04d828131da107463d6bdfabdea2537e5e4bcb",
+    "jarFileModificationDate": "2019-10-23T23:54:34+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/net.opengis.wcs/17.2/net.opengis.wcs-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.pool",
+    "version": {
+      "major": 1,
+      "minor": 5,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "75b6e20c596ed2945a259cea26d7fadd298398e6",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-gml3",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a61a2c17f3e2511937c8700d3995d1ee2816fc09",
+    "jarFileModificationDate": "2019-10-23T23:54:42+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-gml3/17.2/gt-xsd-gml3-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-process-feature",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9f561763c8210bc49b682e177620e0e7b5255cf0",
+    "jarFileModificationDate": "2019-10-23T23:55:05+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-process-feature/17.2/gt-process-feature-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsr-275-1.0-beta-2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7bdd90125e67cd38bee363208e32993c0c75e9be",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.format.jt-format",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "59bd998ac671944dfa14e01940f8176f7673ad07",
+    "jarFileModificationDate": "2019-10-23T23:55:43+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/format/jt-format/1.0.15/jt-format-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c03c0677ffb4f62092bee6d94ad39e8ca15e769a",
+    "jarFileModificationDate": "2019-10-05T12:39:50+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.mosaic.jt-mosaic",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2d321c641ff1c16a3dc4ac3b61f60b17cbc8db24",
+    "jarFileModificationDate": "2019-10-23T23:55:38+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/mosaic/jt-mosaic/1.0.15/jt-mosaic-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.lang",
+    "version": {
+      "major": 2,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0ce1edb914c94ebc388f086c6827e8bdeec71ac2",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.api",
+    "version": {
+      "major": 1,
+      "minor": 7,
+      "micro": 7,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2b8019b6249bb05d81d3a3094e468753e2b21311",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.net.opengis.wps",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1692272def611d00852916bd0d78317d395b1c00",
+    "jarFileModificationDate": "2019-10-23T23:54:43+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/net.opengis.wps/17.2/net.opengis.wps-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.border.jt-border",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9765ef4470110182faf0ef73573554cd12a94dad",
+    "jarFileModificationDate": "2019-10-23T23:55:35+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/border/jt-border/1.0.15/jt-border-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-image",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "68870e79550167a5b1c7a425afb07b015e1ebc3f",
+    "jarFileModificationDate": "2019-10-23T23:54:31+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-image/17.2/gt-image-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-shapefile",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a9bfa774d64ba2ba4ba2a32b4356423a82c2c873",
+    "jarFileModificationDate": "2019-10-23T23:53:50+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-shapefile/17.2/gt-shapefile-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9ce04e34240f674bc72680f8b843b1457383161a",
+    "jarFileModificationDate": "2019-10-23T23:56:28+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "897a9d3bf1a1c877010f8b0c50d58bca8b6d7182",
+    "jarFileModificationDate": "2019-10-05T12:39:50+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.geotools.gt-process",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f6325b9161aa13ae235544c10e83cff72d18c648",
+    "jarFileModificationDate": "2019-10-23T23:53:22+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-process/17.2/gt-process-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-property",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "99204e292085c164d45e1546d730d03406184861",
+    "jarFileModificationDate": "2019-10-23T23:53:59+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-property/17.2/gt-property-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-core",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16b5247daf646bd90ff8ebd7a8177b31e15ef7bf",
+    "jarFileModificationDate": "2019-10-23T23:54:53+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-core/17.2/gt-xsd-core-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-complex",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c3002a2d7e08bf43bcb3cf11988f4034427a33e8",
+    "jarFileModificationDate": "2019-10-23T23:53:58+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-complex/17.2/gt-complex-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "aopalliance-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8",
+    "jarFileModificationDate": "2019-10-23T23:56:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-zonalstats",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "faf8e69d11ab5d554b144795a7077165afbb1527",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-zonalstats/1.4.0/jt-zonalstats-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xmlunit-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4ecf4c68036ae37d889cc1744208abbc42704fb2",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/xmlunit/xmlunit/1.3/xmlunit-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.imagefunction.jt-imagefunction",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "edf1677572a16ee4d2c10d0452404da3cc920ea4",
+    "jarFileModificationDate": "2019-10-23T23:55:45+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/imagefunction/jt-imagefunction/1.0.15/jt-imagefunction-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.iterators.jt-iterators",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "803d57bf6469cd23ba28bac4131a312ad5aa7728",
+    "jarFileModificationDate": "2019-10-23T23:55:38+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/iterators/jt-iterators/1.0.15/jt-iterators-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.net.opengis.ows",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c3458a5c25f61c17d9c7ba6d7cb383d73f5d2838",
+    "jarFileModificationDate": "2019-10-23T23:54:45+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/net.opengis.ows/17.2/net.opengis.ows-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-ows",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f96df9daa50471fd3e17b68351744306796c0c7a",
+    "jarFileModificationDate": "2019-10-23T23:55:15+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-ows/17.2/gt-xsd-ows-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-cql",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "425adea34e48dc7a49e7890b76508b9d78624d39",
+    "jarFileModificationDate": "2019-10-23T23:53:51+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-cql/17.2/gt-cql-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-opengis",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8309fad0594b17a8ef01f89035a95879a6ea2de8",
+    "jarFileModificationDate": "2019-10-23T23:53:34+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-opengis/17.2/gt-opengis-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.rlookup.jt-rlookup",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5f50554300ad1ba5fbb37f5b5af46adc7476dd34",
+    "jarFileModificationDate": "2019-10-23T23:55:46+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/rlookup/jt-rlookup/1.0.15/jt-rlookup-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-tx-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7395321fe937272d9b781a13985e04ab2dcd6210",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-tx/4.2.5.RELEASE/spring-tx-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-jdbc",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "43c5e870153be39a5cdd0eee7f93a8a773a406ee",
+    "jarFileModificationDate": "2019-10-23T23:53:57+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-jdbc/17.2/gt-jdbc-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-xml",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6aa048b42b71aa983d477ee95624414839d05c5a",
+    "jarFileModificationDate": "2019-10-23T23:55:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-xml/17.2/gt-xml-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.common",
+    "version": {
+      "major": 2,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": "v20100914-1218"
+    },
+    "jarFileFingerprint": "72fd98856c4044faab7628950f9c5b217b611590",
+    "jarFileModificationDate": "2019-10-23T23:54:46+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/eclipse/emf/common/2.6.0/common-2.6.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xmlpull-1.1.3.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa",
+    "jarFileModificationDate": "2018-01-31T13:45:29+01:00",
+    "location": "/Users/lastking24/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.vividsolutions.jts",
+    "version": {
+      "major": 1,
+      "minor": 13,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3ccfb9b60f04d71add996a666ceb8902904fd805",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/vividsolutions/jts/1.13/jts-1.13.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-context-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a75e18322c7b362fe1daa26a245ae672ec0f3138",
+    "jarFileModificationDate": "2019-10-23T23:56:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "freemarker-2.3.18",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7b0cd31bfed5ceb396bdcdc088b24e6ff9eae96f",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/freemarker/freemarker/2.3.18/freemarker-2.3.18.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.colorconvert.jt-colorconvert",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b23628477c8807db7677d1fe1dcd1caab4a15bac",
+    "jarFileModificationDate": "2019-10-23T23:55:43+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/colorconvert/jt-colorconvert/1.0.15/jt-colorconvert-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-sld",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "eaddaa8e9cd6818bcfb7bc42c3546b0151f6d153",
+    "jarFileModificationDate": "2019-10-23T23:54:52+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-sld/17.2/gt-xsd-sld-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.org.w3.xlink",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "15927d60dfed4fe9f848efbffaf7d9e9fd02eb0a",
+    "jarFileModificationDate": "2019-10-23T23:54:22+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/org.w3.xlink/17.2/org.w3.xlink-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.imageio-ext.imageio-ext-tiff",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ac9d9bf9ec81fb0edb4fc74783fe142029bc843c",
+    "jarFileModificationDate": "2019-10-23T23:55:30+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.17/imageio-ext-tiff-1.1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.translate.jt-translate",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df2fca56cb9c616b4950d70aca71e14e08d026db",
+    "jarFileModificationDate": "2019-10-23T23:55:40+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/translate/jt-translate/1.0.15/jt-translate-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-main",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "97e18b8c5b6a848071fc4b4692dcf5c9d3b32b00",
+    "jarFileModificationDate": "2019-10-23T23:55:54+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-main/2.11.2/gs-main-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-app-schema-resolver",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f57f04c5cd9576be5586e5e814ca63b9fb30f812",
+    "jarFileModificationDate": "2019-10-23T23:53:59+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-app-schema-resolver/17.2/gt-app-schema-resolver-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-vectorbinarize",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ff6e6fc0396ab9b6c1dd20a599ea432b42a60149",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-vectorbinarize/1.4.0/jt-vectorbinarize-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-grid",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dfa929a635cda247fecab3e52075dfca30ed8f3a",
+    "jarFileModificationDate": "2019-10-23T23:55:08+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-grid/17.2/gt-grid-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jaitools.jt-utils",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2e15b01c3c0ab26b8c54073c0c38dc9ce6f101d5",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jaitools/jt-utils/1.4.0/jt-utils-1.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.rescale.jt-rescale",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9b70c56b7d310edbb03afa8c2c025ddecd0f3431",
+    "jarFileModificationDate": "2019-10-23T23:55:39+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/rescale/jt-rescale/1.0.15/jt-rescale-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.xsd",
+    "version": {
+      "major": 2,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": "v20100914-1218"
+    },
+    "jarFileFingerprint": "e0bff6c35273f65a704b95660cc8571ead1855a8",
+    "jarFileModificationDate": "2019-10-23T23:54:58+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/eclipse/xsd/xsd/2.6.0/xsd-2.6.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bcprov",
+    "version": {
+      "major": 1,
+      "minor": 54,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1acdedeb89f1d950d67b73d481eb7736df65eedb",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.beanutils",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "68f23cee878fd84627cbfbdbf13a0d447a0267bf",
+    "jarFileModificationDate": "2019-10-23T23:55:55+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2-noclassprop.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-gtopo30",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16a0f2ee2faf4900e41ce8712f66bcf4612f2c6b",
+    "jarFileModificationDate": "2019-10-23T23:54:31+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-gtopo30/17.2/gt-gtopo30-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-ows",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d663094456331b8c672f09a9ccd38d65f5b08be7",
+    "jarFileModificationDate": "2019-10-23T23:55:54+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-ows/2.11.2/gs-ows-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "spring-jdbc-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "205d2f1b902eac16a2ece772dc5ac6090b7e0b6f",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-jdbc/4.2.5.RELEASE/spring-jdbc-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b0d87037798be2a6748ae6068107a45433c7eed7",
+    "jarFileModificationDate": "2019-10-05T12:39:52+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "spring-security-config-4.0.4.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cb303b01fe84ca8845312171c77c8b8ff9d4a272",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/security/spring-security-config/4.0.4.RELEASE/spring-security-config-4.0.4.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e4c066a7900d6b831681adbb744e740210cd37be",
+    "jarFileModificationDate": "2019-10-05T12:39:54+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "spring-core-4.2.5.RELEASE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0251207b29f0f38f61e3495a2f7fb053cf1bfe8c",
+    "jarFileModificationDate": "2019-10-23T23:56:29+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.orderdither.jt-orderdither",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8722ef89d802e4bf95fc55f2e3b30f539ba570d7",
+    "jarFileModificationDate": "2019-10-23T23:55:44+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/orderdither/jt-orderdither/1.0.15/jt-orderdither-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xpp3-1.1.3.4.O",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1c165262edac1c1e4f0a67c1643c4b7476187034",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/xpp3/xpp3/1.1.3.4.O/xpp3-1.1.3.4.O.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jai_core-1.1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b179d2efb1174658483e8b41bf4ac9d2eb5de438",
+    "jarFileModificationDate": "2019-10-23T23:53:55+02:00",
+    "location": "/Users/lastking24/.m2/repository/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.stats.jt-stats",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7a2a7eef123139110b538caaa5f71a1ae90ffbe0",
+    "jarFileModificationDate": "2019-10-23T23:55:40+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/stats/jt-stats/1.0.15/jt-stats-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jgridshift-1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "82c163e82b1548c93a9e866dcfd24c66c590a829",
+    "jarFileModificationDate": "2019-10-23T23:53:34+02:00",
+    "location": "/Users/lastking24/.m2/repository/jgridshift/jgridshift/1.0/jgridshift-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.net.opengis.fes",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "279070f62cdf9169edbab35070d054819ae57682",
+    "jarFileModificationDate": "2019-10-23T23:54:23+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/net.opengis.fes/17.2/net.opengis.fes-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-imagemosaic",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a9d2184653f63c746702264e1b806ddf2dee5a80",
+    "jarFileModificationDate": "2019-10-23T23:54:15+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-imagemosaic/17.2/gt-imagemosaic-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-wfs",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c493a8c1a5f388a1cfdaa37e5822c58d8a450863",
+    "jarFileModificationDate": "2019-10-23T23:54:24+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-wfs/17.2/gt-xsd-wfs-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-wfs",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f82be2a75e8c8438d890c3ab97d87b6ac0b7630b",
+    "jarFileModificationDate": "2019-10-23T23:55:52+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-wfs/2.11.2/gs-wfs-2.11.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-geotiff",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "132b4323e1c24c30590dc8feab5d41e3175dbe0b",
+    "jarFileModificationDate": "2019-10-23T23:55:06+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-geotiff/17.2/gt-geotiff-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.ogc.net.opengis.wfs",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b833c5ff4e8ef6e4b592dcb13ac967fd0e7deca8",
+    "jarFileModificationDate": "2019-10-23T23:54:22+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/ogc/net.opengis.wfs/17.2/net.opengis.wfs-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.buffer.jt-buffer",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3ed018cc13f4fe7e0f4607c9850faa51a1333750",
+    "jarFileModificationDate": "2019-10-23T23:55:35+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/buffer/jt-buffer/1.0.15/jt-buffer-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5460adee09cc5fc8829c0acfc46c34670a7d70a0",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "net.sf.geographiclib.GeographicLib-Java",
+    "version": {
+      "major": 1,
+      "minor": 44,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7e18468fafefedd5d1934ea830c1c9683ffd0632",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "668b616e764959d5e258a1232470004d7a394235",
+    "jarFileModificationDate": "2019-10-05T12:39:51+02:00",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.jasypt.jasypt",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b14e87ad376dee74bb2d088279fe2df179cfc9e0",
+    "jarFileModificationDate": "2019-10-23T23:56:20+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/jasypt/jasypt/1.8/jasypt-1.8.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-main",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c3783aa9ba384d5aaac105e39c7d9e3b6217b971",
+    "jarFileModificationDate": "2019-10-23T23:53:37+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-main/17.2/gt-main-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.gt-arcgrid",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "02e8d062adcfd940e711c6e3c3184dafba7cff27",
+    "jarFileModificationDate": "2019-10-23T23:55:05+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/gt-arcgrid/17.2/gt-arcgrid-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsr305-2.0.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5871fb60dc68d67da54a663c3fd636a10a532948",
+    "jarFileModificationDate": "2019-10-23T23:56:18+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.affine.jt-affine",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fc3e5e5b9aa3bd596735fc269d8c08624041e40a",
+    "jarFileModificationDate": "2019-10-23T23:55:33+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/affine/jt-affine/1.0.15/jt-affine-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.nullop.jt-nullop",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9954c5fe6e8b09edbccf83f0408ed10e07e5f61f",
+    "jarFileModificationDate": "2019-10-23T23:55:39+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/nullop/jt-nullop/1.0.15/jt-nullop-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geotools.xsd.gt-xsd-wcs",
+    "version": {
+      "major": 17,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ad38160e636ad9c5d5e6debc65e749f7f7beeaaa",
+    "jarFileModificationDate": "2019-10-23T23:54:35+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geotools/xsd/gt-xsd-wcs/17.2/gt-xsd-wcs-17.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "it.geosolutions.jaiext.crop.jt-crop",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 15,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "89a11080b9bfd476e215b4d91eac19154484e937",
+    "jarFileModificationDate": "2019-10-23T23:55:37+02:00",
+    "location": "/Users/lastking24/.m2/repository/it/geosolutions/jaiext/crop/jt-crop/1.0.15/jt-crop-1.0.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-httpclient-3.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "964cd74171f427720480efdec40a7c7f6e58426a",
+    "jarFileModificationDate": "2019-10-23T23:56:17+02:00",
+    "location": "/Users/lastking24/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "json-simple-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e303a03d04e6788dddfa3655272580ae0fc13bb",
+    "jarFileModificationDate": "2019-10-23T23:56:21+02:00",
+    "location": "/Users/lastking24/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.geoserver.gs-platform",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1a3d379ffce14b2d5759ba7758714cadfc817c78",
+    "jarFileModificationDate": "2019-10-23T23:56:09+02:00",
+    "location": "/Users/lastking24/.m2/repository/org/geoserver/gs-platform/2.11.2/gs-platform-2.11.2.jar",
+    "javaRuntime": false
+  }
+]

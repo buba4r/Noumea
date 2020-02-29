@@ -1,3 +1,13 @@
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins;jenkins_lts]/arch=x86_64
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins;jenkins_lts]/connection_uri=unix\:///var/run/docker.sock
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins;jenkins_lts]/image_id=jenkins/jenkins\:lts
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins;jenkins_lts]/name=[jenkins/jenkins_lts]
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins;jenkins_lts]/os=linux-container
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins_latest]/arch=x86_64
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins_latest]/connection_uri=unix\:///var/run/docker.sock
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins_latest]/image_id=jenkins\:latest
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins_latest]/name=[jenkins_latest]
+LaunchTargetManager/org.eclipse.cdt.docker.launcher.launchTargetType.container,[jenkins_latest]/os=linux-container
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx

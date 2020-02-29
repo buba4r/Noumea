@@ -1,9 +1,0 @@
-package testDiallo;
-
-public class Test {
-	
-	public String helloWorld(String world) {
-		return ("Hello "+world);
-	}
-
-}
