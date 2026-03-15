@@ -25,6 +25,8 @@ import net.opengis.wps10.impl.*;
 
 import com.facade.interfaceServices;
 import WfServices.facadeServices;
+import ai.AIModelService;
+import ai.ClaudeModel;
 import utils.*;
 
 public class MainController implements Initializable {
@@ -60,7 +62,8 @@ public class MainController implements Initializable {
     private VBox vbox2;
  	@FXML
 	private TextField jarName;   
-    
+    @FXML
+    private ChoiceBox<ClaudeModel> modelChoice;
 	private File geoServerProject = null;
 	private File libFile = null;
 	private File projectDirectory = null;
@@ -478,5 +481,15 @@ public class MainController implements Initializable {
 		}
 
 		jarName.setEditable(false);
+
+		modelChoice.getItems().addAll(ClaudeModel.values());
+		modelChoice.setValue(AIModelService.getInstance().getSelectedModel());
+		modelChoice.getSelectionModel().selectedItemProperty().addListener(
+			(obs, oldVal, newVal) -> {
+				if (newVal != null) {
+					AIModelService.getInstance().setSelectedModel(newVal);
+				}
+			}
+		);
 	}
 }
